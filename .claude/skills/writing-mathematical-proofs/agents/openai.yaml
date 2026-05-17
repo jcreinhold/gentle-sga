@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Mathematical Proofs"
+  short_description: "Write rigorous proofs in Markdown"
+  default_prompt: "Use $writing-mathematical-proofs to turn this proof sketch into a readable formal argument in Markdown with Unicode mathematics."
