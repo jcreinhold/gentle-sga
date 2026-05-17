@@ -3,14 +3,14 @@
 ## What this file is about
 
 The well-behaved-family condition introduced two files back is hard to check directly. The definition asks for
-compatibility with every possible auxiliary piece of data, and the test is not local in any obvious sense. In
-practice one wants to know whether a family is well behaved by inspecting it only at a single fixed locus.
+compatibility with every possible auxiliary piece of data, and the test is not local in any obvious sense. In practice
+one wants to know whether a family is well behaved by inspecting it only at a single fixed locus.
 
-This file gives the theorem that makes the inspection legitimate. Under mild hypotheses, a family is well behaved
-over its full base if and only if its restriction to the first infinitesimal layer at the locus is well behaved
-there and a single auxiliary obstruction vanishes. Every earlier file in the seminar that argued well-behavedness by
-checking the special fibre was implicitly using this theorem. It is the engine of the local theory of smooth and
-étale maps and underlies almost every later flatness argument.
+This file gives the theorem that makes the inspection legitimate. Under mild hypotheses, a family is well behaved over
+its full base if and only if its restriction to the first infinitesimal layer at the locus is well behaved there and a
+single auxiliary obstruction vanishes. Every earlier file in the seminar that argued well-behavedness by checking the
+special fibre was implicitly using this theorem. It is the engine of the local theory of smooth and étale maps and
+underlies almost every later flatness argument.
 
 §4 (file 25) gave the flatness ⟺ freeness story over local rings under the standard hypotheses (`I` nilpotent, or `A`
 noetherian with `I` in the radical and `M` finite). The criterion was "`M ⊗ A/I` free plus `Tor^A₁(M, A/I) = 0`," and

@@ -2,15 +2,15 @@
 
 ## What this file is about
 
-The previous file gave a local answer. On a small enough patch, a smooth shape over a point thickens to a smooth
-shape one infinitesimal layer further out, and a map into such a shape extends one layer further. Neither answer
-is unique. Different patches may produce different local extensions, and on overlaps the extensions may disagree.
+The previous file gave a local answer. On a small enough patch, a smooth shape over a point thickens to a smooth shape
+one infinitesimal layer further out, and a map into such a shape extends one layer further. Neither answer is unique.
+Different patches may produce different local extensions, and on overlaps the extensions may disagree.
 
-The next question asks whether the local extensions paste together into a single answer over the whole space. They
-do when a certain bookkeeping group, attached to the space and to a sheaf that measures direction along the smooth
-shape, has only its zero element. Otherwise that group contains a single element that is exactly the obstruction to
-gluing, and the obstruction vanishes precisely when a global answer exists. The file works out which group does
-which job for which question.
+The next question asks whether the local extensions paste together into a single answer over the whole space. They do
+when a certain bookkeeping group, attached to the space and to a sheaf that measures direction along the smooth shape,
+has only its zero element. Otherwise that group contains a single element that is exactly the obstruction to gluing, and
+the obstruction vanishes precisely when a global answer exists. The file works out which group does which job for which
+question.
 
 Section III.4 (file 20) said: a smooth scheme over an infinitesimal thickening lifts smoothly **locally**. The local
 lift is non-canonical (III.4.3, file 20), so gluing local lifts globally requires cohomological accounting. This file

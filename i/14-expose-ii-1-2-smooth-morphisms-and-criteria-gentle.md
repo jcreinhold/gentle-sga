@@ -4,14 +4,14 @@
 
 In ordinary calculus, the cleanest kind of map between two surfaces is a submersion: at every point the map locally
 looks like a flat projection, dropping some coordinates and keeping the rest. A submersion is what guarantees that the
-preimage of a point is itself a smooth surface, and the dimension drops by a predictable amount. The notion runs
-through every part of geometry where you want to slice an object into well-behaved families.
+preimage of a point is itself a smooth surface, and the dimension drops by a predictable amount. The notion runs through
+every part of geometry where you want to slice an object into well-behaved families.
 
 This file builds the algebraic version. The starting material is the notion of covering map from the earlier files,
 which behaved like a submersion of zero dropped dimensions — the layers were discrete. Drop the discreteness. Allow the
 fibres to be honest geometric pieces of positive dimension, but require everything else to keep behaving cleanly. The
-result is the algebraic version of a submersion. Two intrinsic tests for the property follow, both saying the same
-thing from different angles.
+result is the algebraic version of a submersion. Two intrinsic tests for the property follow, both saying the same thing
+from different angles.
 
 Exposé I built étale morphisms — flat plus unramified, the algebraic analogue of an unramified covering. Exposé II adds
 one parameter: relative dimension. A **smooth** morphism is the algebraic analogue of a submersion, a covering "of

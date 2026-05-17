@@ -2,15 +2,15 @@
 
 ## What this file is about
 
-The previous file said when a family is well behaved at a single point. The follow-up question is how the
-well-behaved points sit inside the base. Are they an open region, with each one in a fat neighbourhood of its peers?
-A thin scatter of isolated points? Is the well-behaved region even non-empty?
+The previous file said when a family is well behaved at a single point. The follow-up question is how the well-behaved
+points sit inside the base. Are they an open region, with each one in a fat neighbourhood of its peers? A thin scatter
+of isolated points? Is the well-behaved region even non-empty?
 
-This file gives three answers. A well-behaved family with full support produces an open map on the base. The points
-at which an arbitrary family of coherent data is well behaved form an open subset of the source. Over a base with no
-internal partitions, the well-behaved region contains a non-empty open piece. The third answer, called generic
-flatness, is the technical reason why a piece of data over the generic point of an arithmetic base spreads out
-automatically to a Zariski-open neighbourhood. It is invoked all over arithmetic geometry.
+This file gives three answers. A well-behaved family with full support produces an open map on the base. The points at
+which an arbitrary family of coherent data is well behaved form an open subset of the source. Over a base with no
+internal partitions, the well-behaved region contains a non-empty open piece. The third answer, called generic flatness,
+is the technical reason why a piece of data over the generic point of an arithmetic base spreads out automatically to a
+Zariski-open neighbourhood. It is invoked all over arithmetic geometry.
 
 The local flatness criterion of §5 (file 26) lives at a single point. Globalizing it requires topology: how do flatness
 loci sit inside `Spec(B)`? The answer rests on **constructibility** (Chevalley) and the open-set characterization via

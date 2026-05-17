@@ -5,12 +5,12 @@
 The previous file gave the rules of behaviour for well-varying algebraic families. This file applies them in two
 situations that appear constantly in practice.
 
-The first is the relationship between a ring and its completion at an ideal, the algebraic analogue of zooming in on
-a fixed locus and remembering every infinitesimal layer around it. The completion always varies as well as the
-original ring, and sometimes more so. The second is local. Near a single point of a base, a finitely generated
-package of data may or may not be as simple as possible, meaning a finite stack of free copies of the base ring. The
-file gives a clean criterion for being a free stack, phrased in terms of behaviour along a single infinitesimal
-layer. The criterion is a skeleton version of the deeper one in the next file.
+The first is the relationship between a ring and its completion at an ideal, the algebraic analogue of zooming in on a
+fixed locus and remembering every infinitesimal layer around it. The completion always varies as well as the original
+ring, and sometimes more so. The second is local. Near a single point of a base, a finitely generated package of data
+may or may not be as simple as possible, meaning a finite stack of free copies of the base ring. The file gives a clean
+criterion for being a free stack, phrased in terms of behaviour along a single infinitesimal layer. The criterion is a
+skeleton version of the deeper one in the next file.
 
 Two themes carried in two short sections. **§3** says completion is flat (and faithfully flat under a radical hypothesis
 on the defining ideal). This is where the appendix rows `completion-flat` and `completion-test-for-flatness`, used

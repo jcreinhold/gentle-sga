@@ -36,15 +36,15 @@ characteristic `p > 0` the Cohen ring is the **ring of Witt vectors** `W(k)`. By
 §19.8, appendix [`cohen-ring`](appendix-black-boxes.md#cohen-ring)), every complete noetherian local ring `(A, 𝔪, k)` is
 a quotient of `W[[T₁, …, T_n]]` for some Cohen ring `W` with the same residue field. Synonymously: **Cohen `p`-ring**
 when emphasizing the mixed-characteristic case. _Intuition_: a Cohen ring is the mixed-characteristic counterpart of a
-coefficient field — the canonical way to lift the residue field `k` from characteristic `p` back to characteristic
-zero. File 22.
+coefficient field — the canonical way to lift the residue field `k` from characteristic `p` back to characteristic zero.
+File 22.
 
 **coefficient field.** For an equicharacteristic complete local ring `(A, 𝔪, k)`, a subfield `k' ⊂ A` mapping
 isomorphically to the residue field `k = A/𝔪`. Existence is part of Cohen's structure theorem (EGA 0_IV §19.6, appendix
 [`coefficient-field`](appendix-black-boxes.md#coefficient-field)). A coefficient field gives the trivial lift
 `X = X₀ ⊗_k A` of any `k`-scheme `X₀`. _Intuition_: in the equal-characteristic case, the residue field `k` sits inside
 `A` itself as a subring — the residue projection has a section, so every object over `k` lifts canonically to `A`. File
-22.
+22\.
 
 **conormal sheaf `𝒩_{Y/X}`.** For a closed immersion `Y ↪ X` defined by a coherent ideal sheaf `𝒥`, the coherent sheaf
 `𝒥/𝒥²` on `Y`. Records first-order behavior of `X` along `Y`. Sits in the **conormal exact sequence**
@@ -187,8 +187,8 @@ diagnostic for connectedness preservation under étale covers. File 06, file 12.
 **graph morphism.** For `g : X′ → X`, the morphism `Γ_g : X′ → X ×_Y X` sending `x′` to `(x′, g(x′))`. File 10.
 
 **henselian (local ring).** A local ring `(A, 𝔪)` with residue field `κ = A/𝔪` is _henselian_ if for every monic
-polynomial `f ∈ A[t]` whose reduction `f̄ ∈ κ[t]` factors as `f̄ = ḡ · h̄` with `ḡ, h̄` coprime monics in `κ[t]`, there is
-a factorisation `f = g · h` in `A[t]` with `g, h` monic of the same degrees as `ḡ, h̄` respectively and lifting them.
+polynomial `f ∈ A[t]` whose reduction `f̄ ∈ κ[t]` factors as `f̄ = ḡ · h̄` with `ḡ, h̄` coprime monics in `κ[t]`, there
+is a factorisation `f = g · h` in `A[t]` with `g, h` monic of the same degrees as `ḡ, h̄` respectively and lifting them.
 Equivalently: every étale `A`-algebra that admits a section over `κ` already admits a section over `A`. Complete local
 rings are henselian; the henselisation `A^h` is the universal henselian local extension of `A` with the same residue
 field. _Intuition_: Hensel's lemma holds in `A` — a coprime factorisation of a polynomial over the residue field always
@@ -816,63 +816,63 @@ universally effective morphism of `Sch`-descent. File 42, VIII.5.3.
 ## Descent of étale morphisms and the fundamental group (files 44–47)
 
 **submersive morphism.** A morphism `g : S′ → S` that is **surjective** and makes `S` carry the **quotient topology**
-from `S′`: a subset `U ⊂ S` is open iff `g⁻¹(U) ⊂ S′` is open. The schematic word for "quotient map" in topology.
-File 44, IX.2.1.
+from `S′`: a subset `U ⊂ S` is open iff `g⁻¹(U) ⊂ S′` is open. The schematic word for "quotient map" in topology. File
+44, IX.2.1.
 
 **universally submersive morphism.** A morphism `g : S′ → S` such that every base change `g_T : S′ ×_S T → T` is
-submersive. Every proper surjective morphism, every faithfully flat quasi-compact morphism, and every surjective open
-or closed morphism is universally submersive. The hypothesis under which IX.3 establishes descent of étale morphisms.
-File 44, IX.2.1; file 45, IX.3.
+submersive. Every proper surjective morphism, every faithfully flat quasi-compact morphism, and every surjective open or
+closed morphism is universally submersive. The hypothesis under which IX.3 establishes descent of étale morphisms. File
+44, IX.2.1; file 45, IX.3.
 
 **graph (of an `S`-morphism with étale target).** For `Y / S` étale and `f : X → Y` an `S`-morphism, the subset
 `Γ_f = {(x, f(x))} ⊂ X ×_S Y`. By IX.1.6, `Γ_f` is an open subset of `X ×_S Y` whose first projection `Γ_f → X` is
 radicial and surjective; conversely every such open subset is the graph of a unique `S`-morphism `X → Y`. The single
 lemma that makes file 45 §IX.3 work. File 44, IX.1.6.
 
-**geometrically connected fibres.** A morphism `g : S′ → S` has _geometrically connected fibres_ when, for every
-`s ∈ S` and every field extension `K / κ(s)`, the base change `g⁻¹(s) ⊗_{κ(s)} K` is connected. The key hypothesis
-under which the descent functor `g^* : ℱ_S → ℱ_{S′}` (for the fibred category of finite étale coverings) is fully
-faithful; equivalently, under which the homomorphism `π₁(S′) → π₁(S)` is surjective. File 45, IX.3.4; file 47, IX.6.
+**geometrically connected fibres.** A morphism `g : S′ → S` has _geometrically connected fibres_ when, for every `s ∈ S`
+and every field extension `K / κ(s)`, the base change `g⁻¹(s) ⊗_{κ(s)} K` is connected. The key hypothesis under which
+the descent functor `g^* : ℱ_S → ℱ_{S′}` (for the fibred category of finite étale coverings) is fully faithful;
+equivalently, under which the homomorphism `π₁(S′) → π₁(S)` is surjective. File 45, IX.3.4; file 47, IX.6.
 
 **geometrically trivial covering.** Given `X → S` proper surjective with geometrically connected fibres, an étale
 covering `X′ → X` is _geometrically trivial_ when its fibre `X̄_0′ → X̄_0` over a geometric point of `X̄_0`
-(equivalently, over every fibre of `X → S`) is _completely decomposed_, i.e. isomorphic to a disjoint union of copies
-of `X̄_0`. The criterion for `X′` to come from an étale `S′` via pullback. File 47, IX.6.2, IX.6.7.
+(equivalently, over every fibre of `X → S`) is _completely decomposed_, i.e. isomorphic to a disjoint union of copies of
+`X̄_0`. The criterion for `X′` to come from an étale `S′` via pullback. File 47, IX.6.2, IX.6.7.
 
-**Stein factorisation.** For a proper morphism `f : X → S` of locally noetherian preschemes, the canonical
-factorisation `f : X → S′ → S` with `S′ = Spec_S(f_*(𝒪_X))`, `X → S′` proper with geometrically connected fibres and
-satisfying `(X → S′)_*(𝒪_X) = 𝒪_{S′}`, and `S′ → S` finite. The universal way to "factor out the connected-fibre
-content" of a proper morphism. File 47, IX.6.5–6.6. See
+**Stein factorisation.** For a proper morphism `f : X → S` of locally noetherian preschemes, the canonical factorisation
+`f : X → S′ → S` with `S′ = Spec_S(f_*(𝒪_X))`, `X → S′` proper with geometrically connected fibres and satisfying
+`(X → S′)_*(𝒪_X) = 𝒪_{S′}`, and `S′ → S` finite. The universal way to "factor out the connected-fibre content" of a
+proper morphism. File 47, IX.6.5–6.6. See
 [`ega-iii-stein-factorisation`](appendix-black-boxes.md#ega-iii-stein-factorisation).
 
 **topological invariance of the étale site.** The theorem (IX.4.10) that for `g : S′ → S` finite radicial surjective
-(equivalently, a _universal homeomorphism_), the functor `X ↦ X ×_S S′` is an **equivalence** from étale
-`S`-preschemes to étale `S′`-preschemes. Étale topology cannot distinguish `S` from any finite radicial cover; in
-particular Frobenius and nilpotent thickenings are invisible to the étale fundamental group. File 45, IX.4.10. The
-black-box row [`univ-homeo-equiv`](appendix-black-boxes.md#univ-homeo-equiv) — used since file 06 — is unpacked here.
+(equivalently, a _universal homeomorphism_), the functor `X ↦ X ×_S S′` is an **equivalence** from étale `S`-preschemes
+to étale `S′`-preschemes. Étale topology cannot distinguish `S` from any finite radicial cover; in particular Frobenius
+and nilpotent thickenings are invisible to the étale fundamental group. File 45, IX.4.10. The black-box row
+[`univ-homeo-equiv`](appendix-black-boxes.md#univ-homeo-equiv) — used since file 06 — is unpacked here.
 
 **galoisian-type group generated by `{π_i}` and `{g_j}` subject to relations.** The inverse limit of the quotients of
 the (abstract) free product `(⨿ π_i) * F(g_j) / ⟨relations⟩` by subgroups of finite index whose inverse images in each
-`π_i` are open. Equivalently, the completion of the relevant free product / quotient in the topology of
-finite-quotient subgroups. The Seifert–van-Kampen description of `π₁(S, a)` in IX.5.1 expresses it as a galoisian-type
-group of this form. File 46, IX.5.1.
+`π_i` are open. Equivalently, the completion of the relevant free product / quotient in the topology of finite-quotient
+subgroups. The Seifert–van-Kampen description of `π₁(S, a)` in IX.5.1 expresses it as a galoisian-type group of this
+form. File 46, IX.5.1.
 
-**pinching (of a scheme along a finite set of points).** Given a scheme `S` and a discrete set `T ⊂ S` together with
-a choice of identifications of geometric points of `S` lying over each `t ∈ T`, the _pinched_ scheme `S_pinched` is
-the universal scheme to which `S` admits a morphism collapsing the chosen geometric points. Pinching `ℙ¹` along two
-geometric points produces the nodal cubic; the étale fundamental group of the result is the free profinite group on
-one generator. File 46, IX.5.4–5.
+**pinching (of a scheme along a finite set of points).** Given a scheme `S` and a discrete set `T ⊂ S` together with a
+choice of identifications of geometric points of `S` lying over each `t ∈ T`, the _pinched_ scheme `S_pinched` is the
+universal scheme to which `S` admits a morphism collapsing the chosen geometric points. Pinching `ℙ¹` along two
+geometric points produces the nodal cubic; the étale fundamental group of the result is the free profinite group on one
+generator. File 46, IX.5.4–5.
 
-**symmetric power of a scheme.** For `X / k` and `n ≥ 2`, the `n`-th symmetric power `Sym^n(X) = X^n / 𝔖_n` where
-`𝔖_n` permutes coordinates. For `X` proper connected over an algebraically closed field, `π₁(Sym^n X) = π₁(X)^{ab}`
-(the abelianisation of `π₁(X)`); this is one of the striking consequences of the IX.5.8 quotient-by-finite-group
-formula. File 46, IX.5.8.
+**symmetric power of a scheme.** For `X / k` and `n ≥ 2`, the `n`-th symmetric power `Sym^n(X) = X^n / 𝔖_n` where `𝔖_n`
+permutes coordinates. For `X` proper connected over an algebraically closed field, `π₁(Sym^n X) = π₁(X)^{ab}` (the
+abelianisation of `π₁(X)`); this is one of the striking consequences of the IX.5.8 quotient-by-finite-group formula.
+File 46, IX.5.8.
 
 **cokernel (in the category of Galois-type groups).** For two morphisms `f_1, f_2 : H → G` of Galois-type groups, the
-_cokernel_ is the quotient of `G` by the closed normal subgroup generated by `\{f_1(h) f_2(h)^{-1} : h ∈ H\}`,
-equipped with its quotient topology in the category of Galois-type groups. The π₁ formulation of IX.5.6: for `g`
-universally submersive with geometrically connected fibres, `π₁(S, a)` is the cokernel of `(p_1^*, p_2^*) :
-π₁(S″, s″) ⇉ π₁(S′, s′)`. File 46, IX.5.6.
+_cokernel_ is the quotient of `G` by the closed normal subgroup generated by `\{f_1(h) f_2(h)^{-1} : h ∈ H\}`, equipped
+with its quotient topology in the category of Galois-type groups. The π₁ formulation of IX.5.6: for `g` universally
+submersive with geometrically connected fibres, `π₁(S, a)` is the cokernel of
+`(p_1^*, p_2^*) : π₁(S″, s″) ⇉ π₁(S′, s′)`. File 46, IX.5.6.
 
 **fundamental exact sequence.** For `X → S` proper surjective with geometrically connected fibres, `s ∈ S`, and a
 geometric point `ā` of the geometric fibre `X̄_0 = X ⊗_{κ(s)} \bar{κ(s)}` over `s`, the canonical exact sequence
@@ -896,8 +896,8 @@ the upper side preserves separability. The right vocabulary for "a morphism whos
 with no inseparable hidden structure." File 48, X.1.1.
 
 **Stein factorisation refined to étale.** EGA III §7.8.10(i): for `f : X → Y` proper separable with `Y` locally
-noetherian, the Stein factor `Y′ = Spec_Y(f_*𝒪_X)` over `Y` is **finite étale**, not merely finite. Upgrades the
-general Stein factorisation (file 47, IX.6) to a covering in the étale sense. File 48, X.1.2. See
+noetherian, the Stein factor `Y′ = Spec_Y(f_*𝒪_X)` over `Y` is **finite étale**, not merely finite. Upgrades the general
+Stein factorisation (file 47, IX.6) to a covering in the étale sense. File 48, X.1.2. See
 [`ega-iii-7-stein-finite-etale`](appendix-black-boxes.md#ega-iii-7-stein-finite-etale).
 
 **homotopy exact sequence (for proper separable).** For `f : X → Y` proper separable with `Y` locally noetherian and
@@ -908,10 +908,9 @@ connected, `f_*𝒪_X = 𝒪_Y` (equivalently, geometrically connected fibres), 
 π₁(X̄_y, ā) → π₁(X, a) → π₁(Y, b) → e
 ```
 
-is exact at `π₁(X, a)` and at `π₁(Y, b)`. Surjectivity at `π₁(Y, b)` is (file 45) IX.3.4 + (file 33) V.6.9; exactness
-at `π₁(X, a)` is the descent statement X.1.3 made via the (file 33) V.6 dictionary. **Not** left-exact: injectivity of
-the leftmost arrow would require an algebraic-geometric analogue of `π₂` of the base, which is unavailable. File 48,
-X.1.4.
+is exact at `π₁(X, a)` and at `π₁(Y, b)`. Surjectivity at `π₁(Y, b)` is (file 45) IX.3.4 + (file 33) V.6.9; exactness at
+`π₁(X, a)` is the descent statement X.1.3 made via the (file 33) V.6 dictionary. **Not** left-exact: injectivity of the
+leftmost arrow would require an algebraic-geometric analogue of `π₂` of the base, which is unavailable. File 48, X.1.4.
 
 **constant family of coverings.** A family `{X_y′ → X}_{y ∈ Y(k)}` of étale coverings of `X` parametrised by the
 `k`-rational points of a connected scheme `Y` is *constant* if all members are pairwise isomorphic as étale
@@ -919,10 +918,10 @@ X.1.4.
 constant. The slogan: families of étale coverings of a proper scheme (or parametrised by a proper scheme) over an
 algebraically closed field are constant. File 48, X.1.9.
 
-**Artin–Schreier family.** In characteristic `p > 0`, the family `B_s = k[t, s][x] / (x^p − x − st)` over `Spec(k[t, s])
-= 𝔸² _k`. For each fixed `s ≠ 0`, `B_s` defines a non-trivial `ℤ/p`-cover of `𝔸¹_k`; for distinct `s_0 ≠ s_1`, the
-covers are non-isomorphic. Hence the family is *non-constant*, contradicting the analogue of X.1.9 over a non-proper
-base — Lang–Serre's counterexample to dropping properness. File 48, X.1.10.
+**Artin–Schreier family.** In characteristic `p > 0`, the family `B_s = k[t, s][x] / (x^p − x − st)` over
+`Spec(k[t, s]) = 𝔸² _k`. For each fixed `s ≠ 0`, `B_s` defines a non-trivial `ℤ/p`-cover of `𝔸¹_k`; for distinct
+`s_0 ≠ s_1`, the covers are non-isomorphic. Hence the family is *non-constant*, contradicting the analogue of X.1.9 over
+a non-proper base — Lang–Serre's counterexample to dropping properness. File 48, X.1.10.
 
 **specialization morphism on `π₁`.** For `f : X → Y` proper separable with `Y` locally noetherian and `y₀ ⤳ y₁` a
 specialisation in `Y` (i.e. `y₀ ∈ \mathrm{cl}(\{y₁\})`), the canonical homomorphism
@@ -936,67 +935,67 @@ commutative diagram of two homotopy exact sequences (file 48, X.1.4) on the clos
 right-hand vertical arrows isomorphisms. File 49, X.2.3–2.4.
 
 **upper semicontinuity of fibre `π₁`.** Under proper separable hypotheses, the specialisation morphism `sp` is
-**surjective**: `π₁(X̄_{y₀})` is a quotient of `π₁(X̄_{y₁})`. The drop along a specialisation can be strict
-(degenerate elliptic curves drop `ℤ̂²` to `ℤ̂`, `e`, or `e`; M. Artin's unpublished counterexample (file 49, X.2.5)
-shows even smooth proper families exhibit non-flat-local-system behaviour). File 49, X.2.3–2.5.
+**surjective**: `π₁(X̄_{y₀})` is a quotient of `π₁(X̄_{y₁})`. The drop along a specialisation can be strict (degenerate
+elliptic curves drop `ℤ̂²` to `ℤ̂`, `e`, or `e`; M. Artin's unpublished counterexample (file 49, X.2.5) shows even
+smooth proper families exhibit non-flat-local-system behaviour). File 49, X.2.3–2.5.
 
-**transcendental method.** For `X₀ / k` proper smooth connected of genus `g` over an algebraically closed `k` of char
-0, compute `π₁(X₀)` by reducing `k$ to a subfield of `ℂ` (via X.1.8 algebraic-closure invariance), then comparing
-`π₁^ét(X₀ ⊗ ℂ)` with the **profinite completion** of the topological fundamental group of the associated complex
-analytic surface of genus `g`. The latter has the **surface presentation** with `2g` generators and one commutator
-relation. File 50, X.2.6.
+**transcendental method.** For `X₀ / k` proper smooth connected of genus `g` over an algebraically closed `k` of char 0,
+compute `π₁(X₀)` by reducing `k$ to a subfield of`ℂ`(via X.1.8 algebraic-closure invariance), then comparing`π₁^ét(X₀ ⊗
+ℂ)`with the **profinite completion** of the topological fundamental group of the associated complex analytic surface of genus`g`. The latter has the **surface presentation** with`2g\`
+generators and one commutator relation. File 50, X.2.6.
 
 **Witt-vector lift of a smooth proper curve.** For `X₀ / k` smooth proper connected of genus `g` over an algebraically
-closed `k` of char `p > 0`, the lift `X / W(k)` over the Witt ring (SGA 1 III.7.4, gentle in file 22) is a smooth
-proper curve of the same genus, with closed fibre `X₀` and generic fibre `X_K = X ⊗ K` smooth proper of dimension 1
-and genus `g` (by Euler–Poincaré invariance). The transcendental method applied to `X_K$ then descends via X.2.3 to
-give a presentation of `π₁(X₀)`. File 50, X.2.6. See
-[`witt-vectors-lifting-smooth-curves`](appendix-black-boxes.md#witt-vectors-lifting-smooth-curves).
+closed `k` of char `p > 0`, the lift `X / W(k)` over the Witt ring (SGA 1 III.7.4, gentle in file 22) is a smooth proper
+curve of the same genus, with closed fibre `X₀` and generic fibre `X_K = X ⊗ K` smooth proper of dimension 1 and genus
+`g` (by Euler–Poincaré invariance). The transcendental method applied to
+`X_K$ then descends via X.2.3 to give a presentation of`π₁(X₀)`. File 50, X.2.6. See [`witt-vectors-lifting-smooth-curves\`\](appendix-black-boxes.md#witt-vectors-lifting-smooth-curves).
 
 **prime-to-`p` completion `π₁(X)^{(p)}`.** For a profinite group `G` and a prime `p`, the *prime-to-`p` completion* is
-the quotient of `G` by the closed normal subgroup generated by a `p`-Sylow subgroup. Equivalently: the inverse limit
-of those finite quotients of `G` of order coprime to `p`. For a proper smooth connected curve `X₀ / k` over an
+the quotient of `G` by the closed normal subgroup generated by a `p`-Sylow subgroup. Equivalently: the inverse limit of
+those finite quotients of `G` of order coprime to `p`. For a proper smooth connected curve `X₀ / k` over an
 algebraically closed `k` of char `p`, the continuity theorem X.3.8 gives a clean description of `π₁(X₀)^{(p)}` purely
 algebraically, while the full `π₁(X₀)` remains opaque. File 51, X.3.9–3.10.
 
-**decomposition subgroup `G_d`.** For a Galois extension `L / K` of fraction fields of complete DVRs and a maximal
-ideal `𝔪′` of the normalisation `V′ ⊂ L`, the subgroup `G_d = \{ σ ∈ \mathrm{Gal}(L/K) : σ(𝔪′) = 𝔪′ \}$ — the
-elements that preserve the chosen prime. Acts on the residue extension `k′ = V′/𝔪′$. File 51, X.3.6.
+**decomposition subgroup `G_d`.** For a Galois extension `L / K` of fraction fields of complete DVRs and a maximal ideal
+`𝔪′` of the normalisation `V′ ⊂ L`, the subgroup
+`G_d = \{ σ ∈ \mathrm{Gal}(L/K) : σ(𝔪′) = 𝔪′ \}$ — the elements that preserve the chosen prime. Acts on the residue extension`k′
+= V′/𝔪′$. File 51, X.3.6.
 
-**inertia subgroup `G_i`.** Within `G_d$, the subgroup of elements that act trivially on `k′$. Order equals the
-*ramification index* `e_{L/K}$ of `L / K$ at the chosen prime. Cyclic in the tame case. File 51, X.3.6.
+**inertia subgroup `G_i`.** Within `G_d$, the subgroup of elements that act trivially on`k′$. Order equals the
+*ramification index* `e_{L/K}$ of \`L / K$ at the chosen prime. Cyclic in the tame case. File 51, X.3.6.
 
-**tame ramification.** A Galois extension `L / K$ over a complete DVR is *tamely ramified* if `|G_i|$ is coprime to
-the residue characteristic `p$. In the tame case, `G_i ↪ k′^×$ canonically, so `G_i$ is cyclic of order coprime to
-`p$. Automatically the case in characteristic 0. Typical tame example: `L = K[t]/(t^n − u)$ for `u$ a uniformiser of
-`V$ and `n$ coprime to `p$. File 51, X.3.6. See
+**tame ramification.** A Galois extension `L / K$ over a complete DVR is *tamely ramified* if`|G_i|$ is coprime to
+the residue characteristic `p$. In the tame case, `G_i ↪ k′^×$ canonically, so`G_i$ is cyclic of order coprime to
+`p$. Automatically the case in characteristic 0. Typical tame example: `L = K[t]/(t^n − u)$ for`u$ a uniformiser of
+`V$ and `n$ coprime to`p$. File 51, X.3.6. See
 [`serre-local-fields-tameness`](appendix-black-boxes.md#serre-local-fields-tameness).
 
-**Abhyankar's lemma.** Let `V$ be a DVR with fraction field `K$. Let `L, K′$ be tamely ramified Galois extensions of
-`K$ over `V$ with inertia groups of orders `m, n$. Let `L′$ be a composite extension. If `m$ is a multiple of `n$,
-then `L′$ is **unramified** over the localisations of the normal closure of `V$ in `K′$. The composite of two tamely
-ramified extensions with inertia orders dividing each other becomes unramified. File 51, X.3.6.
+**Abhyankar's lemma.** Let `V$ be a DVR with fraction field`K$. Let `L, K′$ be tamely ramified Galois extensions of
+`K$ over`V$ with inertia groups of orders `m, n$. Let `L′$ be a composite extension. If`m$ is a multiple of `n$, then
+`L′$ is **unramified** over the localisations of the normal closure of`V$ in `K′$. The composite of two tamely ramified
+extensions with inertia orders dividing each other becomes unramified. File 51, X.3.6.
 
-**Zariski–Nagata purity of the branch locus.** For `f : X → Y$ quasi-finite dominant with `X$ normal and `Y$ regular
-locally noetherian, the branch locus is either everything or **pure of codimension 1** in `X$. Equivalently: étale
-coverings of `Y$ extend uniquely across any closed subscheme of `Y$ of codimension `≥ 2$. Proved generally in
-**SGA 2 X.3.4**; the dim-2 case is proved inline in file 51 via depth-`≥ 2` + freeness over a regular dim-2 local
-ring. File 51, X.3.1–3.3. See [`zariski-nagata-purity`](appendix-black-boxes.md#zariski-nagata-purity).
+**Zariski–Nagata purity of the branch locus.** For `f : X → Y$ quasi-finite dominant with`X$ normal and `Y$ regular
+locally noetherian, the branch locus is either everything or **pure of codimension 1** in
+`X$. Equivalently: étale coverings of`Y$ extend uniquely across any closed subscheme of `Y$ of codimension
+`≥ 2$. Proved generally in **SGA 2 X.3.4**; the dim-2 case is proved inline in file 51 via depth-`≥
+2` + freeness over a regular dim-2 local ring. File 51, X.3.1–3.3. See [`zariski-nagata-purity\`\](appendix-black-boxes.md#zariski-nagata-purity).
 
-**birational invariance of `π₁`.** For `X, Y$ proper regular `k$-schemes and `f : X ⤏ Y$ a birational map, the induced
-homomorphism `π₁(X, a) → π₁(Y, b)$ is an isomorphism. Equivalently: `π₁$ of a smooth proper variety is a *birational
+**birational invariance of `π₁`.** For `X, Y$ proper regular`k$-schemes and `f : X ⤏ Y$ a birational map, the induced
+homomorphism `π₁(X, a) → π₁(Y, b)$ is an isomorphism. Equivalently:`π₁$ of a smooth proper variety is a *birational
 invariant*. File 51, X.3.4.
 
-**continuity theorem (for proper smooth).** For `f : X → Y$ proper smooth with geometrically connected fibres, `Y$
-locally noetherian, and `y₀ ⤳ y₁$ in `Y$, the specialisation morphism `sp : π₁(X̄_{y₁}) → π₁(X̄_{y₀})$ is **surjective**
-and induces an **isomorphism** on the prime-to-`p$ completions `π₁^{(p)}$, where `p = \mathrm{char}(κ(y₀))$. The
+**continuity theorem (for proper smooth).** For `f : X → Y$ proper smooth with geometrically connected fibres,`Y$
+locally noetherian, and `y₀ ⤳ y₁$ in `Y$, the specialisation morphism`sp : π₁(X̄\_{y₁}) →
+π₁(X̄\_{y₀})$ is **surjective**
+and induces an **isomorphism** on the prime-to-`p$ completions `π₁^{(p)}$, where`p = \\mathrm{char}(κ(y₀))$. The
 prime-to-`p$ étale fundamental group is **rigid** under specialisation in a proper smooth family. File 51, X.3.8.
 
 **anabelian (pointer entry).** A theorem in *anabelian geometry* asserts that an arithmetic-geometric object (e.g. a
 hyperbolic curve over a number field) is determined up to isomorphism by its étale fundamental group, possibly with
 extra structure (a section, an outer Galois action, etc.). Tamagawa's solvable specialisation theorem (file 50, X.2.14)
-is an anabelian rigidity statement: solvable potential good reduction of a curve over a complete DVR forces the curve
-to be constant. The broader framework is surveyed in Nakamura–Tamagawa–Mochizuki *Sugaku Expositions* 14 (2001) and
+is an anabelian rigidity statement: solvable potential good reduction of a curve over a complete DVR forces the curve to
+be constant. The broader framework is surveyed in Nakamura–Tamagawa–Mochizuki *Sugaku Expositions* 14 (2001) and
 Szamuely §6.7. File 50, X.2.14.
 
 ## Examples and complements (files 52–56)
@@ -1004,32 +1003,32 @@ Szamuely §6.7. File 50, X.2.14.
 **rational variety.** A proper integral `k`-scheme `X` whose function field `k(X)` is purely transcendental over `k`,
 i.e. `k(X) ≃ k(t₁, …, t_r)` for `r = dim X`. Equivalently, `X` is birational to `ℙ^r_k`. File 52, XI.1.2.
 
-**unirational variety (weak vs strong).** A proper integral `k`-scheme `X` whose function field `k(X)` is contained
-in a purely transcendental extension `K′ = k(t₁, …, t_r)`. **Weakly unirational**: the embedding can be inseparable.
+**unirational variety (weak vs strong).** A proper integral `k`-scheme `X` whose function field `k(X)` is contained in a
+purely transcendental extension `K′ = k(t₁, …, t_r)`. **Weakly unirational**: the embedding can be inseparable.
 **Strongly unirational**: the embedding is separable, equivalently the dominant rational `f : ℙ^r ⤏ X` is generically
 smooth. In characteristic 0 the two notions coincide; in char `p > 0` strongly ⊊ weakly. File 52, XI.1.3, XI.1.4.2.
 
 **rationally connected variety.** A normal integral projective `k`-variety `V` admitting `F : T × ℙ¹ → V` with the
-two-point evaluation `T × ℙ¹ × ℙ¹ → V × V`, `(t, u, u′) ↦ (F(t, u), F(t, u′))` *dominant*. Equivalently: any two
-general points are joined by a rational curve. File 52, XI.1.4.4.
+two-point evaluation `T × ℙ¹ × ℙ¹ → V × V`, `(t, u, u′) ↦ (F(t, u), F(t, u′))` *dominant*. Equivalently: any two general
+points are joined by a rational curve. File 52, XI.1.4.4.
 
 **separably rationally connected variety (sRC).** As above, with the two-point evaluation additionally *generically
 smooth*. In char 0, RC = sRC; in char `p > 0`, sRC ⊊ RC. Kollár's theorem (file 52, XI.1.4.5) gives sRC ⇒ trivial
 `π₁^ét`. File 52, XI.1.4.4.
 
 **abelian variety.** A proper smooth geometrically connected `k`-group scheme. Automatically commutative as a group
-scheme; carries a biduality `A^{∨∨} ≃ A` (Mumford TIFR Ch. III). The "richest-π₁" object among proper smooth
-varieties of a given dimension. File 53, §XI.2.
+scheme; carries a biduality `A^{∨∨} ≃ A` (Mumford TIFR Ch. III). The "richest-π₁" object among proper smooth varieties
+of a given dimension. File 53, §XI.2.
 
-**Tate module `T_ℓ(A)`.** For `A` an abelian variety of dimension `g` over algebraically closed `k`, the inverse
-limit `T_ℓ(A) := lim_r _{ℓ^r}A(k)` along multiplication-by-`ℓ` transition maps. A free `ℤ_ℓ`-module of rank `2g` when
-`ℓ ≠ char(k)`; of rank `ν ≤ g` (the **`p`-rank**) when `ℓ = p = char(k) > 0`. The adelic version is `T·(A) := ∏_ℓ
-T_ℓ(A) = lim_n _nA(k)`. File 53, §§XI.2.3–XI.2.4. See
+**Tate module `T_ℓ(A)`.** For `A` an abelian variety of dimension `g` over algebraically closed `k`, the inverse limit
+`T_ℓ(A) := lim_r _{ℓ^r}A(k)` along multiplication-by-`ℓ` transition maps. A free `ℤ_ℓ`-module of rank `2g` when
+`ℓ ≠ char(k)`; of rank `ν ≤ g` (the **`p`-rank**) when `ℓ = p = char(k) > 0`. The adelic version is
+`T·(A) := ∏_ℓ T_ℓ(A) = lim_n _nA(k)`. File 53, §§XI.2.3–XI.2.4. See
 [`tate-module-weil`](appendix-black-boxes.md#tate-module-weil).
 
 **`p`-rank `ν` of an abelian variety.** For `A / k̄_p` an abelian variety of dimension `g`, `ν = ν(A)` is the integer
-such that `_pA(k̄)` is a free `ℤ/pℤ`-module of rank `ν`. Equivalently, `T_p(A) ≃ ℤ_p^ν`. The `p`-rank classifies
-abelian varieties by their `p`-divisible group; `ν = g` (**ordinary**), `ν = 0` (**supersingular**), `0 < ν < g`
+such that `_pA(k̄)` is a free `ℤ/pℤ`-module of rank `ν`. Equivalently, `T_p(A) ≃ ℤ_p^ν`. The `p`-rank classifies abelian
+varieties by their `p`-divisible group; `ν = g` (**ordinary**), `ν = 0` (**supersingular**), `0 < ν < g`
 (**intermediate**). File 53, §XI.2.4.
 
 **Cartier dual.** For `G` a finite commutative group scheme over a base scheme `S`, the Cartier dual is
@@ -1037,18 +1036,18 @@ abelian varieties by their `p`-divisible group; `ν = g` (**ordinary**), `ν = 0
 `D(D(G)) ≃ G`. Examples: `D(μ_n) = (ℤ/nℤ)`, `D((ℤ/nℤ)) = μ_n`, `D(α_p) = α_p` in char `p`. File 56, §XI.6.5. See
 [`cartier-duality`](appendix-black-boxes.md#cartier-duality).
 
-**true fundamental group / Nori fundamental group `π₁^N`.** For `X` proper connected reduced over a perfect field
-`k` with a rational point `x ∈ X(k)`, the **Nori fundamental group scheme** is a pro-finite-group-scheme
-`π₁^N(X, x)` over `k` classifying principal `G`-bundles for `G` an arbitrary finite (possibly non-étale) group scheme
-over `k`. For `X = A` an abelian variety, `π₁^N(A, 0) = lim_n _nA` (as a pro-finite flat group scheme). Distinct
-from the étale `π₁(X, x)` exactly when `X` admits principal bundles with infinitesimal structure group. File 53,
-§XI.2.5. See [`nori-fundamental-group`](appendix-black-boxes.md#nori-fundamental-group).
+**true fundamental group / Nori fundamental group `π₁^N`.** For `X` proper connected reduced over a perfect field `k`
+with a rational point `x ∈ X(k)`, the **Nori fundamental group scheme** is a pro-finite-group-scheme `π₁^N(X, x)` over
+`k` classifying principal `G`-bundles for `G` an arbitrary finite (possibly non-étale) group scheme over `k`. For
+`X = A` an abelian variety, `π₁^N(A, 0) = lim_n _nA` (as a pro-finite flat group scheme). Distinct from the étale
+`π₁(X, x)` exactly when `X` admits principal bundles with infinitesimal structure group. File 53, §XI.2.5. See
+[`nori-fundamental-group`](appendix-black-boxes.md#nori-fundamental-group).
 
 **projective cone over `V ⊂ ℙ^r`.** For `V` a closed subscheme of `ℙ^r_k`, the **projective cone** `Ĉ_V` is the
-projective completion of the affine cone `C_V = V(𝒪_V(1))` — equivalently, `Ĉ_V = ℙ(𝒪_V ⊕ 𝒪_V(1))` (a `ℙ¹`-bundle
-over `V`) with the zero section contracted to a single vertex point `y_0`. The contraction `f : X → Ĉ_V` (where
-`X = ℙ(𝒪_V ⊕ 𝒪_V(1))`) is the universal example of a proper morphism that is *not* separable (fibres are `ℙ¹` away
-from `y_0`, but `V` over `y_0`). File 54, §XI.3.1.
+projective completion of the affine cone `C_V = V(𝒪_V(1))` — equivalently, `Ĉ_V = ℙ(𝒪_V ⊕ 𝒪_V(1))` (a `ℙ¹`-bundle over
+`V`) with the zero section contracted to a single vertex point `y_0`. The contraction `f : X → Ĉ_V` (where
+`X = ℙ(𝒪_V ⊕ 𝒪_V(1))`) is the universal example of a proper morphism that is *not* separable (fibres are `ℙ¹` away from
+`y_0`, but `V` over `y_0`). File 54, §XI.3.1.
 
 **principal homogeneous bundle (fpqc sense).** An `S`-prescheme `P` with a right action of an `S`-group `G` such that
 there exists an fpqc base change `S′ → S` with `P ×_S S′ ≃ G ×_S S′` (with `G ×_S S′` acting on itself by right
@@ -1060,183 +1059,180 @@ Generalises the V.2.7 principal-covering notion (file 30) to non-étale `G`. Fil
 `P ×_S G → P ×_S P`, `(x, g) ↦ (x, x · g)`, is an isomorphism. Weaker than principal homogeneous: does not require
 local-triviality. File 55, §XI.4.1.
 
-**Kummer covering of rank `n`.** A principal `μ_{n, S}`-bundle over `S`, where `μ_{n, S} = Spec 𝒪_S[t]/(1 − t^n)` is
-the **Kummer group of rank `n`**. The set of these is `H¹(S, μ_n)`. When `n` is invertible in `𝒪_S` and `S` admits
-a primitive `n`-th root of unity, `μ_{n, S} ≃ (ℤ/nℤ)_S` and the Kummer covering is a principal `ℤ/nℤ`-covering in
-the classical sense. File 56, §XI.6.1–XI.6.2.
+**Kummer covering of rank `n`.** A principal `μ_{n, S}`-bundle over `S`, where `μ_{n, S} = Spec 𝒪_S[t]/(1 − t^n)` is the
+**Kummer group of rank `n`**. The set of these is `H¹(S, μ_n)`. When `n` is invertible in `𝒪_S` and `S` admits a
+primitive `n`-th root of unity, `μ_{n, S} ≃ (ℤ/nℤ)_S` and the Kummer covering is a principal `ℤ/nℤ`-covering in the
+classical sense. File 56, §XI.6.1–XI.6.2.
 
 **Artin–Schreier covering.** A principal `(ℤ/pℤ)_S`-bundle over `S` in characteristic `p`, classified by
 `H¹(S, ℤ/pℤ) ≃ A/wp(A)` (in the affine case) via the Artin–Schreier exact sequence
-`0 → (ℤ/pℤ)_S → 𝔾_a,S ──wp→ 𝔾_a,S → 0`. The `p`-power analogue of Kummer theory in characteristic `p`. File 56,
-§XI.6.4.
+`0 → (ℤ/pℤ)_S → 𝔾_a,S ──wp→ 𝔾_a,S → 0`. The `p`-power analogue of Kummer theory in characteristic `p`. File 56, §XI.6.4.
 
-**Frobenius morphism `F`.** Over a base `S` of characteristic `p > 0` (i.e. `p · 𝒪_S = 0`), the **Frobenius
-morphism** `F : 𝔾_{a, S} → 𝔾_{a, S}` is the group homomorphism sending a section `t` to `t^p`. More generally, for
-`G` a group scheme over `𝔽_p` and `S → Spec 𝔽_p`, `F : G_S → G_S` is the corresponding `p`-th-power morphism.
-File 56, §XI.6.4.
+**Frobenius morphism `F`.** Over a base `S` of characteristic `p > 0` (i.e. `p · 𝒪_S = 0`), the **Frobenius morphism**
+`F : 𝔾_{a, S} → 𝔾_{a, S}` is the group homomorphism sending a section `t` to `t^p`. More generally, for `G` a group
+scheme over `𝔽_p` and `S → Spec 𝔽_p`, `F : G_S → G_S` is the corresponding `p`-th-power morphism. File 56, §XI.6.4.
 
-**Artin–Schreier endomorphism `wp = id − F`.** The difference of the identity and Frobenius on `𝔾_{a, S}` in char
-`p`. Its kernel is `(ℤ/pℤ)_S`. File 56, §XI.6.4.
+**Artin–Schreier endomorphism `wp = id − F`.** The difference of the identity and Frobenius on `𝔾_{a, S}` in char `p`.
+Its kernel is `(ℤ/pℤ)_S`. File 56, §XI.6.4.
 
-**infinitesimal group scheme `α_p`.** The kernel of `F : 𝔾_a → 𝔾_a` over a char-`p` base, equal to
-`Spec 𝒪_S[t]/(t^p)`. A **non-étale** finite locally free group scheme of order `p`, radical over `S`.
-Cartier-self-dual: `D(α_p) = α_p`. Witnesses one of the simplest finite flat group schemes that is not étale. File 56,
-§XI.6.5.
+**infinitesimal group scheme `α_p`.** The kernel of `F : 𝔾_a → 𝔾_a` over a char-`p` base, equal to `Spec 𝒪_S[t]/(t^p)`.
+A **non-étale** finite locally free group scheme of order `p`, radical over `S`. Cartier-self-dual: `D(α_p) = α_p`.
+Witnesses one of the simplest finite flat group schemes that is not étale. File 56, §XI.6.5.
 
 **Picard scheme `Pic_{S/k}`.** For `S → Spec k` a proper morphism with certain flatness/cohomological hypotheses, the
 **Picard scheme** is the scheme representing the relative Picard functor `T ↦ Pic(S_T) / Pic(T)`. Its connected
-component `Pic^0_{S/k}` is a `k`-group scheme. For `S = A` an abelian variety, `Pic^0_{A/k} = A^∨` is the **dual
-abelian variety**. Black-box reference: see [`pic-scheme-fga`](appendix-black-boxes.md#pic-scheme-fga). File 56,
-§§XI.6.3, XI.6.5.
+component `Pic^0_{S/k}` is a `k`-group scheme. For `S = A` an abelian variety, `Pic^0_{A/k} = A^∨` is the **dual abelian
+variety**. Black-box reference: see [`pic-scheme-fga`](appendix-black-boxes.md#pic-scheme-fga). File 56, §§XI.6.3,
+XI.6.5.
 
 ## Algebraic and analytic geometry (files 57–60)
 
-**Complex analytic space.** A locally-ringed-`ℂ`-space `(𝒳, 𝒪_𝒳)` locally modelled on a closed analytic subspace of
-an open `U ⊂ ℂⁿ` cut out by a finite collection of holomorphic functions `f_1, …, f_r ∈ 𝒪(U)`, equipped with the
-quotient structure sheaf `𝒪_U / (f_1, …, f_r) · 𝒪_U`. Morphisms are sheaf maps of locally-ringed-`ℂ`-spaces.
-Black-box references: [`gunning-rossi-analytic`](appendix-black-boxes.md#gunning-rossi-analytic),
+**Complex analytic space.** A locally-ringed-`ℂ`-space `(𝒳, 𝒪_𝒳)` locally modelled on a closed analytic subspace of an
+open `U ⊂ ℂⁿ` cut out by a finite collection of holomorphic functions `f_1, …, f_r ∈ 𝒪(U)`, equipped with the quotient
+structure sheaf `𝒪_U / (f_1, …, f_r) · 𝒪_U`. Morphisms are sheaf maps of locally-ringed-`ℂ`-spaces. Black-box
+references: [`gunning-rossi-analytic`](appendix-black-boxes.md#gunning-rossi-analytic),
 [`grauert-remmert-coverings`](appendix-black-boxes.md#grauert-remmert-coverings). File 57, §XII.0.
 
 **The analytic space `X^an` associated with a `ℂ`-scheme `X` locally of finite type.** The complex analytic space
 representing the functor `𝒳 ↦ Hom_{LocRing/ℂ}(𝒳, X)`. Exists by Theorem-Definition XII.1.1. Together with the
-**canonical morphism** `φ : X^an → X` of locally-ringed-`ℂ`-spaces, `(X^an, φ)` is unique up to unique isomorphism;
-on underlying sets `|X^an| ≃ X(ℂ)`; at every point `x ∈ X^an`, the local map `φ_x` becomes an isomorphism after
-passage to completions. File 57.
+**canonical morphism** `φ : X^an → X` of locally-ringed-`ℂ`-spaces, `(X^an, φ)` is unique up to unique isomorphism; on
+underlying sets `|X^an| ≃ X(ℂ)`; at every point `x ∈ X^an`, the local map `φ_x` becomes an isomorphism after passage to
+completions. File 57.
 
 **Analytification of a morphism / a sheaf.** The functor `Φ : X ↦ X^an` extends to morphisms: a scheme morphism
 `f : X → Y` yields a unique analytic morphism `f^an : X^an → Y^an` with `φ_Y ∘ f^an = f ∘ φ_X` (XII.1.2). It also
-extends to `𝒪_X`-modules: `F ↦ F^an := φ^* F` is exact, faithful, and conservative on coherent sheaves (XII.1.3.1).
-File 57.
+extends to `𝒪_X`-modules: `F ↦ F^an := φ^* F` is exact, faithful, and conservative on coherent sheaves (XII.1.3.1). File
+57\.
 
-**Stein open / Stein cover.** An open `𝒰 ⊂ 𝒳` on which Cartan's Theorem B vanishes the cohomology of every
-coherent analytic sheaf: `H^p(𝒰, 𝓕) = 0` for every `p ≥ 1`. The analytic analogue of "affine open". The standard
-cover of `ℙ^r_𝒴` by `r + 1` opens `𝓤_i ≃ 𝓑 × 𝓔^r` consists of Stein opens, and Čech computes derived cohomology on
-this cover. Black-box reference:
-[`cartan-faisceaux-analytiques`](appendix-black-boxes.md#cartan-faisceaux-analytiques). File 59, §XII.4.2.
+**Stein open / Stein cover.** An open `𝒰 ⊂ 𝒳` on which Cartan's Theorem B vanishes the cohomology of every coherent
+analytic sheaf: `H^p(𝒰, 𝓕) = 0` for every `p ≥ 1`. The analytic analogue of "affine open". The standard cover of `ℙ^r_𝒴`
+by `r + 1` opens `𝓤_i ≃ 𝓑 × 𝓔^r` consists of Stein opens, and Čech computes derived cohomology on this cover. Black-box
+reference: [`cartan-faisceaux-analytiques`](appendix-black-boxes.md#cartan-faisceaux-analytiques). File 59, §XII.4.2.
 
-**Finite covering of an analytic space (XII.5.0).** An analytic morphism `𝒳' → 𝒳` that is finite (proper with
-finite fibres) and such that *every* irreducible component of `𝒳'` dominates an irreducible component of `𝒳`. The
-dominance hypothesis is the analytic analogue of the algebraic condition that the cover is "everywhere of full
-rank". File 60, §XII.5.0.
+**Finite covering of an analytic space (XII.5.0).** An analytic morphism `𝒳' → 𝒳` that is finite (proper with finite
+fibres) and such that *every* irreducible component of `𝒳'` dominates an irreducible component of `𝒳`. The dominance
+hypothesis is the analytic analogue of the algebraic condition that the cover is "everywhere of full rank". File 60,
+§XII.5.0.
 
-**Finite étale covering of an analytic space.** A finite covering that is étale (locally biholomorphic). Equivalent
-to: finite + flat + unramified, or finite + locally biholomorphic. File 60, §XII.5.
+**Finite étale covering of an analytic space.** A finite covering that is étale (locally biholomorphic). Equivalent to:
+finite + flat + unramified, or finite + locally biholomorphic. File 60, §XII.5.
 
-**Riemann existence theorem (XII.5.1).** The functor `X' ↦ X'^an` from finite étale coverings of `X` to finite
-étale coverings of `X^an` is an *equivalence of categories*, for every `ℂ`-scheme `X` locally of finite type. The
-analytic counterpart of the classical Riemann existence theorem on Riemann surfaces. File 60, §XII.5.1.
+**Riemann existence theorem (XII.5.1).** The functor `X' ↦ X'^an` from finite étale coverings of `X` to finite étale
+coverings of `X^an` is an *equivalence of categories*, for every `ℂ`-scheme `X` locally of finite type. The analytic
+counterpart of the classical Riemann existence theorem on Riemann surfaces. File 60, §XII.5.1.
 
-**Grauert–Remmert theorem (XII.5.4).** A normal finite covering of an open subset `𝒰 ⊂ 𝒳` of a normal analytic
-space, étale on `𝒰 minus a rare closed analytic subset`, extends uniquely to a normal finite covering of `𝒳`.
-The codimension-`≥ 2` version (XII.5.5 strengthening) removes the étaleness hypothesis. File 60, §XII.5.4.
+**Grauert–Remmert theorem (XII.5.4).** A normal finite covering of an open subset `𝒰 ⊂ 𝒳` of a normal analytic space,
+étale on `𝒰 minus a rare closed analytic subset`, extends uniquely to a normal finite covering of `𝒳`. The
+codimension-`≥ 2` version (XII.5.5 strengthening) removes the étaleness hypothesis. File 60, §XII.5.4.
 
 **GAGA (Géométrie Algébrique et Géométrie Analytique).** The comparison principle of Serre 1956
-([`gaga-serre-original`](appendix-black-boxes.md#gaga-serre-original)) and its extension to relative proper
-morphisms (XII.4.2). For `f : X → Y` proper and `F` coherent on `X`, the canonical map
-`(R^p f_* F)^an → R^p f_*^an(F^an)` is an isomorphism for every `p ≥ 0`. Specialised to `Y = Spec ℂ`:
-`H^p(X, F) ≃ H^p(X^an, F^an)` for `X` proper. Specialised to functoriality: `Coh(X) ≃ Coh(X^an)` and the
-analytification functor is fully faithful on the category of proper `ℂ`-schemes. File 59.
+([`gaga-serre-original`](appendix-black-boxes.md#gaga-serre-original)) and its extension to relative proper morphisms
+(XII.4.2). For `f : X → Y` proper and `F` coherent on `X`, the canonical map `(R^p f_* F)^an → R^p f_*^an(F^an)` is an
+isomorphism for every `p ≥ 0`. Specialised to `Y = Spec ℂ`: `H^p(X, F) ≃ H^p(X^an, F^an)` for `X` proper. Specialised to
+functoriality: `Coh(X) ≃ Coh(X^an)` and the analytification functor is fully faithful on the category of proper
+`ℂ`-schemes. File 59.
 
-**Higman group.** A finitely-presented infinite group with no proper subgroup of finite index — equivalently,
-trivial profinite completion. Constructed by G. Higman in 1951
-([`higman-non-residually-finite`](appendix-black-boxes.md#higman-non-residually-finite)). If realised as
-`π_1^top(V^an)` for `V / ℂ` smooth projective, the natural map to the étale fundamental group is trivial — but
-no such `V` is currently known. File 60, §XII.5.5.
+**Higman group.** A finitely-presented infinite group with no proper subgroup of finite index — equivalently, trivial
+profinite completion. Constructed by G. Higman in 1951
+([`higman-non-residually-finite`](appendix-black-boxes.md#higman-non-residually-finite)). If realised as `π_1^top(V^an)`
+for `V / ℂ` smooth projective, the natural map to the étale fundamental group is trivial — but no such `V` is currently
+known. File 60, §XII.5.5.
 
 **Algebraically simply connected vs topologically simply connected.** For `X / ℂ` a proper smooth scheme: *X is
 algebraically simply connected* means `π_1^ét(X) = 1`, equivalently `π̂_1^top(X^an) = 1` (XII.5.2); *X^an is
 topologically simply connected* means `π_1^top(X^an) = 1`. The two notions are equivalent when `π_1^top(X^an)` is
 residually finite; in general the topological condition is strictly stronger. Toledo's construction
-([`toledo-non-residually-finite-pi1`](appendix-black-boxes.md#toledo-non-residually-finite-pi1)) shows the
-strictness is real. File 60, §XII.5.5.
+([`toledo-non-residually-finite-pi1`](appendix-black-boxes.md#toledo-non-residually-finite-pi1)) shows the strictness is
+real. File 60, §XII.5.5.
 
 ## Étale cohomology, cohomological properness, and tame ramification (files 61–64)
 
-**Étale site, étale sheaf.** The *étale site* `X_et` of a scheme `X` is the category of étale `X`-schemes with the
-étale topology (surjective families of étale morphisms cover). An *étale sheaf of sets / groups / abelian groups* on
-`X` is a presheaf on `X_et` satisfying the sheaf condition for étale coverings. Source:
+**Étale site, étale sheaf.** The *étale site* `X_et` of a scheme `X` is the category of étale `X`-schemes with the étale
+topology (surjective families of étale morphisms cover). An *étale sheaf of sets / groups / abelian groups* on `X` is a
+presheaf on `X_et` satisfying the sheaf condition for étale coverings. Source:
 [`sga-4-etale-site`](appendix-black-boxes.md#sga-4-etale-site). File 61 §XIII.B.1.
 
 **Pushforward, higher direct images, base-change comparison.** For `f : X → Y` and an étale sheaf `F` on `X`, the
-pushforward `f_* F` and the higher direct images `R^q f_* F` (`q ≥ 0`) are again étale sheaves on `Y`; their stalk
-at a geometric point `ȳ` is `H^q(X ×_Y Y_{(ȳ)}, F)`. The base-change comparison map
-`Φ^q : h^* R^q f_* F → R^q f'_* (h'^* F)` is the canonical natural transformation for a cartesian square. Source:
+pushforward `f_* F` and the higher direct images `R^q f_* F` (`q ≥ 0`) are again étale sheaves on `Y`; their stalk at a
+geometric point `ȳ` is `H^q(X ×_Y Y_{(ȳ)}, F)`. The base-change comparison map `Φ^q : h^* R^q f_* F → R^q f'_* (h'^* F)`
+is the canonical natural transformation for a cartesian square. Source:
 [`sga-4-direct-image-and-rqf`](appendix-black-boxes.md#sga-4-direct-image-and-rqf). File 61 §XIII.B.2–B.3.
 
 **Cohomologically proper relative to `S` in dimension `≤ n`.** A pair `(F, f : X → Y)` with `F` an étale sheaf / stack
 on `X` is *cohomologically proper relative to `S` in dimension `≤ n`* (`n ∈ {-1, 0, 1}`) if the comparison functor
-`g^* f_* F → f'_* h^* F` is faithful / fully faithful / an equivalence under every base change `S' → S`. Concretely:
-for every base change `S' → S`, the comparison map `(R^q f_* F)|_{S'} → R^q f'_* (F|_{X_{S'}})` is an isomorphism for
-every `q ≤ n`. Specialised to sheaves of sets (XIII.1.2): `Φ^q` an iso for `q ≤ n`. Specialised to sheaves of groups
+`g^* f_* F → f'_* h^* F` is faithful / fully faithful / an equivalence under every base change `S' → S`. Concretely: for
+every base change `S' → S`, the comparison map `(R^q f_* F)|_{S'} → R^q f'_* (F|_{X_{S'}})` is an isomorphism for every
+`q ≤ n`. Specialised to sheaves of sets (XIII.1.2): `Φ^q` an iso for `q ≤ n`. Specialised to sheaves of groups
 (XIII.1.3.1): every inner twist `^P F` survives base change at `H^0`, and the non-abelian `R^1` survives base change.
 _Intuition_: the cohomology of `f` survives base change up to degree `n` — the value computed at a fibre matches the
 value seen at the corresponding point of the base. Source:
 [`sga-5-ii-cohomologically-proper`](appendix-black-boxes.md#sga-5-ii-cohomologically-proper). File 61 §XIII.1.
 
-**Locally `n`-acyclic, `n`-acyclic morphism.** A morphism `f : X → S` is *locally `n`-acyclic* (for a coefficient
-ring) if `F → R f_* f^* F` is an iso through degree `n` over every strict localisation of `S`; *`n`-acyclic* if the
-same is true globally over `S`. Equivalently, at every geometric point of `S` the étale cohomology of the geometric
-fibre agrees with the relative cohomology up to degree `n`. For coherent `f`, 0-acyclic ⇔ geometrically connected
-fibres. Smooth morphisms are locally `n`-aspherical for `n < dim_{rel}` and prime-to-residue-characteristic
-coefficients. _Intuition_: cohomology commutes with base change generically — over open dense pieces of the parameter
-space — not everywhere. Source: [`sga-4-xv-loc-acyclic`](appendix-black-boxes.md#sga-4-xv-loc-acyclic). File 61
-§XIII.B.6; file 63 §XIII.3, §XIII.4.
+**Locally `n`-acyclic, `n`-acyclic morphism.** A morphism `f : X → S` is *locally `n`-acyclic* (for a coefficient ring)
+if `F → R f_* f^* F` is an iso through degree `n` over every strict localisation of `S`; *`n`-acyclic* if the same is
+true globally over `S`. Equivalently, at every geometric point of `S` the étale cohomology of the geometric fibre agrees
+with the relative cohomology up to degree `n`. For coherent `f`, 0-acyclic ⇔ geometrically connected fibres. Smooth
+morphisms are locally `n`-aspherical for `n < dim_{rel}` and prime-to-residue-characteristic coefficients. _Intuition_:
+cohomology commutes with base change generically — over open dense pieces of the parameter space — not everywhere.
+Source: [`sga-4-xv-loc-acyclic`](appendix-black-boxes.md#sga-4-xv-loc-acyclic). File 61 §XIII.B.6; file 63 §XIII.3,
+§XIII.4.
 
-**Constructible étale sheaf.** An étale sheaf `F` on `X` is *constructible* if there is a finite stratification of
-`X` into locally closed constructible subsets on which the restriction of `F` is locally constant with finite fibres.
+**Constructible étale sheaf.** An étale sheaf `F` on `X` is *constructible* if there is a finite stratification of `X`
+into locally closed constructible subsets on which the restriction of `F` is locally constant with finite fibres.
 Source: [`sga-4-constructible-sheaves`](appendix-black-boxes.md#sga-4-constructible-sheaves). File 61 §XIII.B.5.
 
 **Stack on `X_et`.** A fibred category `F → X_et` with effective descent for the étale topology (XIII.0.1). Examples:
 the discrete-category stack of an étale sheaf of sets; the stack `Tors(G)` of `G`-torsors for a sheaf of groups `G`.
 
-**Gerbe on `X_et`.** A stack `F` whose fibres are non-empty connected groupoids (XIII.0.2). The stack of `G`-torsors
-is a gerbe; conversely, a gerbe with a section is canonically `Tors(SheafAut(x))`.
+**Gerbe on `X_et`.** A stack `F` whose fibres are non-empty connected groupoids (XIII.0.2). The stack of `G`-torsors is
+a gerbe; conversely, a gerbe with a section is canonically `Tors(SheafAut(x))`.
 
-**Sheaf of maximal subgerbes `SF`.** The sheafification of "isomorphism classes of objects of `F_{X'}`" (XIII.0.3).
-For `F = Tors(G)`, `SF = R^1 f_* G` in the non-abelian sense.
+**Sheaf of maximal subgerbes `SF`.** The sheafification of "isomorphism classes of objects of `F_{X'}`" (XIII.0.3). For
+`F = Tors(G)`, `SF = R^1 f_* G` in the non-abelian sense.
 
-**Strongly desingularizable schemes (in dim `≤ d` over `k`).** Schemes of finite type over `k` for which every
-reduced closed subscheme of dimension `≤ d` admits a strong resolution of singularities. Hironaka gives this in
-characteristic zero for every `d`; in characteristic `p > 0` it is an open hypothesis. Source:
+**Strongly desingularizable schemes (in dim `≤ d` over `k`).** Schemes of finite type over `k` for which every reduced
+closed subscheme of dimension `≤ d` admits a strong resolution of singularities. Hironaka gives this in characteristic
+zero for every `d`; in characteristic `p > 0` it is an open hypothesis. Source:
 [`sga-5-i-strongly-desingularizable`](appendix-black-boxes.md#sga-5-i-strongly-desingularizable). File 63.
 
 **Tamely ramified algebra over a DVR.** An étale `K`-algebra `L = ∏ L_i` over the fraction field `K` of a DVR `R` of
-residual characteristic `p` is *tamely ramified over `R`* if the inertia group `I_i` of the Galois closure `L'_i / K`
-at `R` has order prime to `p`. Equivalently, for `R` strictly local: `[L_i : K]` is prime to `p`. Inertia is in any
-case an extension of `cyclic-prime-to-p` by `p`-group ([`serre-local-fields-iv-7`](appendix-black-boxes.md#serre-local-fields-iv-7));
-the gentle file reproduces the proof in the general non-separable-residue case. File 62 §XIII.2.0.
+residual characteristic `p` is *tamely ramified over `R`* if the inertia group `I_i` of the Galois closure `L'_i / K` at
+`R` has order prime to `p`. Equivalently, for `R` strictly local: `[L_i : K]` is prime to `p`. Inertia is in any case an
+extension of `cyclic-prime-to-p` by `p`-group
+([`serre-local-fields-iv-7`](appendix-black-boxes.md#serre-local-fields-iv-7)); the gentle file reproduces the proof in
+the general non-separable-residue case. File 62 §XIII.2.0.
 
-**Normal-crossings divisor relative to `S`; strict-NC.** A divisor `D ≥ 0` on an `S`-scheme `X` is *strictly with
-normal crossings relative to `S`* (SGA 5 II 4.2) if there is a finite family `(f_i)` in `Γ(X, 𝒪_X)` with `D = ∑ div(f_i)`
-such that at every point of `Supp D` the subscheme cut out by the `f_i ∈ I(x)` is smooth over `S` of codimension
-`#I(x)` in `X`. *Normal crossings relative to `S`* is the étale-local version. File 62 §XIII.2.1.0.
+**Normal-crossings divisor relative to `S`; strict-NC.** A divisor `D ≥ 0` on an `S`-scheme `X` is *strictly with normal
+crossings relative to `S`* (SGA 5 II 4.2) if there is a finite family `(f_i)` in `Γ(X, 𝒪_X)` with `D = ∑ div(f_i)` such
+that at every point of `Supp D` the subscheme cut out by the `f_i ∈ I(x)` is smooth over `S` of codimension `#I(x)` in
+`X`. *Normal crossings relative to `S`* is the étale-local version. File 62 §XIII.2.1.0.
 
 **Tame ramification (along a divisor).** For a covering `Y → X` ramified along a normal-crossings divisor `D ⊂ X` of
 residual characteristic `p` (relative to a base `S`), the ramification is *tame* if at every generic point of every
-irreducible component of `D` the ramification index is coprime to `p`; otherwise it is *wild*. Equivalently, the
-inertia group of the Galois closure at each generic point of `D` has order coprime to `p`. The local pointwise version
-along a DVR is **Tamely ramified algebra over a DVR** above. _Intuition_: the branching is controlled by the prime
+irreducible component of `D` the ramification index is coprime to `p`; otherwise it is *wild*. Equivalently, the inertia
+group of the Galois closure at each generic point of `D` has order coprime to `p`. The local pointwise version along a
+DVR is **Tamely ramified algebra over a DVR** above. _Intuition_: the branching is controlled by the prime
 characteristic of the base — tame means the characteristic does not divide the index, so ramification is "visible" in
-the residue field; wild means the characteristic divides the index, and ramification hides higher-order arithmetic
-that the residue field cannot see. File 62 §XIII.2.1.
+the residue field; wild means the characteristic divides the index, and ramification hides higher-order arithmetic that
+the residue field cannot see. File 62 §XIII.2.1.
 
-**Tamely ramified sheaf on `U = X − Y` along `D` relative to `S`.** An étale sheaf `F` of sets on `U` whose
-restriction to the fraction field `K` of `𝒪_{X_{s̄}, y}` is representable by an étale `K`-algebra tame over `𝒪_{X_{s̄}, y}`,
-for every geometric point `s̄` of `S` and every maximal point `y` of the geometric fibre `Y_{s̄}`. File 62 §XIII.2.1.1.
+**Tamely ramified sheaf on `U = X − Y` along `D` relative to `S`.** An étale sheaf `F` of sets on `U` whose restriction
+to the fraction field `K` of `𝒪_{X_{s̄}, y}` is representable by an étale `K`-algebra tame over `𝒪_{X_{s̄}, y}`, for
+every geometric point `s̄` of `S` and every maximal point `y` of the geometric fibre `Y_{s̄}`. File 62 §XIII.2.1.1.
 
-**`H¹_tame(U, F)`, `R¹_tame f_* F`.** The subset of `H^1(U, F)` formed by torsor classes tamely ramified on `X`
-relative to `S` (XIII.2.1.2); the subsheaf of `R^1 f_* F` whose stalks classify such tame torsors. File 62 §XIII.2.1.2.
+**`H¹_tame(U, F)`, `R¹_tame f_* F`.** The subset of `H^1(U, F)` formed by torsor classes tamely ramified on `X` relative
+to `S` (XIII.2.1.2); the subsheaf of `R^1 f_* F` whose stalks classify such tame torsors. File 62 §XIII.2.1.2.
 
 **Tame fundamental group `π₁^tame((U, X)/S, a)`.** Pro-representing group of the Galois category `C_t((U, X)/S)` of
 tamely ramified étale coverings of `U` (XIII.2.1.3). A quotient of `π_1(U, a)`. File 62 §XIII.2.1.3.
 
-**Pro-`ℒ` fundamental group `π₁^ℒ(X, a)`; prime-to-`p` fundamental group `π₁^{p'}(X)`.** Maximal pro-`ℒ` quotient of
-the étale `π_1`, for a set of primes `ℒ`. When `ℒ = p'` is the complement of the residual characteristic, this is the
+**Pro-`ℒ` fundamental group `π₁^ℒ(X, a)`; prime-to-`p` fundamental group `π₁^{p'}(X)`.** Maximal pro-`ℒ` quotient of the
+étale `π_1`, for a set of primes `ℒ`. When `ℒ = p'` is the complement of the residual characteristic, this is the
 prime-to-`p` fundamental group. File 63 §XIII.4.0.
 
-**`π₁'(X, a)`.** For a morphism `X → S` of connected schemes with `K = Ker(π_1(X) → π_1(S))`, the quotient of
-`π_1(X)` by the smallest distinguished pro-subgroup `N` of `K` such that `K/N` is a pro-`ℒ`-group `K^ℒ`. Lives in the
-exact sequence `π_1^ℒ(X_{s̄}) → π_1'(X) → π_1(S)`. File 63 §XIII.4.0.
+**`π₁'(X, a)`.** For a morphism `X → S` of connected schemes with `K = Ker(π_1(X) → π_1(S))`, the quotient of `π_1(X)`
+by the smallest distinguished pro-subgroup `N` of `K` such that `K/N` is a pro-`ℒ`-group `K^ℒ`. Lives in the exact
+sequence `π_1^ℒ(X_{s̄}) → π_1'(X) → π_1(S)`. File 63 §XIII.4.0.
 
 ## Notation lookups
 

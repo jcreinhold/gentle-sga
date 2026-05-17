@@ -5,10 +5,10 @@
 ## What this file is about
 
 Cut a few points out of a smooth surface. The picture in higher dimensions: two coordinate planes meeting at a right
-angle, with the missing locus running along the meeting line. The shape that remains has more loops than it started
-with — a new one around every cut. Algebraically, the cut lets covers spread out badly near the missing piece, in two
-flavours, one controlled and the other not. Restricting to the controlled flavour carves out the part of the
-fundamental group that behaves cleanly across families.
+angle, with the missing locus running along the meeting line. The shape that remains has more loops than it started with
+— a new one around every cut. Algebraically, the cut lets covers spread out badly near the missing piece, in two
+flavours, one controlled and the other not. Restricting to the controlled flavour carves out the part of the fundamental
+group that behaves cleanly across families.
 
 The technical name for the controlled flavour is tame. Linear data on the complement that is tame along the cut has
 pushforwards that survive base change in any family. The headline payoff is an explicit description of the tame

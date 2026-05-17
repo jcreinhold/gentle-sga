@@ -8,10 +8,9 @@ when you cross, the bridge is the wrong one. This file runs that test on the alg
 standard local properties — being free of nilpotents, being free of certain singularities, being well-dimensioned, and
 two close relatives — turn out to transfer in both directions across the bridge. That is the first half of the file.
 
-The second half does what classical Galois theory does for fields, but for spaces. Over a sufficiently well-behaved
-base space, the coverings are governed entirely by the algebra of the function field — the field of fractions whose
-elements are the rational functions on the base. Coverings of the space and certain field extensions are the same
-catalogue.
+The second half does what classical Galois theory does for fields, but for spaces. Over a sufficiently well-behaved base
+space, the coverings are governed entirely by the algebra of the function field — the field of fractions whose elements
+are the rational functions on the base. Coverings of the space and certain field extensions are the same catalogue.
 
 Files 04 and 05 settled what an étale morphism _is_. They left open what an étale morphism is _for_. The covering-map
 analogue would have to bring a covering-map's payoff: hypotheses transfer between the two ends of the morphism, and over

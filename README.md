@@ -1,8 +1,8 @@
 # Gentle SGA
 
-A gentle reader's companion to the *Séminaire de Géométrie Algébrique du Bois-Marie*, starting from SGA 1 — what
-étale means, why it is the right algebro-geometric analogue of "local isomorphism," and how the surrounding sheaf,
-descent, and fundamental-group machinery is built on top.
+A gentle reader's companion to the *Séminaire de Géométrie Algébrique du Bois-Marie*, starting from SGA 1 — what étale
+means, why it is the right algebro-geometric analogue of "local isomorphism," and how the surrounding sheaf, descent,
+and fundamental-group machinery is built on top.
 
 The companion does not replace the source. It defines every technical term before using it, gives intuition before each
 formal statement, and treats the reader as a working mathematician fluent in categories and rings but not in scheme

@@ -2,8 +2,8 @@
 
 ## What this file is about
 
-Wrap a rubber band twice around your wrist. Every point on your wrist now has two points of band sitting above it.
-That is a covering map: a top space lying neatly over a bottom space, finitely many sheets, the sheets locally
+Wrap a rubber band twice around your wrist. Every point on your wrist now has two points of band sitting above it. That
+is a covering map: a top space lying neatly over a bottom space, finitely many sheets, the sheets locally
 indistinguishable from stacked copies of the bottom. Covering maps are one of the oldest pictures in topology, and they
 are how the subject sees symmetry.
 
@@ -215,13 +215,13 @@ injection of `A`-modules, then `M' ⊗_A B ↪ M ⊗_A B` is again an injection.
 The definition is austere; the payoff is geometric. A flat family is one without algebraic surprises. Concretely:
 
 - **No fibre is special by accident.** If the family is flat, every fibre carries the same kind of algebraic information
-    that the generic fibre does. A flat family is not allowed to grow a hidden component over a closed point, or to
-    shed one.
+    that the generic fibre does. A flat family is not allowed to grow a hidden component over a closed point, or to shed
+    one.
 - **Multiplication by a base regular element stays injective.** This is the literal meaning of "preserves injections":
     if `a ∈ A` is not a zero divisor, then `a` is not a zero divisor in `B` either. In families of curves, this is
     exactly the absence of the embedded-point pathology.
-- **Dimensions move continuously.** For finite-type families, the dimension of the fibre is locally constant in the
-    flat case (with a precise statement that we will not need verbatim).
+- **Dimensions move continuously.** For finite-type families, the dimension of the fibre is locally constant in the flat
+    case (with a precise statement that we will not need verbatim).
 
 The full operational toolkit splits into facts we prove here and facts we take from Exposé IV of EGA. We make the split
 visible. The first three facts have short proofs we work in the next subsection; the last two depend on the local
@@ -236,10 +236,10 @@ flatness criterion and on faithfully flat descent, machinery that requires its o
 
 **Operational facts cited.**
 
-4. Base change of a flat morphism is flat. (Standard tensor-product exchange; see
+1. Base change of a flat morphism is flat. (Standard tensor-product exchange; see
     [`flatness-sorites`](appendix-black-boxes.md#flatness-sorites).)
-5. The locus where a finite-type morphism is flat is open. (EGA IV, §11; the proof uses the local flatness criterion.)
-6. **Faithfully flat descent**: if `A → B` is faithfully flat, properties of `A` can often be tested on `B`. (Faithfully
+1. The locus where a finite-type morphism is flat is open. (EGA IV, §11; the proof uses the local flatness criterion.)
+1. **Faithfully flat descent**: if `A → B` is faithfully flat, properties of `A` can often be tested on `B`. (Faithfully
     flat = flat plus injective on every nonzero `A`-module after tensoring up. The descent machinery is the subject of
     Exposé VIII; files 40–43 in this gentle pass.)
 
@@ -250,11 +250,11 @@ Each cited fact has an entry in the appendix with statement, role, and source.
 Two cases are immediate.
 
 **Localization is flat.** `A → A[1/f]` and `A → A_𝔭` are flat. Here is the proof in one paragraph. By construction
-`A[1/f]` is the colimit of the directed system `A →^f A →^f A → ⋯` along multiplication by `f`. Tensoring commutes
-with colimits, so for any `A`-module `M`, the localization `M ⊗_A A[1/f] = M[1/f]` is the same colimit applied to `M`.
-An injection `M' ↪ M` becomes an injection at every stage of the system (multiplication by `f` is preserved), and
-filtered colimits in the category of `A`-modules are exact. So `M'[1/f] ↪ M[1/f]`, which is the flatness condition.
-The localization `A_𝔭 = (A ∖ 𝔭)^{-1} A` is the same argument over the multiplicative set `A ∖ 𝔭`.
+`A[1/f]` is the colimit of the directed system `A →^f A →^f A → ⋯` along multiplication by `f`. Tensoring commutes with
+colimits, so for any `A`-module `M`, the localization `M ⊗_A A[1/f] = M[1/f]` is the same colimit applied to `M`. An
+injection `M' ↪ M` becomes an injection at every stage of the system (multiplication by `f` is preserved), and filtered
+colimits in the category of `A`-modules are exact. So `M'[1/f] ↪ M[1/f]`, which is the flatness condition. The
+localization `A_𝔭 = (A ∖ 𝔭)^{-1} A` is the same argument over the multiplicative set `A ∖ 𝔭`.
 
 **Free implies flat.** If `B` is free as an `A`-module, then `B` is flat over `A`. The reason: tensoring with a free
 module is isomorphism-on-each-summand, which preserves injections.

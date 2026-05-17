@@ -244,97 +244,97 @@ carries the same meaning as in the source, we follow the source.
 
 ## Descent of étale morphisms and the fundamental group (files 44–47)
 
-| Symbol                       | Meaning                                                                                                                                                |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `Γ_f ⊂ X ×_S Y`              | the graph of an `S`-morphism `f : X → Y`; for `Y / S` étale, an open subset with radicial-surjective first projection (file 44, IX.1.6)                |
-| `Open(X)`                    | the set of open subsets of a prescheme `X`, regarded as a poset (file 44, IX.2.3)                                                                      |
-| `π₀(S)`                      | the set of connected components of a prescheme `S` (file 46, IX.5)                                                                                     |
-| `E′ = π₀(S′)`, `E″`, `E‴`    | the sets of connected components of `S′`, `S″`, `S‴` respectively (file 46, IX.5)                                                                      |
-| `q_i = π₀(p_i)`              | the maps `E″ → E′` induced from the two projections `p_i : S″ ⇉ S′` by applying `π₀` (file 46, IX.5)                                                   |
-| `q_{ij} = π₀(p_{ij})`        | the maps `E‴ → E″` induced from the three projections `p_{ij} : S‴ ⇉ S″` by applying `π₀` (file 46, IX.5)                                              |
-| `v_i = π₀(u_i)`              | the three maps `E‴ → E′` induced from the three projections `u_i : S‴ ⇉ S′` (file 46, IX.5)                                                            |
-| `π_{s′} = π₁(S′, \bar{s′})`  | the étale fundamental group of the connected component of `S′` named by `s′ ∈ E′`, at a chosen geometric point (file 46, IX.5)                         |
-| `g_{s″}`                     | a generator of the Seifert–van-Kampen formula for `π₁(S, a)`, indexed by `s″ ∈ E″`; describes the gluing across the connected component `s″` (file 46) |
-| `a_i^{s‴} ∈ π_{v_i(s‴)}`     | the cocycle elements of the descent datum on the fibred category of finite étale coverings, indexed by `s‴ ∈ E‴` and `i ∈ {1, 2, 3}` (file 46, IX.5)   |
-| `n(s)`                       | the geometric number of points in the fibre `g⁻¹(s)` of a finite morphism `g : S′ → S` at `s ∈ S`; equivalently the separable degree (file 46, IX.5.4) |
-| `Sym^n(X)`                   | the `n`-th symmetric power `X^n / 𝔖_n` of a scheme `X` (file 46, IX.5.8)                                                                               |
-| `S′_g`                       | for `Γ` a finite group acting on `S′` and `g ∈ Γ`, the subscheme of `S′` on which `id_{S′}` and `g` agree (file 46, IX.5.8)                            |
-| `π₁(S′, Γ; a′)`              | the automorphism group of the fibre functor on the Galois category `𝓒_0′` of étale coverings of `S′` equipped with a compatible `Γ`-action (file 46)   |
+| Symbol                      | Meaning                                                                                                                                                |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Γ_f ⊂ X ×_S Y`             | the graph of an `S`-morphism `f : X → Y`; for `Y / S` étale, an open subset with radicial-surjective first projection (file 44, IX.1.6)                |
+| `Open(X)`                   | the set of open subsets of a prescheme `X`, regarded as a poset (file 44, IX.2.3)                                                                      |
+| `π₀(S)`                     | the set of connected components of a prescheme `S` (file 46, IX.5)                                                                                     |
+| `E′ = π₀(S′)`, `E″`, `E‴`   | the sets of connected components of `S′`, `S″`, `S‴` respectively (file 46, IX.5)                                                                      |
+| `q_i = π₀(p_i)`             | the maps `E″ → E′` induced from the two projections `p_i : S″ ⇉ S′` by applying `π₀` (file 46, IX.5)                                                   |
+| `q_{ij} = π₀(p_{ij})`       | the maps `E‴ → E″` induced from the three projections `p_{ij} : S‴ ⇉ S″` by applying `π₀` (file 46, IX.5)                                              |
+| `v_i = π₀(u_i)`             | the three maps `E‴ → E′` induced from the three projections `u_i : S‴ ⇉ S′` (file 46, IX.5)                                                            |
+| `π_{s′} = π₁(S′, \bar{s′})` | the étale fundamental group of the connected component of `S′` named by `s′ ∈ E′`, at a chosen geometric point (file 46, IX.5)                         |
+| `g_{s″}`                    | a generator of the Seifert–van-Kampen formula for `π₁(S, a)`, indexed by `s″ ∈ E″`; describes the gluing across the connected component `s″` (file 46) |
+| `a_i^{s‴} ∈ π_{v_i(s‴)}`    | the cocycle elements of the descent datum on the fibred category of finite étale coverings, indexed by `s‴ ∈ E‴` and `i ∈ {1, 2, 3}` (file 46, IX.5)   |
+| `n(s)`                      | the geometric number of points in the fibre `g⁻¹(s)` of a finite morphism `g : S′ → S` at `s ∈ S`; equivalently the separable degree (file 46, IX.5.4) |
+| `Sym^n(X)`                  | the `n`-th symmetric power `X^n / 𝔖_n` of a scheme `X` (file 46, IX.5.8)                                                                               |
+| `S′_g`                      | for `Γ` a finite group acting on `S′` and `g ∈ Γ`, the subscheme of `S′` on which `id_{S′}` and `g` agree (file 46, IX.5.8)                            |
+| `π₁(S′, Γ; a′)`             | the automorphism group of the fibre functor on the Galois category `𝓒_0′` of étale coverings of `S′` equipped with a compatible `Γ`-action (file 46)   |
 | `X̄_0 = X ⊗_k \bar{k}`       | the geometric special fibre of an `S`-prescheme `X` at a point `s ∈ S` with residue field `k = κ(s)` and algebraic closure `\bar{k}` (file 47, IX.6)   |
 
 ## Specialization of the fundamental group (files 48–51)
 
-| Symbol                       | Meaning                                                                                                                                                |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `X̄_y = X_y ⊗_{κ(y)} κ(y)̄`   | the geometric fibre of `f : X → Y` at `y ∈ Y`, base-changed to an algebraic closure of the residue field `κ(y)` (file 48, X.1)                          |
-| `sp` or `sp_{y₀, y₁}`        | the specialization morphism `π₁(X̄_{y₁}) → π₁(X̄_{y₀})` for a specialisation `y₀ ⤳ y₁`, defined up to inner automorphism (file 49, X.2.3)              |
-| `K_s`                        | the separable closure of a field `K` (used heavily in file 51 §X.3.7–3.8)                                                                                |
-| `K̄`                          | the algebraic closure of a field `K`                                                                                                                    |
-| `W(k)`                       | the Witt-vector ring of an algebraically closed field `k` of characteristic `p > 0`; complete DVR with residue field `k`, fraction field `K_0` of char 0 (file 50, X.2.6) |
-| `G_d`                        | the decomposition subgroup of a Galois group at a chosen maximal ideal of the integral closure (file 51, X.3.6)                                          |
-| `G_i`                        | the inertia subgroup of a Galois group at a chosen maximal ideal; order is the ramification index (file 51, X.3.6)                                       |
-| `e_{L/K}(𝒪)`                 | the ramification index of a Galois extension `L/K` at a chosen place over the DVR `𝒪 ⊂ K` (file 51, X.3.6)                                              |
-| `G^{res}`                    | the inverse limit of the finite *solvable* topological quotients of a profinite group `G`; the "solvable profinite quotient" (file 50, X.2.14)           |
-| `π₁(X)^{(p)}`                | the prime-to-`p` completion of `π₁(X)`: the maximal pro-(prime-to-`p`) quotient (file 51, X.3.9–3.10)                                                    |
-| `Γ`                          | the surface group on `2g` generators with one commutator relation `(s_1 t_1 s_1^{-1} t_1^{-1}) ⋯ (s_g t_g s_g^{-1} t_g^{-1}) = 1` (file 50, X.2.6)       |
-| `(s_i, t_i)_{1 ≤ i ≤ g}`     | the `2g` topological generators of `π₁(X₀)` for `X₀ / k` a proper smooth curve of genus `g`; geometrically, meridians and longitudes of the `i`-th handle of the associated topological surface (file 50, X.2.6) |
-| `Γ^{(p)}`                    | the prime-to-`p` quotient of the surface group `Γ`: the universal pro-(prime-to-`p`) group on `2g` generators with the commutator relation (file 51, X.3.10) |
-| `X_K = X ⊗_R K`              | the generic fibre of a scheme `X / R` (`R` a DVR with fraction field `K`); cited in file 50 (X.2.6) and file 51 (X.3.7)                                  |
+| Symbol                    | Meaning                                                                                                                                                                                                          |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `X̄_y = X_y ⊗_{κ(y)} κ(y)̄` | the geometric fibre of `f : X → Y` at `y ∈ Y`, base-changed to an algebraic closure of the residue field `κ(y)` (file 48, X.1)                                                                                   |
+| `sp` or `sp_{y₀, y₁}`     | the specialization morphism `π₁(X̄_{y₁}) → π₁(X̄_{y₀})` for a specialisation `y₀ ⤳ y₁`, defined up to inner automorphism (file 49, X.2.3)                                                                          |
+| `K_s`                     | the separable closure of a field `K` (used heavily in file 51 §X.3.7–3.8)                                                                                                                                        |
+| `K̄`                       | the algebraic closure of a field `K`                                                                                                                                                                             |
+| `W(k)`                    | the Witt-vector ring of an algebraically closed field `k` of characteristic `p > 0`; complete DVR with residue field `k`, fraction field `K_0` of char 0 (file 50, X.2.6)                                        |
+| `G_d`                     | the decomposition subgroup of a Galois group at a chosen maximal ideal of the integral closure (file 51, X.3.6)                                                                                                  |
+| `G_i`                     | the inertia subgroup of a Galois group at a chosen maximal ideal; order is the ramification index (file 51, X.3.6)                                                                                               |
+| `e_{L/K}(𝒪)`              | the ramification index of a Galois extension `L/K` at a chosen place over the DVR `𝒪 ⊂ K` (file 51, X.3.6)                                                                                                       |
+| `G^{res}`                 | the inverse limit of the finite *solvable* topological quotients of a profinite group `G`; the "solvable profinite quotient" (file 50, X.2.14)                                                                   |
+| `π₁(X)^{(p)}`             | the prime-to-`p` completion of `π₁(X)`: the maximal pro-(prime-to-`p`) quotient (file 51, X.3.9–3.10)                                                                                                            |
+| `Γ`                       | the surface group on `2g` generators with one commutator relation `(s_1 t_1 s_1^{-1} t_1^{-1}) ⋯ (s_g t_g s_g^{-1} t_g^{-1}) = 1` (file 50, X.2.6)                                                               |
+| `(s_i, t_i)_{1 ≤ i ≤ g}`  | the `2g` topological generators of `π₁(X₀)` for `X₀ / k` a proper smooth curve of genus `g`; geometrically, meridians and longitudes of the `i`-th handle of the associated topological surface (file 50, X.2.6) |
+| `Γ^{(p)}`                 | the prime-to-`p` quotient of the surface group `Γ`: the universal pro-(prime-to-`p`) group on `2g` generators with the commutator relation (file 51, X.3.10)                                                     |
+| `X_K = X ⊗_R K`           | the generic fibre of a scheme `X / R` (`R` a DVR with fraction field `K`); cited in file 50 (X.2.6) and file 51 (X.3.7)                                                                                          |
 
 ## Examples and complements (files 52–56)
 
-| Symbol                                  | Meaning                                                                                                                                                          |
-| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `μ_{n, S}`                              | the Kummer group of rank `n` over `S`: `Spec 𝒪_S[t] / (1 − t^n)`; kernel of `n`-th power on `𝔾_{m, S}` (file 56, XI.6.1)                                          |
-| `α_p`                                   | kernel of Frobenius `F : 𝔾_a → 𝔾_a` over the prime field `𝔽_p`; an infinitesimal (non-étale) finite locally free group scheme of order `p` (file 56, XI.6.5)     |
-| `α_{p^n}`                               | kernel of the `n`-th iterate `F^n : 𝔾_a → 𝔾_a` (file 56, XI.6.5)                                                                                                  |
-| `F : 𝔾_a → 𝔾_a`                         | Frobenius morphism over a char-`p` base, `F(t) = t^p` (file 56, XI.6.4)                                                                                          |
-| `wp = id − F`                           | Artin–Schreier endomorphism of `𝔾_a` in char `p` (file 56, XI.6.4)                                                                                                |
-| `T_ℓ(A)`                                | `ℓ`-adic Tate module of an abelian variety `A`: `lim_r _{ℓ^r}A(k)` (file 53, XI.2.3)                                                                              |
-| `T·(A)`                                 | adelic Tate module `∏_ℓ T_ℓ(A) = lim_n _nA(k)` (file 53, XI.2.3)                                                                                                  |
-| `_nA`                                   | kernel of multiplication by `n` in a group scheme `A` (file 53, XI.2.3); for an abelian variety, a finite flat group scheme of order `n^{2g}`                    |
-| `ν`                                     | `p`-rank of an abelian variety `A / k̄_p`: integer `0 ≤ ν ≤ dim A` with `_pA(k̄) ≃ (ℤ/p)^ν` (file 53, XI.2.4)                                                       |
-| `D(G) = SheafHom_{S\text{-grp}}(G, 𝔾_m)` | Cartier dual of a finite commutative `S`-group scheme `G` (file 56, XI.6.5)                                                                                      |
-| `Pic(S)`                                | Picard group `H¹(S, 𝒪_S^*)` of an `S`-scheme (file 56, XI.6.3)                                                                                                    |
-| `Pic_{S / k}`                           | Picard scheme of `S / k` (file 56, XI.6.5)                                                                                                                       |
-| `Pic^0_{S / k}`                         | connected component of identity in `Pic_{S/k}` (file 56, XI.6.5)                                                                                                  |
-| `A^∨`                                   | dual abelian variety of `A`: `A^∨ = Pic^0_{A/k}` (file 56, XI.6.5)                                                                                                |
-| `H¹(S, G)`                              | set of isomorphism classes of principal `G`-bundles over `S` (in the fpqc / descent-theoretic sense of XI.4.1); a group when `G` is commutative (file 55, XI.4.3) |
-| `Ext(A, G)`                             | group of isomorphism classes of commutative extensions `0 → G → E → A → 0` of an abelian variety `A` by `G` (file 53, XI.2.1)                                    |
-| `Z¹(π₁, 𝒢)`                             | set of 1-cocycles `φ : π₁ → 𝒢` (with `π₁` acting on `𝒢`) (file 55, XI.5)                                                                                          |
-| `B¹(π₁, 𝒢)`                             | 1-coboundaries; `H¹(π₁, 𝒢) = Z¹ / B¹` (file 55, XI.5)                                                                                                             |
-| `π₁^N(X, x)`                            | Nori fundamental group scheme of `X` pointed at `x` (file 53, XI.2.5)                                                                                            |
-| `T·(Pic_{X/k})`                         | "true Tate module of `Pic`": limit `lim_i D(P_i)` over finite algebraic subgroups `P_i ⊂ Pic_{X/k}` (file 56, XI.6.5)                                            |
-| `_n Pic(S)`                             | `n`-torsion in `Pic(S)`: kernel of multiplication by `n` on `Pic(S)` (file 56, XI.6.3)                                                                            |
-| `H⁰(S, 𝒪_S)`, `H⁰(S, 𝒪_S^*)`           | global sections of the structure sheaf and its unit group (file 55, XI.5)                                                                                        |
-| `Gr(k, n)`                              | Grassmann variety of `k`-dimensional subspaces of an `n`-dimensional vector space (file 52, XI.1.2)                                                              |
-| `G/P`                                   | generalised flag variety: quotient of a connected linear group `G` by a parabolic subgroup `P` (file 52, XI.1.2)                                                 |
-| `Ĉ_V`                                   | projective cone over a closed subscheme `V ⊂ ℙ^r` (file 54, XI.3.1)                                                                                              |
-| `RC`, `sRC`                             | rationally connected, separably rationally connected (file 52, XI.1.4.4)                                                                                         |
+| Symbol                                   | Meaning                                                                                                                                                           |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `μ_{n, S}`                               | the Kummer group of rank `n` over `S`: `Spec 𝒪_S[t] / (1 − t^n)`; kernel of `n`-th power on `𝔾_{m, S}` (file 56, XI.6.1)                                          |
+| `α_p`                                    | kernel of Frobenius `F : 𝔾_a → 𝔾_a` over the prime field `𝔽_p`; an infinitesimal (non-étale) finite locally free group scheme of order `p` (file 56, XI.6.5)      |
+| `α_{p^n}`                                | kernel of the `n`-th iterate `F^n : 𝔾_a → 𝔾_a` (file 56, XI.6.5)                                                                                                  |
+| `F : 𝔾_a → 𝔾_a`                          | Frobenius morphism over a char-`p` base, `F(t) = t^p` (file 56, XI.6.4)                                                                                           |
+| `wp = id − F`                            | Artin–Schreier endomorphism of `𝔾_a` in char `p` (file 56, XI.6.4)                                                                                                |
+| `T_ℓ(A)`                                 | `ℓ`-adic Tate module of an abelian variety `A`: `lim_r _{ℓ^r}A(k)` (file 53, XI.2.3)                                                                              |
+| `T·(A)`                                  | adelic Tate module `∏_ℓ T_ℓ(A) = lim_n _nA(k)` (file 53, XI.2.3)                                                                                                  |
+| `_nA`                                    | kernel of multiplication by `n` in a group scheme `A` (file 53, XI.2.3); for an abelian variety, a finite flat group scheme of order `n^{2g}`                     |
+| `ν`                                      | `p`-rank of an abelian variety `A / k̄_p`: integer `0 ≤ ν ≤ dim A` with `_pA(k̄) ≃ (ℤ/p)^ν` (file 53, XI.2.4)                                                       |
+| `D(G) = SheafHom_{S\text{-grp}}(G, 𝔾_m)` | Cartier dual of a finite commutative `S`-group scheme `G` (file 56, XI.6.5)                                                                                       |
+| `Pic(S)`                                 | Picard group `H¹(S, 𝒪_S^*)` of an `S`-scheme (file 56, XI.6.3)                                                                                                    |
+| `Pic_{S / k}`                            | Picard scheme of `S / k` (file 56, XI.6.5)                                                                                                                        |
+| `Pic^0_{S / k}`                          | connected component of identity in `Pic_{S/k}` (file 56, XI.6.5)                                                                                                  |
+| `A^∨`                                    | dual abelian variety of `A`: `A^∨ = Pic^0_{A/k}` (file 56, XI.6.5)                                                                                                |
+| `H¹(S, G)`                               | set of isomorphism classes of principal `G`-bundles over `S` (in the fpqc / descent-theoretic sense of XI.4.1); a group when `G` is commutative (file 55, XI.4.3) |
+| `Ext(A, G)`                              | group of isomorphism classes of commutative extensions `0 → G → E → A → 0` of an abelian variety `A` by `G` (file 53, XI.2.1)                                     |
+| `Z¹(π₁, 𝒢)`                              | set of 1-cocycles `φ : π₁ → 𝒢` (with `π₁` acting on `𝒢`) (file 55, XI.5)                                                                                          |
+| `B¹(π₁, 𝒢)`                              | 1-coboundaries; `H¹(π₁, 𝒢) = Z¹ / B¹` (file 55, XI.5)                                                                                                             |
+| `π₁^N(X, x)`                             | Nori fundamental group scheme of `X` pointed at `x` (file 53, XI.2.5)                                                                                             |
+| `T·(Pic_{X/k})`                          | "true Tate module of `Pic`": limit `lim_i D(P_i)` over finite algebraic subgroups `P_i ⊂ Pic_{X/k}` (file 56, XI.6.5)                                             |
+| `_n Pic(S)`                              | `n`-torsion in `Pic(S)`: kernel of multiplication by `n` on `Pic(S)` (file 56, XI.6.3)                                                                            |
+| `H⁰(S, 𝒪_S)`, `H⁰(S, 𝒪_S^*)`             | global sections of the structure sheaf and its unit group (file 55, XI.5)                                                                                         |
+| `Gr(k, n)`                               | Grassmann variety of `k`-dimensional subspaces of an `n`-dimensional vector space (file 52, XI.1.2)                                                               |
+| `G/P`                                    | generalised flag variety: quotient of a connected linear group `G` by a parabolic subgroup `P` (file 52, XI.1.2)                                                  |
+| `Ĉ_V`                                    | projective cone over a closed subscheme `V ⊂ ℙ^r` (file 54, XI.3.1)                                                                                               |
+| `RC`, `sRC`                              | rationally connected, separably rationally connected (file 52, XI.1.4.4)                                                                                          |
 
 ## Algebraic and analytic geometry (files 57–60)
 
-| Symbol                                  | Meaning                                                                                                                                                          |
-| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `X^an`                                  | the complex analytic space associated with a `ℂ`-scheme `X` locally of finite type (file 57, XII.1.1)                                                            |
-| `|X^an|`                                | underlying set of `X^an`; bijects to `X(ℂ) ⊂ \|X\|` via `φ` (file 57, XII.1.1)                                                                                   |
-| `φ : X^an → X`                          | canonical morphism of locally-ringed-`ℂ`-spaces representing the points functor `𝒳 ↦ Hom_{LocRing/ℂ}(𝒳, X)` (file 57, XII.1.1)                                  |
-| `φ_x : 𝒪_{X, φ(x)} → 𝒪_{X^an, x}`       | local map at `x ∈ X^an`; an isomorphism after passage to completions (file 57, XII.1.1)                                                                          |
-| `φ̂_x : 𝒪̂_{X, φ(x)} ≃ 𝒪̂_{X^an, x}`     | completion isomorphism — the local content of XII.1.1 (file 57)                                                                                                  |
-| `f^an : X^an → Y^an`                    | analytification of `f : X → Y`; the unique morphism with `φ_Y ∘ f^an = f ∘ φ_X` (file 57, XII.1.2)                                                               |
-| `F^an = φ^* F`                          | analytification of an `𝒪_X`-module `F`; exact, faithful, conservative on coherent sheaves (file 57, XII.1.3.1)                                                  |
-| `𝒪_𝒳`, `𝒪_{X^an}`                       | structure sheaf of an analytic space; the sheaf of holomorphic functions modulo the defining ideal                                                               |
-| `Φ : Sch_{lft}/ℂ → AnSp/ℂ`              | the analytification functor `X ↦ X^an`; commutes with finite projective limits (file 57, XII.1.2)                                                                |
-| `𝓔ⁿ`                                    | the analytic affine `n`-space `(ℂⁿ, 𝒪_hol)`; equals `(𝔸ⁿ_ℂ)^an` (file 57, XII.1.1.c)                                                                             |
-| `𝓑`                                     | a (poly)disc / open ball in `𝓔ⁿ`; the standard Stein neighbourhood (file 59, XII.4.2)                                                                            |
-| `𝒳`, `𝒴`, `𝓟`, `𝓤`, `𝓥`                 | script letters: analytic spaces (following the SGA source convention for §§XII.4–XII.5)                                                                          |
-| `Spec_an(𝒜)`                            | analytic spectrum of a coherent analytic `𝒪_𝒳`-algebra; the analytic analogue of `Spec_S` for a quasi-coherent `𝒪_S`-algebra (file 60, XII.5.4–XII.5.5)         |
-| `R^p f_*^an`                            | higher direct image along an analytic morphism `f^an` (file 59, XII.4.1)                                                                                         |
-| `θ_p : (R^p f_* F)^an → R^p f_*^an(F^an)` | canonical comparison map for higher direct images; the GAGA datum (file 59, XII.4.1)                                                                           |
-| `π_0(X)`, `π_0(X^an)`                   | set of connected components; the canonical map is a bijection by XII.2.6 (file 58)                                                                               |
-| `π_1^top(X^an, x)`                      | topological fundamental group of the analytic space at a base-point `x ∈ X^an` (file 60, XII.5.2)                                                                |
-| `π̂_1^top(X^an, x)`                     | profinite completion of `π_1^top(X^an, x)`; isomorphic to `π_1^ét(X, φ(x))` by XII.5.2                                                                           |
-| `π_1^ét(X, a)`                          | étale fundamental group of a scheme (file 33, V.7); analytic comparison is XII.5.2                                                                               |
+| Symbol                                    | Meaning                                                                                                                                                 |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `X^an`                                    | the complex analytic space associated with a `ℂ`-scheme `X` locally of finite type (file 57, XII.1.1)                                                   |
+| \`                                        | X^an                                                                                                                                                    |
+| `φ : X^an → X`                            | canonical morphism of locally-ringed-`ℂ`-spaces representing the points functor `𝒳 ↦ Hom_{LocRing/ℂ}(𝒳, X)` (file 57, XII.1.1)                          |
+| `φ_x : 𝒪_{X, φ(x)} → 𝒪_{X^an, x}`         | local map at `x ∈ X^an`; an isomorphism after passage to completions (file 57, XII.1.1)                                                                 |
+| `φ̂_x : 𝒪̂_{X, φ(x)} ≃ 𝒪̂_{X^an, x}`         | completion isomorphism — the local content of XII.1.1 (file 57)                                                                                         |
+| `f^an : X^an → Y^an`                      | analytification of `f : X → Y`; the unique morphism with `φ_Y ∘ f^an = f ∘ φ_X` (file 57, XII.1.2)                                                      |
+| `F^an = φ^* F`                            | analytification of an `𝒪_X`-module `F`; exact, faithful, conservative on coherent sheaves (file 57, XII.1.3.1)                                          |
+| `𝒪_𝒳`, `𝒪_{X^an}`                         | structure sheaf of an analytic space; the sheaf of holomorphic functions modulo the defining ideal                                                      |
+| `Φ : Sch_{lft}/ℂ → AnSp/ℂ`                | the analytification functor `X ↦ X^an`; commutes with finite projective limits (file 57, XII.1.2)                                                       |
+| `𝓔ⁿ`                                      | the analytic affine `n`-space `(ℂⁿ, 𝒪_hol)`; equals `(𝔸ⁿ_ℂ)^an` (file 57, XII.1.1.c)                                                                    |
+| `𝓑`                                       | a (poly)disc / open ball in `𝓔ⁿ`; the standard Stein neighbourhood (file 59, XII.4.2)                                                                   |
+| `𝒳`, `𝒴`, `𝓟`, `𝓤`, `𝓥`                   | script letters: analytic spaces (following the SGA source convention for §§XII.4–XII.5)                                                                 |
+| `Spec_an(𝒜)`                              | analytic spectrum of a coherent analytic `𝒪_𝒳`-algebra; the analytic analogue of `Spec_S` for a quasi-coherent `𝒪_S`-algebra (file 60, XII.5.4–XII.5.5) |
+| `R^p f_*^an`                              | higher direct image along an analytic morphism `f^an` (file 59, XII.4.1)                                                                                |
+| `θ_p : (R^p f_* F)^an → R^p f_*^an(F^an)` | canonical comparison map for higher direct images; the GAGA datum (file 59, XII.4.1)                                                                    |
+| `π_0(X)`, `π_0(X^an)`                     | set of connected components; the canonical map is a bijection by XII.2.6 (file 58)                                                                      |
+| `π_1^top(X^an, x)`                        | topological fundamental group of the analytic space at a base-point `x ∈ X^an` (file 60, XII.5.2)                                                       |
+| `π̂_1^top(X^an, x)`                        | profinite completion of `π_1^top(X^an, x)`; isomorphic to `π_1^ét(X, φ(x))` by XII.5.2                                                                  |
+| `π_1^ét(X, a)`                            | étale fundamental group of a scheme (file 33, V.7); analytic comparison is XII.5.2                                                                      |
 
 ## Logical and categorical operators
 
@@ -353,24 +353,24 @@ carries the same meaning as in the source, we follow the source.
 
 ## Étale cohomology, cohomological properness, and tame ramification (files 61–64)
 
-| Symbol                                | Meaning                                                                                                          |
-| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `X_et`, `X_et^∼`                      | étale site of `X`; topos of étale sheaves on `X` (XIII.B.1)                                                      |
-| `f_*`, `R^q f_*`                      | étale pushforward and higher direct images (`q ≥ 0`); `R^1 f_*` makes sense for sheaves of groups (Giraud)        |
-| `Φ^q : h^* R^q f_* F → R^q f'_* F'`   | base-change comparison map for a cartesian square (XIII.B.3)                                                     |
-| `(F, f)` coh-proper rel. `S` in dim ≤ `n` | `n ∈ {−1, 0, 1}`: comparison functor faithful / fully faithful / equivalence under every base change (XIII.1.1) |
-| `H¹_tame(U, F)`                       | subset of `H^1(U, F)` of tamely ramified torsor classes (XIII.2.1.2)                                             |
-| `R¹_tame f_* F`                       | subsheaf of `R^1 f_* F` consisting of tame classes (XIII.2.1.2)                                                  |
-| `π₁^tame((U, X)/S, a)`, `π₁^tame(U)`  | tame fundamental group of the open `U` relative to the compactification `X` and base `S` (XIII.2.1.3)            |
-| `π₁^ℒ(X, a)`                          | maximal pro-`ℒ` quotient of `π_1^ét(X, a)` (XIII.4.0)                                                            |
-| `π₁^{p'}(X)`                          | prime-to-`p` fundamental group; `ℒ = p'`                                                                         |
-| `π₁'(X, a)`                           | quotient by the smallest distinguished pro-subgroup `N` of `K = Ker(π_1(X) → π_1(S))` with `K/N` pro-`ℒ` (XIII.4.0) |
-| `K^ℒ`                                 | maximal pro-`ℒ` quotient of `K`                                                                                  |
-| `SF`                                  | sheaf of maximal subgerbes of a stack `F` (XIII.0.3)                                                             |
-| `C_t = C_t((U, X)/S)`                 | Galois category of tamely ramified étale coverings (XIII.2.1.3)                                                  |
-| `wp`, `wp(a) = a^p − a`               | Artin–Schreier operator on a characteristic-`p` ring (XIII.2.13)                                                 |
-| `^P F`                                | inner twist of a sheaf of groups `F` by a `F`-torsor `P` (XIII.1.3.1)                                            |
-| `P ∧^F Q`                             | contracted product of a right `F`-torsor `P` and a left `F`-torsor `Q`                                           |
+| Symbol                                    | Meaning                                                                                                             |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `X_et`, `X_et^∼`                          | étale site of `X`; topos of étale sheaves on `X` (XIII.B.1)                                                         |
+| `f_*`, `R^q f_*`                          | étale pushforward and higher direct images (`q ≥ 0`); `R^1 f_*` makes sense for sheaves of groups (Giraud)          |
+| `Φ^q : h^* R^q f_* F → R^q f'_* F'`       | base-change comparison map for a cartesian square (XIII.B.3)                                                        |
+| `(F, f)` coh-proper rel. `S` in dim ≤ `n` | `n ∈ {−1, 0, 1}`: comparison functor faithful / fully faithful / equivalence under every base change (XIII.1.1)     |
+| `H¹_tame(U, F)`                           | subset of `H^1(U, F)` of tamely ramified torsor classes (XIII.2.1.2)                                                |
+| `R¹_tame f_* F`                           | subsheaf of `R^1 f_* F` consisting of tame classes (XIII.2.1.2)                                                     |
+| `π₁^tame((U, X)/S, a)`, `π₁^tame(U)`      | tame fundamental group of the open `U` relative to the compactification `X` and base `S` (XIII.2.1.3)               |
+| `π₁^ℒ(X, a)`                              | maximal pro-`ℒ` quotient of `π_1^ét(X, a)` (XIII.4.0)                                                               |
+| `π₁^{p'}(X)`                              | prime-to-`p` fundamental group; `ℒ = p'`                                                                            |
+| `π₁'(X, a)`                               | quotient by the smallest distinguished pro-subgroup `N` of `K = Ker(π_1(X) → π_1(S))` with `K/N` pro-`ℒ` (XIII.4.0) |
+| `K^ℒ`                                     | maximal pro-`ℒ` quotient of `K`                                                                                     |
+| `SF`                                      | sheaf of maximal subgerbes of a stack `F` (XIII.0.3)                                                                |
+| `C_t = C_t((U, X)/S)`                     | Galois category of tamely ramified étale coverings (XIII.2.1.3)                                                     |
+| `wp`, `wp(a) = a^p − a`                   | Artin–Schreier operator on a characteristic-`p` ring (XIII.2.13)                                                    |
+| `^P F`                                    | inner twist of a sheaf of groups `F` by a `F`-torsor `P` (XIII.1.3.1)                                               |
+| `P ∧^F Q`                                 | contracted product of a right `F`-torsor `P` and a left `F`-torsor `Q`                                              |
 
 ## Nonstandard or source-specific notation
 

@@ -4,15 +4,15 @@
 
 ## What this file is about
 
-The fundamental group of a doughnut is easy to draw and impossible to argue with. The fundamental group of a system
-of polynomial equations over a field of finite characteristic has no loops to draw at all, no continuous deformations
-to consider, and no obvious reason to exist. This file constructs it anyway.
+The fundamental group of a doughnut is easy to draw and impossible to argue with. The fundamental group of a system of
+polynomial equations over a field of finite characteristic has no loops to draw at all, no continuous deformations to
+consider, and no obvious reason to exist. This file constructs it anyway.
 
 The construction takes the place of loops with the next best thing — the unbranched finite covers of the object — and
-extracts a group from the way those covers fit together. Over the complex numbers the group built this way agrees, in
-a precise sense, with the classical fundamental group of the underlying shape. Over other fields it gives an answer
-where no shape was available to begin with. This is the companion Grothendieck wrote the rest of the seminar to build,
-and it is the destination toward which the previous five files have been moving.
+extracts a group from the way those covers fit together. Over the complex numbers the group built this way agrees, in a
+precise sense, with the classical fundamental group of the underlying shape. Over other fields it gives an answer where
+no shape was available to begin with. This is the companion Grothendieck wrote the rest of the seminar to build, and it
+is the destination toward which the previous five files have been moving.
 
 ## Opening: the geometric payoff
 
@@ -43,13 +43,13 @@ The forward-references that have been carrying water since file 05 — the absol
 fundamental group note at the end of file 06, the transcendental computation aside in file 22, the four-exposé arc
 closing file 27 — are resolved here.
 
-> **Galois-category axioms (G1)–(G6), at a glance** (cf. file 31, §V.4). A pair `(𝒞, F)` of a category `𝒞` and a
-> functor `F : 𝒞 → FSet` to finite sets is a **Galois category** when:
+> **Galois-category axioms (G1)–(G6), at a glance** (cf. file 31, §V.4). A pair `(𝒞, F)` of a category `𝒞` and a functor
+> `F : 𝒞 → FSet` to finite sets is a **Galois category** when:
 >
 > - **(G1)** `𝒞` has a final object and admits fibre products (equivalently, finite projective limits);
 > - **(G2)** `𝒞` has finite sums and quotients by finite groups of automorphisms (hence an initial object `∅_𝒞`);
-> - **(G3)** every morphism `u : X → Y` factors as a strict epimorphism followed by a monomorphism onto a direct
->     summand of `Y`;
+> - **(G3)** every morphism `u : X → Y` factors as a strict epimorphism followed by a monomorphism onto a direct summand
+>     of `Y`;
 > - **(G4)** `F` is left exact: preserves the final object and fibre products;
 > - **(G5)** `F` commutes with finite sums, sends strict epimorphisms to epimorphisms (i.e. surjections), and commutes
 >     with quotients by finite groups of automorphisms;

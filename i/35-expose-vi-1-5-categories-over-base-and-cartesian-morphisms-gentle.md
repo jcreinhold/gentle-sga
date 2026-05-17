@@ -46,13 +46,13 @@ construction" — and lighter in §§4–5. We summarise the bookkeeping rather 
 every diagrammatic verification should keep Vistoli §3.1
 ([`vistoli-fga-explained`](appendix-black-boxes.md#vistoli-fga-explained)) open in parallel.
 
-**Running examples.** Two examples thread the abstract material of files 35–38 and connect it to geometry. The first
-is the **arrow category** `Ar(ℰ) = Hom(Δ¹, ℰ)`, developed as a full worked section at the close of each file (this
-file's closing example at the bottom; file 36 §VI.7's cleavage; file 37 §VI.10's direct image). The second is
-**quasi-coherent modules**, `S ↦ QCoh(S)` over the category of schemes, called out inline after each key definition
-and again at file 38 §VI.11(b). The arrow-category example is the one Grothendieck uses to motivate cartesian
-morphisms; the QCoh example is the one file 40 onward leans on. We keep both visible. A reader who only wants the
-geometry should follow the QCoh callouts and skim the arrow-category sections.
+**Running examples.** Two examples thread the abstract material of files 35–38 and connect it to geometry. The first is
+the **arrow category** `Ar(ℰ) = Hom(Δ¹, ℰ)`, developed as a full worked section at the close of each file (this file's
+closing example at the bottom; file 36 §VI.7's cleavage; file 37 §VI.10's direct image). The second is **quasi-coherent
+modules**, `S ↦ QCoh(S)` over the category of schemes, called out inline after each key definition and again at file 38
+§VI.11(b). The arrow-category example is the one Grothendieck uses to motivate cartesian morphisms; the QCoh example is
+the one file 40 onward leans on. We keep both visible. A reader who only wants the geometry should follow the QCoh
+callouts and skim the arrow-category sections.
 
 ## §VI.1 Universes, categories, equivalences
 
@@ -353,11 +353,11 @@ When the inverse image of every `ξ ∈ Ob ℱ_S` exists, the assignment `ξ ↦
 `T`-morphism `f*(λ) : f*(ξ) → f*(ξ')` making the obvious square commute.
 
 > **In quasi-coherent modules** (`ℰ = Sch`, `ℱ_S = QCoh(S)`). For `f : T → S` and a quasi-coherent module `M` on `S`,
-> the inverse image is the usual pullback sheaf `f*(M) = f^{-1}M ⊗_{f^{-1}𝒪_S} 𝒪_T`. The cartesian morphism `α_f(M) :
-> f*(M) → M` is the canonical map in the sheaf category, and the universal property of VI.5.1 unpacks to the universal
-> property of pullback. The inverse-image functor `f* : QCoh(S) → QCoh(T)` is the standard pullback of quasi-coherent
-> sheaves. We will return to this example in §VI.11(b) and again in file 40 §VIII.1, where the QCoh fibred category is
-> the protagonist.
+> the inverse image is the usual pullback sheaf `f*(M) = f^{-1}M ⊗_{f^{-1}𝒪_S} 𝒪_T`. The cartesian morphism
+> `α_f(M) : f*(M) → M` is the canonical map in the sheaf category, and the universal property of VI.5.1 unpacks to the
+> universal property of pullback. The inverse-image functor `f* : QCoh(S) → QCoh(T)` is the standard pullback of
+> quasi-coherent sheaves. We will return to this example in §VI.11(b) and again in file 40 §VIII.1, where the QCoh
+> fibred category is the protagonist.
 
 ### Properties of cartesian morphisms
 

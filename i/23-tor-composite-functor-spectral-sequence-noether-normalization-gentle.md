@@ -5,8 +5,8 @@
 The next batch of files cites three pieces of algebra it does not stop to prove. The first is a sequence of gadgets
 attached to a pair of modules that detects how badly tensoring fails to preserve exact sequences. The second is a
 bookkeeping device that organises two operations applied in succession into a grid of groups, with a five-term
-consequence used once. The third is a classical fact, due to Emmy Noether, saying every finitely generated algebra
-over a field is finite over a polynomial subring.
+consequence used once. The third is a classical fact, due to Emmy Noether, saying every finitely generated algebra over
+a field is finite over a polynomial subring.
 
 This file makes the three pieces honest. A reader who already knows them can skip. Everyone else should read the
 relevant section before opening the file that uses it. The point is to keep the next batch self-contained without

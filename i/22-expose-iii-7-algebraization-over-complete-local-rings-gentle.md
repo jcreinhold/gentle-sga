@@ -3,15 +3,15 @@
 ## What this file is about
 
 A central drama of modern number theory is the move between geometric shapes defined modulo a prime, where the
-arithmetic is rigid and finite, and shapes defined over the integers themselves, where the methods of ordinary
-geometry apply. Lifting from the small-prime world to the integer world is hard. The standard strategy climbs one
-infinitesimal layer at a time, takes a limit, and then asks whether the limit really is an honest geometric object
-rather than a purely formal tower.
+arithmetic is rigid and finite, and shapes defined over the integers themselves, where the methods of ordinary geometry
+apply. Lifting from the small-prime world to the integer world is hard. The standard strategy climbs one infinitesimal
+layer at a time, takes a limit, and then asks whether the limit really is an honest geometric object rather than a
+purely formal tower.
 
-The previous files built the layer-by-layer machinery and identified the obstruction at each step. This file
-finishes the job. When two bookkeeping groups attached to the shape are both zero, every layer can be climbed and
-the limit comes from an honest geometric object. The marquee consequence is that every smooth curve in the
-small-prime world lifts to one over the integers, with no obstruction at all.
+The previous files built the layer-by-layer machinery and identified the obstruction at each step. This file finishes
+the job. When two bookkeeping groups attached to the shape are both zero, every layer can be climbed and the limit comes
+from an honest geometric object. The marquee consequence is that every smooth curve in the small-prime world lifts to
+one over the integers, with no obstruction at all.
 
 The cohomological obstruction theory of file 21 (§III.5–§III.6) says when a smooth scheme `X₀ / k` lifts to a smooth
 scheme over an infinitesimal thickening of `Spec k`. Stringing those lifts together gives a **formal scheme** `𝔛 → Ŝ`

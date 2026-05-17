@@ -3,13 +3,13 @@
 ## What this file is about
 
 Imagine building a surface from a handful of local patches together with instructions for how to glue the patches along
-their overlaps. The patches alone do not determine the surface; the gluing instructions do half the work. In algebra
-the same question appears: a global object lives over a base, and pulling it back to a covering gives pieces, while the
+their overlaps. The patches alone do not determine the surface; the gluing instructions do half the work. In algebra the
+same question appears: a global object lives over a base, and pulling it back to a covering gives pieces, while the
 overlap data records how the pieces line up. The natural question is when the pieces and the gluing data, taken
 together, determine a unique global object.
 
-The answer is yes, under a clean local-to-global condition on the covering. This file proves the first geometric
-version of that statement, for the simplest kind of object — what algebraic geometers call a quasi-coherent module.
+The answer is yes, under a clean local-to-global condition on the covering. This file proves the first geometric version
+of that statement, for the simplest kind of object — what algebraic geometers call a quasi-coherent module.
 
 ## Opening: from framework to first geometric specialisation
 
@@ -108,9 +108,9 @@ The cleavage's coherence isomorphism `c_{f, g}` (file 36 VI.7) is here the canon
 
 <!-- source: VIII §1 preamble; specialisation of VI.12.1 -->
 
-Recall (VI.12.1, file 38): the descent isomorphism says that a section of a fibred category over a base `S` is the
-same data as a family of sections over a cover of `S` together with gluing isomorphisms on the pairwise overlaps,
-subject to a cocycle condition on the triple overlaps.
+Recall (VI.12.1, file 38): the descent isomorphism says that a section of a fibred category over a base `S` is the same
+data as a family of sections over a cover of `S` together with gluing isomorphisms on the pairwise overlaps, subject to
+a cocycle condition on the triple overlaps.
 
 Specialising file 38's descent isomorphism VI.12.1 to the cloven category `QCoh(–)°` and to the one-arrow base
 `{T → S} ⊂ Sch`, a **descent datum** on a quasi-coherent `𝒪_{S′}`-module `M′` relative to `g : S′ → S` is an isomorphism

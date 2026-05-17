@@ -2,15 +2,15 @@
 
 ## What this file is about
 
-Imagine an algebraic shape sitting over a single point and a slightly thicker point next to it, the thicker point
-being the original with an infinitesimal extra layer added. Two questions come up. First, given a map from the
-slightly thicker point into another smooth shape, where only the inner part of the map has been specified, can the
-specification be extended over the whole thicker point? Second, given the smooth shape itself, but only over the
-inner point, can the shape itself be thickened to live over the thicker point and still be smooth?
+Imagine an algebraic shape sitting over a single point and a slightly thicker point next to it, the thicker point being
+the original with an infinitesimal extra layer added. Two questions come up. First, given a map from the slightly
+thicker point into another smooth shape, where only the inner part of the map has been specified, can the specification
+be extended over the whole thicker point? Second, given the smooth shape itself, but only over the inner point, can the
+shape itself be thickened to live over the thicker point and still be smooth?
 
-This file answers both questions locally, meaning on a small enough patch. In each case the answer is yes, and in
-each case the answer is not unique. The next two files measure the failure of uniqueness and ask whether the local
-answers paste together into a single answer over the whole space.
+This file answers both questions locally, meaning on a small enough patch. In each case the answer is yes, and in each
+case the answer is not unique. The next two files measure the failure of uniqueness and ask whether the local answers
+paste together into a single answer over the whole space.
 
 Section III.1 defined **formally smooth** as a property of local ring maps. Section III.2 gave the equivalent **lifting
 characterization**: every algebra map `B → C / J` to a quotient by a nilpotent ideal lifts to an algebra map `B → C`. We

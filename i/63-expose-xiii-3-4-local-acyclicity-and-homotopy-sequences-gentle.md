@@ -5,14 +5,14 @@
 ## What this file is about
 
 Push a sheaf forward along a map and ask: does the value at a base point equal what one sees at the fibre above that
-point? The previous file isolated a clean special case. The general case is harder and cannot be settled everywhere
-— over special points the comparison can fail. The realistic hypothesis is generic. Restrict to a non-empty open
-piece of the base, and over that piece the comparison works for every reasonable coefficient.
+point? The previous file isolated a clean special case. The general case is harder and cannot be settled everywhere —
+over special points the comparison can fail. The realistic hypothesis is generic. Restrict to a non-empty open piece of
+the base, and over that piece the comparison works for every reasonable coefficient.
 
 This generic statement is the engine behind two structural theorems for the algebraic fundamental group. The first
-assembles the fundamental groups of fibre, total space, and base into a three-term sequence — the same kind
-topologists write for fibre bundles. The second is a product formula for the part coprime to the characteristic. Both
-run on inputs imported from later Grothendieck seminars as black boxes.
+assembles the fundamental groups of fibre, total space, and base into a three-term sequence — the same kind topologists
+write for fibre bundles. The second is a product formula for the part coprime to the characteristic. Both run on inputs
+imported from later Grothendieck seminars as black boxes.
 
 File 62 isolated tame ramification along an NC divisor as the operative case of cohomological properness. File 63
 extracts the *general* mechanism: **generic local acyclicity** (§XIII.3) gives cohomological properness over a non-empty

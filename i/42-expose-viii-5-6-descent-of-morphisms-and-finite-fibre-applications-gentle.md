@@ -3,9 +3,9 @@
 ## What this file is about
 
 Gluing has so far been about objects: take pieces with overlap data and assemble one global thing. The next question is
-about the maps between such things. Given two assembled objects and a candidate map between them defined piece by
-piece, when does it actually fit together as a single global map? The answer is what closes the previous two files'
-machinery into something usable for working geometers.
+about the maps between such things. Given two assembled objects and a candidate map between them defined piece by piece,
+when does it actually fit together as a single global map? The answer is what closes the previous two files' machinery
+into something usable for working geometers.
 
 The file also includes a small finite-fibre application. When a family is well-behaved and only ever hits finitely many
 points above each base point, the family is forced into an especially rigid shape — close to the most classical kind of

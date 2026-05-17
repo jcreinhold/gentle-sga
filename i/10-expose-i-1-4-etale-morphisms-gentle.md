@@ -3,10 +3,10 @@
 ## What this file is about
 
 The preceding files explained the algebraic notion of a covering map twice, in a friendly order chosen to keep the
-reader oriented. Grothendieck did not write his original lectures in that order. He had a single instrument in mind —
-an algebraic calculus of infinitesimal differences between two points lying above the same base point — and he wanted
-to lay the instrument out first, all of it, before letting any of the geometry use it. The instrument and the geometry
-then unfold together in a tighter, more efficient sequence than the one we used.
+reader oriented. Grothendieck did not write his original lectures in that order. He had a single instrument in mind — an
+algebraic calculus of infinitesimal differences between two points lying above the same base point — and he wanted to
+lay the instrument out first, all of it, before letting any of the geometry use it. The instrument and the geometry then
+unfold together in a tighter, more efficient sequence than the one we used.
 
 This file rewinds and walks through that original sequence at the source's pace. The mathematics is the same as in the
 earlier files; the order, the proofs, and the technical bookkeeping are the source's. By the end the algebraic version
@@ -25,8 +25,8 @@ tool and the discriminant is its testable invariant.
 
 The standing assumption from the source (`I`): **all preschemes are locally noetherian**, at least from section I.2
 onward. We also assume separation when the diagonal needs to be a closed immersion; the source mentions this in section
-I.1 with the line "a hypothesis that would be farcical here." We take separation as the default and flag exceptions.
-See file 03 for the definition.
+I.1 with the line "a hypothesis that would be farcical here." We take separation as the default and flag exceptions. See
+file 03 for the definition.
 
 ## I.1 Differential calculus
 

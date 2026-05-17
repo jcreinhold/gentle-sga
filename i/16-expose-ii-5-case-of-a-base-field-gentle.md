@@ -3,15 +3,15 @@
 ## What this file is about
 
 Take the simplest possible setting. The base of the family is a single field — the rational numbers, say, or the real
-numbers, or one of the finite arithmetic worlds where every prime divides exactly once. Over a base that simple, what
-do the algebraic submersions developed in the previous two files reduce to? And how does the algebraic word for
-"smooth" line up with the older, more elementary word "regular" that ring theorists were already using for local
-algebraic objects that look like polynomial rings near a point?
+numbers, or one of the finite arithmetic worlds where every prime divides exactly once. Over a base that simple, what do
+the algebraic submersions developed in the previous two files reduce to? And how does the algebraic word for "smooth"
+line up with the older, more elementary word "regular" that ring theorists were already using for local algebraic
+objects that look like polynomial rings near a point?
 
-This file does the comparison. Over a perfect base — one with no hidden arithmetic flaw in the way roots of
-polynomials behave — the two words agree exactly. Over an imperfect base they part ways, and the gap is named and
-measured. The chapter then closes a circle: covering maps are submersions of zero dropped dimensions, and the rigidity
-results of the earlier files are the derivative test of this chapter, specialised to that case.
+This file does the comparison. Over a perfect base — one with no hidden arithmetic flaw in the way roots of polynomials
+behave — the two words agree exactly. Over an imperfect base they part ways, and the gap is named and measured. The
+chapter then closes a circle: covering maps are submersions of zero dropped dimensions, and the rigidity results of the
+earlier files are the derivative test of this chapter, specialised to that case.
 
 Files 14 and 15 developed smooth morphisms in full generality (over an arbitrary base prescheme `Y`). This file
 specializes to `Y = Spec k` for `k` a field. The pay-off is concrete: smooth becomes a single-criterion test in

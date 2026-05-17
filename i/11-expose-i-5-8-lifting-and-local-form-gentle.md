@@ -4,10 +4,10 @@
 
 When you bend a steel rod, every short stretch of it bends with the rest; the rod has no slack. The algebraic notion of
 a covering map turns out to have the same flavour, and this file is where the rigidity is measured. Four separate
-statements, taken in sequence, say how little information is enough to pin down a covering completely. A small
-condition on points pins one down; a small infinitesimal thickening of the base fails to change the catalogue; a
-covering of a sufficiently complete local target is determined by what it does on the residue field alone; and locally,
-every covering is built from a single polynomial in one variable.
+statements, taken in sequence, say how little information is enough to pin down a covering completely. A small condition
+on points pins one down; a small infinitesimal thickening of the base fails to change the catalogue; a covering of a
+sufficiently complete local target is determined by what it does on the residue field alone; and locally, every covering
+is built from a single polynomial in one variable.
 
 Each statement narrows the notion from a different side. The previous file gave the proofs in sketch. Here they are
 proved in the source's full detail.

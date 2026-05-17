@@ -2,14 +2,14 @@
 
 ## What this file is about
 
-Background for a more abstract chapter. The pictures so far have all relied on the word "cover": a smaller piece
-sitting over a larger one, with a rule for gluing several smaller pieces back into the larger. In ordinary topology
-the rule is given by open sets and unions. Grothendieck's idea was to keep the rule and drop the open sets.
+Background for a more abstract chapter. The pictures so far have all relied on the word "cover": a smaller piece sitting
+over a larger one, with a rule for gluing several smaller pieces back into the larger. In ordinary topology the rule is
+given by open sets and unions. Grothendieck's idea was to keep the rule and drop the open sets.
 
 What remains is a category equipped with a vocabulary for which collections of arrows should count as covers, and an
 axiom saying that data spread across a cover and agreeing on overlaps comes from a single piece of data on the whole.
-This file collects that vocabulary. It is the language in which the next chapter will state a single grand theorem:
-many of the structures that arise on geometric objects can be reassembled from their behaviour on any sufficiently fine
+This file collects that vocabulary. It is the language in which the next chapter will state a single grand theorem: many
+of the structures that arise on geometric objects can be reassembled from their behaviour on any sufficiently fine
 cover.
 
 ## Why this file exists

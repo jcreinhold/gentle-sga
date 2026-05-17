@@ -165,8 +165,8 @@ This is the **black box** [`bourbaki-sem-195`](appendix-black-boxes.md) that fil
 A Galois category (defined in V.5.1; see file 32) is in particular artinian (V.4 step b), and a fundamental functor `F`
 is left- exact (axiom (G4)) and finite-set-valued, so the theorem applies. (Equivalently called a **fibre functor**;
 "fundamental functor" is the term Grothendieck uses in Exposé V, "fibre functor" is the modern name, and the two are
-synonymous — we use both.) The pro-object that emerges is the **fundamental pro-object** `P_F`, whose automorphism
-group is the **fundamental group** `π = Aut(F)`.
+synonymous — we use both.) The pro-object that emerges is the **fundamental pro-object** `P_F`, whose automorphism group
+is the **fundamental group** `π = Aut(F)`.
 
 ### Why pro-objects, not just objects
 

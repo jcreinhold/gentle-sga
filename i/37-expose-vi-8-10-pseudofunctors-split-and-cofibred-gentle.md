@@ -57,9 +57,9 @@ pseudofunctors`ℰ° → Cat`.*
 > **In quasi-coherent modules.** The pseudofunctor side of the dictionary is the one Hartshorne or Vakil writes when
 > they say "pullback along `f`": the assignment `S ↦ QCoh(S)`, `f ↦ f^*`, equipped with the canonical iso
 > `g^* f^* ≃ (fg)^*` of quasi-coherent pullback. The pentagon identity is the routine compatibility that
-> `h^* g^* f^* ≃ (fgh)^*` agrees no matter which two factors one associates first; in QCoh it is true on the nose
-> for the pullback formula `f^* M = f^{-1}M ⊗_{f^{-1}𝒪_S} 𝒪_T`. The cloven category recovered from this pseudofunctor
-> is the QCoh fibred category of §VI.7's running example.
+> `h^* g^* f^* ≃ (fgh)^*` agrees no matter which two factors one associates first; in QCoh it is true on the nose for
+> the pullback formula `f^* M = f^{-1}M ⊗_{f^{-1}𝒪_S} 𝒪_T`. The cloven category recovered from this pseudofunctor is the
+> QCoh fibred category of §VI.7's running example.
 
 ### The construction
 

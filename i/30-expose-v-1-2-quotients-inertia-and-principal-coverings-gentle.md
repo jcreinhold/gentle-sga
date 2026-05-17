@@ -7,13 +7,13 @@
 ## What this file is about
 
 When a finite group of symmetries acts on a space, the orbits of the action form a new space — the quotient — and the
-map from the original to the quotient is, in good cases, an unbranched cover. This is the cleanest way to manufacture
-a covering with a prescribed symmetry group, and over the complex numbers it is the source of nearly every example one
+map from the original to the quotient is, in good cases, an unbranched cover. This is the cleanest way to manufacture a
+covering with a prescribed symmetry group, and over the complex numbers it is the source of nearly every example one
 meets first.
 
 This file does the algebraic version. A finite group acts on a geometric object built from rings, and the question is
-when the orbit space exists at all, and when the resulting map is unbranched. The answer turns on two refinements of
-the idea of an orbit's stabiliser. One records which symmetries fix a chosen point; the other records which fix the
+when the orbit space exists at all, and when the resulting map is unbranched. The answer turns on two refinements of the
+idea of an orbit's stabiliser. One records which symmetries fix a chosen point; the other records which fix the
 algebraic data attached to that point. The map is unbranched exactly when the second is trivial.
 
 ## Opening: from deck transformations to inertia groups
@@ -48,11 +48,11 @@ covering map                      ↔   étale quotient morphism X → X/G
 finite Galois cover               ↔   principal covering with group G.
 ```
 
-Two pieces of terminology used throughout this file. When a group `G` acts on a scheme `X` and `x ∈ X` is a fixed
-point, the stabiliser acts on the residue field `κ(x)` by ring automorphisms; this is the **residue-field action**.
-The **decomposition group** `G_d(x) := {g ∈ G : g·x = x}` is the stabiliser of `x` in `G`, and the **inertia group**
-`G_i(x) ⊂ G_d(x)` is the kernel of the residue-field action `G_d(x) → Aut(κ(x))` — the subgroup that fixes the
-residue field pointwise. The formal restatement appears in §V.2.
+Two pieces of terminology used throughout this file. When a group `G` acts on a scheme `X` and `x ∈ X` is a fixed point,
+the stabiliser acts on the residue field `κ(x)` by ring automorphisms; this is the **residue-field action**. The
+**decomposition group** `G_d(x) := {g ∈ G : g·x = x}` is the stabiliser of `x` in `G`, and the **inertia group**
+`G_i(x) ⊂ G_d(x)` is the kernel of the residue-field action `G_d(x) → Aut(κ(x))` — the subgroup that fixes the residue
+field pointwise. The formal restatement appears in §V.2.
 
 We begin with the construction of `X / G`.
 
@@ -98,13 +98,13 @@ group to the residue Galois group._
 
 **Proof sketch.** For (i): every `a ∈ A` satisfies the monic polynomial `∏_{s ∈ G}(T − s · a) ∈ B[T]`, so `A` is
 integral over `B`. For (ii): the surjectivity and the orbit-as-fibre description follow from going-up / lying-over for
-integral extensions (Cohen–Seidenberg). For non-specialists: if `B ⊂ A` is an integral ring extension, every prime
-ideal of `B` is the contraction of some prime of `A` (lying-over), and a chain of primes in `B` lifts to a chain of
-primes in `A` (going-up). The topology assertion uses the extra fact that **integral morphisms are
-closed**: an integral `p` carries closed sets of `X` to closed sets of `Y` (because the image of `V(I) ⊆ X` is
-`V(I ∩ B) ⊆ Y`). For (iii): both `G_d(x)` and `Gal(κ(x) / κ(y))` are finite groups acting on `κ(x) / κ(y)`; the
-surjectivity is a standard splitting-field argument. (See Bourbaki _Algèbre Commutative_ V §1–§2 for full detail.) For
-(iv): combine (ii) and the universal property of `B = A^G`.
+integral extensions (Cohen–Seidenberg). For non-specialists: if `B ⊂ A` is an integral ring extension, every prime ideal
+of `B` is the contraction of some prime of `A` (lying-over), and a chain of primes in `B` lifts to a chain of primes in
+`A` (going-up). The topology assertion uses the extra fact that **integral morphisms are closed**: an integral `p`
+carries closed sets of `X` to closed sets of `Y` (because the image of `V(I) ⊆ X` is `V(I ∩ B) ⊆ Y`). For (iii): both
+`G_d(x)` and `Gal(κ(x) / κ(y))` are finite groups acting on `κ(x) / κ(y)`; the surjectivity is a standard
+splitting-field argument. (See Bourbaki _Algèbre Commutative_ V §1–§2 for full detail.) For (iv): combine (ii) and the
+universal property of `B = A^G`.
 
 ### V.1.2 — Sheaves of invariants
 

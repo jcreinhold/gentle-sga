@@ -2,16 +2,16 @@
 
 ## What this file is about
 
-An earlier batch of files said what it means for an algebraic shape to vary smoothly over a base, in the sense of
-having no kinks or pinch points. The definition there required a finiteness restriction. Some of the most useful
-objects break it: power series in several variables, the local ring at a point of a complex analytic shape, and the
-rings used in arithmetic over the integers all behave like smooth families everywhere it matters, but the older
-definition does not see them.
+An earlier batch of files said what it means for an algebraic shape to vary smoothly over a base, in the sense of having
+no kinks or pinch points. The definition there required a finiteness restriction. Some of the most useful objects break
+it: power series in several variables, the local ring at a point of a complex analytic shape, and the rings used in
+arithmetic over the integers all behave like smooth families everywhere it matters, but the older definition does not
+see them.
 
-This file widens the notion to take them in. The wider definition is a lifting question. Given a map into the shape
-from a smaller piece sitting inside a slightly thicker piece, does the map extend to the thicker piece? The right
-answer is yes, always. The file proves that this lifting condition agrees with the earlier definition wherever the
-earlier one applied.
+This file widens the notion to take them in. The wider definition is a lifting question. Given a map into the shape from
+a smaller piece sitting inside a slightly thicker piece, does the map extend to the thicker piece? The right answer is
+yes, always. The file proves that this lifting condition agrees with the earlier definition wherever the earlier one
+applied.
 
 Exposé II (files 14–16) developed smooth morphisms under a **finite-type** hypothesis: smooth = locally étale over a
 polynomial scheme `Y[t₁, …, t_n]`. The current exposé widens the lens. Some of the rings most relevant to formal and

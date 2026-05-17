@@ -321,11 +321,11 @@ The cleavage is normalised iff `K` additionally satisfies:
 
 The morphisms in `K` are called the **transport morphisms** of the cleavage.
 
-> **In quasi-coherent modules.** A cleavage of the QCoh fibred category is a choice of pullback functor `f^* : QCoh(S)
-> → QCoh(T)` for every morphism `f : T → S` of schemes, plus the canonical transport `α_f(M) : f^*(M) → M` for every
-> quasi-coherent module `M` on `S`. The standard sheaf-theoretic pullback gives a normalised cleavage: `(id_S)^* = id`
-> on quasi-coherent sheaves over `S`. This is the cleavage Hartshorne or Vakil uses implicitly every time they write
-> `f^*`.
+> **In quasi-coherent modules.** A cleavage of the QCoh fibred category is a choice of pullback functor
+> `f^* : QCoh(S) → QCoh(T)` for every morphism `f : T → S` of schemes, plus the canonical transport
+> `α_f(M) : f^*(M) → M` for every quasi-coherent module `M` on `S`. The standard sheaf-theoretic pullback gives a
+> normalised cleavage: `(id_S)^* = id` on quasi-coherent sheaves over `S`. This is the cleavage Hartshorne or Vakil uses
+> implicitly every time they write `f^*`.
 
 ### From cleavage to coherence: defining `c_{f, g}`
 

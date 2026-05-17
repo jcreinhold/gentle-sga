@@ -3,14 +3,14 @@
 ## What this file is about
 
 A familiar question in geometry asks how much local information determines a global object. Pick a covering of a space
-by small patches. On each patch the answer to some question is easy. On the overlaps, the easy answers may disagree.
-The disagreements form a kind of bookkeeping problem, and there is a standard apparatus for tracking when the local
-answers fit together into a global one and, if they do not, how badly they fail.
+by small patches. On each patch the answer to some question is easy. On the overlaps, the easy answers may disagree. The
+disagreements form a kind of bookkeeping problem, and there is a standard apparatus for tracking when the local answers
+fit together into a global one and, if they do not, how badly they fail.
 
 This file sets that apparatus up in the small. Three groups of numbers attached to a covering measure, in turn, the
-global sections, the principal-bundle-like objects sitting over the space, and the obstruction to gluing locally
-defined structures into a single global structure. The later files in this batch use the third group to count the ways
-a smooth shape over a thickened point can be extended one infinitesimal step further.
+global sections, the principal-bundle-like objects sitting over the space, and the obstruction to gluing locally defined
+structures into a single global structure. The later files in this batch use the third group to count the ways a smooth
+shape over a thickened point can be extended one infinitesimal step further.
 
 Files 19–22 walk Exposé III. Sections III.1–III.4 reuse machinery already in place: completions of local rings (file
 04), formally smooth as a property of homomorphisms (defined inside file 19), infinitesimal neighborhoods (file 03).
@@ -53,9 +53,9 @@ File 03 also gives the **diagonal** `Δ_{X/Y} : X ↪ X ×_Y X` and its ideal sh
 
 ### What cohomology is, in one paragraph
 
-A short orientation before any formula. The setting is always a left-exact functor on sheaves — typically global sections
-`F ↦ F(X)` — that fails to be right-exact. **Cohomology measures exactly that failure.** Given a short exact sequence
-of sheaves `0 → F' → F → F'' → 0`, applying global sections produces a sequence
+A short orientation before any formula. The setting is always a left-exact functor on sheaves — typically global
+sections `F ↦ F(X)` — that fails to be right-exact. **Cohomology measures exactly that failure.** Given a short exact
+sequence of sheaves `0 → F' → F → F'' → 0`, applying global sections produces a sequence
 
 ```text
 0 → F'(X) → F(X) → F''(X)

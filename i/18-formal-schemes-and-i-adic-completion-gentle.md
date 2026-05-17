@@ -3,14 +3,14 @@
 ## What this file is about
 
 A function near a point is captured by its value, then its slope, then its curvature, and so on. Each new derivative
-records a finer piece of behaviour near the point, and the whole tower together is the Taylor expansion. Geometry has
-an analogue. Inside a larger space sits a smaller piece. Around the smaller piece there is a first-order neighbourhood,
+records a finer piece of behaviour near the point, and the whole tower together is the Taylor expansion. Geometry has an
+analogue. Inside a larger space sits a smaller piece. Around the smaller piece there is a first-order neighbourhood,
 then a second-order, then a third, each fatter than the last by an infinitesimal layer. The whole tower, taken at once,
 is a richer object than any single layer.
 
-This file gives the algebra that handles such towers. It builds the right notion of limit, the right notion of space
-the limit lives in, and a theorem saying when a structure carried by the entire tower comes from an honest geometric
-object on the larger space. The lifting questions in the next four files all depend on it.
+This file gives the algebra that handles such towers. It builds the right notion of limit, the right notion of space the
+limit lives in, and a theorem saying when a structure carried by the entire tower comes from an honest geometric object
+on the larger space. The lifting questions in the next four files all depend on it.
 
 Sections III.5–III.7 of Exposé III work over a base scheme `S` equipped with a coherent sheaf of ideals `𝓘`. They
 construct schemes one **infinitesimal thickening at a time**: starting from data over `S₀ := V(𝓘)` (the closed subscheme
@@ -49,9 +49,9 @@ Two extensions are needed to handle Exposé III.
 ### Why this construction?
 
 Before any formula, the picture. Pick a ring `R` and an ideal `𝓘`. The quotient `R/𝓘` knows the values of functions
-modulo the ideal — geometrically, their values along the closed subscheme `V(𝓘)`. The quotient `R/𝓘²` adds one
-layer: it knows values plus first-order data, the way a derivative knows a function plus its slope. `R/𝓘³` adds
-second-order data. The tower
+modulo the ideal — geometrically, their values along the closed subscheme `V(𝓘)`. The quotient `R/𝓘²` adds one layer: it
+knows values plus first-order data, the way a derivative knows a function plus its slope. `R/𝓘³` adds second-order data.
+The tower
 
 ```text
 R/𝓘  ←  R/𝓘²  ←  R/𝓘³  ←  ⋯
@@ -60,11 +60,11 @@ R/𝓘  ←  R/𝓘²  ←  R/𝓘³  ←  ⋯
 records what a function looks like to ever-higher infinitesimal order along `V(𝓘)`. Functions in `R` itself sit at the
 top; each one projects to its image at every level.
 
-The **completion** `R̂` is what you get when you let all those infinitesimal orders accumulate into single elements.
-An element of `R̂` is a coherent choice of one element in each quotient — a value, a first-order increment, a
-second-order increment, and so on, each compatible with the next. The result is what `R` becomes when every
-infinitesimal series along `V(𝓘)` is allowed to converge. In analytic language, `R̂` is to `R` what the ring of
-formal power series at a point is to the ring of polynomials.
+The **completion** `R̂` is what you get when you let all those infinitesimal orders accumulate into single elements. An
+element of `R̂` is a coherent choice of one element in each quotient — a value, a first-order increment, a second-order
+increment, and so on, each compatible with the next. The result is what `R` becomes when every infinitesimal series
+along `V(𝓘)` is allowed to converge. In analytic language, `R̂` is to `R` what the ring of formal power series at a
+point is to the ring of polynomials.
 
 The construction packages this as an inverse limit because every step kills slightly less of the data. The connection
 backward is to file 03's first-order picture: the conormal sheaf there is `𝓘/𝓘²`, the first non-trivial layer of this

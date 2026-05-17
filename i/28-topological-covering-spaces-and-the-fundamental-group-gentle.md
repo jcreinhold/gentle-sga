@@ -2,14 +2,14 @@
 
 ## What this file is about
 
-Wrap a rubber band around a doughnut and there is no way to slide it off without breaking the doughnut. Wrap it around
-a ball and it slips free. The difference is captured by a single object attached to each shape: a group whose elements
-are loops that cannot be pulled tight, considered up to continuous deformation. This is the fundamental group, the
-oldest precise sense in which a space has a shape distinct from its size.
+Wrap a rubber band around a doughnut and there is no way to slide it off without breaking the doughnut. Wrap it around a
+ball and it slips free. The difference is captured by a single object attached to each shape: a group whose elements are
+loops that cannot be pulled tight, considered up to continuous deformation. This is the fundamental group, the oldest
+precise sense in which a space has a shape distinct from its size.
 
-A second picture stacks above the first. Some shapes admit unbranched covers — neat stacks of identical sheets laid
-over the original. The covers of a space are governed by its fundamental group in a tight and surprising way. The rest
-of this book will rebuild both pictures in algebra, for objects that have no points and no loops. This file states the
+A second picture stacks above the first. Some shapes admit unbranched covers — neat stacks of identical sheets laid over
+the original. The covers of a space are governed by its fundamental group in a tight and surprising way. The rest of
+this book will rebuild both pictures in algebra, for objects that have no points and no loops. This file states the
 geometric original they will be made to recover.
 
 ## Why this file exists

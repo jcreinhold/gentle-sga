@@ -5,15 +5,15 @@
 ## What this file is about
 
 Abhyankar's lemma is a recipe for untangling a controlled cover. Given a cover that spreads out along a thin locus of
-forbidden points, one can adjoin roots to the base and obtain a new cover that is clean — unramified everywhere —
-over the new base. The recipe works only for the controlled flavour of spreading-out, the tame one. The opposite
-flavour, wild, is the bad ramification that the prime characteristic of the base field forces, and no construction
-straightens it out. An earlier file proved a local form. The geometric setting now needs a family version, with the
-roots adjoined simultaneously in every direction.
+forbidden points, one can adjoin roots to the base and obtain a new cover that is clean — unramified everywhere — over
+the new base. The recipe works only for the controlled flavour of spreading-out, the tame one. The opposite flavour,
+wild, is the bad ramification that the prime characteristic of the base field forces, and no construction straightens it
+out. An earlier file proved a local form. The geometric setting now needs a family version, with the roots adjoined
+simultaneously in every direction.
 
-The relative lemma also closes the thirteen-chapter tour. The gentle SGA project read Grothendieck's first seminar in
-a voice accessible to a working algebraic geometer rather than to a specialist. The closing remarks point forward to
-the later seminars.
+The relative lemma also closes the thirteen-chapter tour. The gentle SGA project read Grothendieck's first seminar in a
+voice accessible to a working algebraic geometer rather than to a specialist. The closing remarks point forward to the
+later seminars.
 
 File 51 (X.3) proved Abhyankar's lemma in the local form that file 50 (X.2.6) needs. File 62 (XIII.2.4) needed a sharper
 *relative* version: an étale covering of `U` tamely ramified along an NC divisor `D` extends, after a Kummer base

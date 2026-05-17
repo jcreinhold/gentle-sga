@@ -2,15 +2,15 @@
 
 ## What this file is about
 
-A geometric object often has a base — a space of parameters it sits over — and a covering by simpler pieces. Two
-quite different questions can be asked. Local-on-the-base asks whether a property holds when checked on every piece of
-the base. Local-on-the-source asks whether a property holds when checked after pulling everything back to a covering.
-For honest geometry these should agree, but they need not, and a careful translation between the two is the price of
-working with general bases.
+A geometric object often has a base — a space of parameters it sits over — and a covering by simpler pieces. Two quite
+different questions can be asked. Local-on-the-base asks whether a property holds when checked on every piece of the
+base. Local-on-the-source asks whether a property holds when checked after pulling everything back to a covering. For
+honest geometry these should agree, but they need not, and a careful translation between the two is the price of working
+with general bases.
 
-This file develops the translation for the simplest enrichments of the previous file's gluing theorem — algebras
-instead of modules, with consequences for how maps between objects behave: surjectivity, finiteness, openness,
-separation, properness.
+This file develops the translation for the simplest enrichments of the previous file's gluing theorem — algebras instead
+of modules, with consequences for how maps between objects behave: surjectivity, finiteness, openness, separation,
+properness.
 
 ## Opening: from modules to schemes and their properties
 

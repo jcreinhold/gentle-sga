@@ -42,20 +42,20 @@ This bridge collects, in the gentle voice, the facts about the étale topology a
 needs. Nothing here is proved; everything is quoted from SGA 4 (with one Giraud reference) or SGA 5 II, with appendix
 entries. Downstream we will *cite the bridge*, not paraphrase it again.
 
-The étale topology is finer than the Zariski one. Where a Zariski neighbourhood of a point is an open subset
-containing it, an étale neighbourhood is any unramified cover — the algebraic analogue of an open piece of a finite
-Riemann surface lying above the point. Sheaves on this finer topology, and the cohomology those sheaves carry, are the
-right setting for fundamental-group theory and for the comparison results Exposé XIII proves; building the setting
-properly is the work of SGA 4. The eight items below extract just the parts of SGA 4 and SGA 5 II that Exposé XIII
-actually uses: the étale site and its sheaves (B.1); the pushforward of an étale sheaf along a map of schemes and the
-higher derived versions that record cohomology along the fibres (B.2); the comparison map between cohomology and
-base-changed cohomology, whose failure or success is the protagonist of cohomological properness (B.3); the proper
-base-change theorem, which says that comparison succeeds when the map is proper (B.4); the class of *constructible*
-sheaves, which stays closed under the operations we need (B.5); locally acyclic morphisms, which generalise "every
-fibre is a point" to higher dimensions (B.6); the radicial-base-change reduction VIII 1.1, the standing reduction
-trick that lets us pass freely between a scheme and its reduction (B.7); and strong desingularization, the input that
-makes our base-change machine apply to general schemes (B.8). The last subsection (B.9) opens the parallel theory of
-stacks and gerbes, which the non-commutative coefficients of XIII.1 require.
+The étale topology is finer than the Zariski one. Where a Zariski neighbourhood of a point is an open subset containing
+it, an étale neighbourhood is any unramified cover — the algebraic analogue of an open piece of a finite Riemann surface
+lying above the point. Sheaves on this finer topology, and the cohomology those sheaves carry, are the right setting for
+fundamental-group theory and for the comparison results Exposé XIII proves; building the setting properly is the work of
+SGA 4. The eight items below extract just the parts of SGA 4 and SGA 5 II that Exposé XIII actually uses: the étale site
+and its sheaves (B.1); the pushforward of an étale sheaf along a map of schemes and the higher derived versions that
+record cohomology along the fibres (B.2); the comparison map between cohomology and base-changed cohomology, whose
+failure or success is the protagonist of cohomological properness (B.3); the proper base-change theorem, which says that
+comparison succeeds when the map is proper (B.4); the class of *constructible* sheaves, which stays closed under the
+operations we need (B.5); locally acyclic morphisms, which generalise "every fibre is a point" to higher dimensions
+(B.6); the radicial-base-change reduction VIII 1.1, the standing reduction trick that lets us pass freely between a
+scheme and its reduction (B.7); and strong desingularization, the input that makes our base-change machine apply to
+general schemes (B.8). The last subsection (B.9) opens the parallel theory of stacks and gerbes, which the
+non-commutative coefficients of XIII.1 require.
 
 #### B.1. The étale site `X_et` and étale sheaves.
 

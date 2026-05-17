@@ -2,15 +2,15 @@
 
 ## What this file is about
 
-Imagine an algebraic family of shapes parametrised by a base. As the parameter moves, the shape over each value
-changes. The cleanest families are the ones with no surprises: nothing jumps up in dimension at a special value,
-nothing collapses, nothing disappears. The technical word for this kind of well-behaved variation, used as a black
-box in almost every file so far, is flatness.
+Imagine an algebraic family of shapes parametrised by a base. As the parameter moves, the shape over each value changes.
+The cleanest families are the ones with no surprises: nothing jumps up in dimension at a special value, nothing
+collapses, nothing disappears. The technical word for this kind of well-behaved variation, used as a black box in almost
+every file so far, is flatness.
 
 This file opens the box. The first section collects the closure properties: flatness is preserved under composition,
 under base change, and under combinations of these. The second section sharpens flatness into a stronger condition
-called faithful flatness, which corresponds to the geometric notion of a covering map that reaches every point of
-the base. This is the algebraic backbone of descent, treated much later in the seminar.
+called faithful flatness, which corresponds to the geometric notion of a covering map that reaches every point of the
+base. This is the algebraic backbone of descent, treated much later in the seminar.
 
 Files 04, 05, 11, 12, and 14–22 have used flatness as a black box. Whenever the étale or smooth theory needed "flat is
 preserved under base change," "the flat locus is open," or "flat plus finite over a local ring is free," we cited the

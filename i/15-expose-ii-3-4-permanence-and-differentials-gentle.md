@@ -3,8 +3,8 @@
 ## What this file is about
 
 If you have a good algebraic version of a submersion, two questions follow almost automatically. Does it preserve the
-properties that mattered for ordinary covering maps? And does it admit a workable derivative test, so that you can
-check the property by computing something concrete on the defining equations?
+properties that mattered for ordinary covering maps? And does it admit a workable derivative test, so that you can check
+the property by computing something concrete on the defining equations?
 
 This file answers both. The local algebraic properties that survived crossing a covering — being free of certain
 singularities, being well-dimensioned, and so on — also survive crossing a submersion, with one extra term tracking the

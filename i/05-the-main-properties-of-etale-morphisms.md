@@ -7,9 +7,9 @@ play the role of a covering map. It was short — two clauses, both technical. W
 settled by what the clauses can prove.
 
 This file collects four payoffs. Each one says that the new notion behaves the way a covering ought to behave: it is
-rigid where rigidity is the right word, determined by very little data, indifferent to certain kinds of algebraic
-noise, and always presentable in a clean local form. Read together, they amount to the case for the definition. The
-four results are stated here with sketches; the full proofs are gathered later, in the chapter that walks through the
+rigid where rigidity is the right word, determined by very little data, indifferent to certain kinds of algebraic noise,
+and always presentable in a clean local form. Read together, they amount to the case for the definition. The four
+results are stated here with sketches; the full proofs are gathered later, in the chapter that walks through the
 original source line by line.
 
 We have a definition: flat plus unramified. The definition is short. What it does is not. The slogan that accompanied us

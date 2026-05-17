@@ -195,30 +195,32 @@ data `(f^*, α_f, c_{f, g})` as in file 36 §VI.7. Let `i_S : ℱ_S → ℱ` den
 
 Before the abstract statement, the picture the abstract statement records.
 
-Pick the running example **quasi-coherent modules**: `ℰ` is the category of schemes, `ℱ → ℰ` is the fibred category whose
-fibre over a scheme `S` is the category of quasi-coherent `𝒪_S`-modules, and for a morphism `f : T → S` the inverse
-image `f^*` is the usual pullback of quasi-coherent sheaves.
+Pick the running example **quasi-coherent modules**: `ℰ` is the category of schemes, `ℱ → ℰ` is the fibred category
+whose fibre over a scheme `S` is the category of quasi-coherent `𝒪_S`-modules, and for a morphism `f : T → S` the
+inverse image `f^*` is the usual pullback of quasi-coherent sheaves.
 
 In this setting, descent data on a cover `{U_i → S}` of a scheme `S` is exactly what one's intuition expects.
 
 - **Local pieces.** A quasi-coherent module `M_i` on each `U_i`.
-- **Gluings on pairwise overlaps.** An isomorphism `φ_{ij} : M_j |_{U_i ×_S U_j} ≅ M_i |_{U_i ×_S U_j}` for each
-    ordered pair `(i, j)`, telling how `M_i` and `M_j` are to be identified on the overlap. The convention here is
-    that `φ_{ii} = id` and `φ_{ji} = φ_{ij}^{-1}`.
+
+- **Gluings on pairwise overlaps.** An isomorphism `φ_{ij} : M_j |_{U_i ×_S U_j} ≅ M_i |_{U_i ×_S U_j}` for each ordered
+    pair `(i, j)`, telling how `M_i` and `M_j` are to be identified on the overlap. The convention here is that
+    `φ_{ii} = id` and `φ_{ji} = φ_{ij}^{-1}`.
+
 - **Cocycle condition on triple overlaps.** On the triple overlap `U_i ×_S U_j ×_S U_k`,
 
     ```text
     φ_{ij}  ∘  φ_{jk}  =  φ_{ik}.
     ```
 
-    Going `k → j → i` agrees with going `k → i`. This is the obstruction to inconsistent gluings: if the cocycle
-    identity fails, two different routes through the overlaps give two different identifications, and the local data
-    cannot assemble.
+    Going `k → j → i` agrees with going `k → i`. This is the obstruction to inconsistent gluings: if the cocycle identity
+    fails, two different routes through the overlaps give two different identifications, and the local data cannot
+    assemble.
 
 The descent isomorphism VI.12.1 says: **giving such a triple `((M_i), (φ_{ij}))` satisfying the cocycle condition is the
-same data as giving a single global quasi-coherent module `M` on `S`.** The forward direction is restriction: `M_i := M
-|_{U_i}`, and the `φ_{ij}` are the canonical identifications. The backward direction is the substance — gluings that
-agree on triple overlaps assemble to a unique global module.
+same data as giving a single global quasi-coherent module `M` on `S`.** The forward direction is restriction:
+`M_i := M |_{U_i}`, and the `φ_{ij}` are the canonical identifications. The backward direction is the substance —
+gluings that agree on triple overlaps assemble to a unique global module.
 
 The abstract statement below replaces "module" with "functor into a target category `𝒞`," and replaces "restriction to
 `U_i`" with "the fibre-wise functor `F_S`," and replaces the pairwise gluings `φ_{ij}` with natural transformations
