@@ -12,14 +12,13 @@ Use these sources for orientation and calibration, not for copy-paste prose.
 ## Useful Supplements
 
 - Timothy Gowers, “examples first” posts, for when examples or fictitious histories genuinely clarify a definition or
-    theorem before the formal statement.
+  theorem before the formal statement.
 - Terence Tao’s writing-advice pages, especially “Write a rapid prototype first,” “Organise the paper,” “Create lemmas,”
-    and “On compilation errors in mathematical reading,” for theorem-scale proof architecture and decomposition
-    workflow.
+  and “On compilation errors in mathematical reading,” for theorem-scale proof architecture and decomposition workflow.
 - Richard Hammack, _Book of Proof_, for explicit backward-scratch-work techniques that discover intermediate claims
-    before the finished proof is written.
+  before the finished proof is written.
 - Short proofwriting checklists and proof-pedagogy notes for revision discipline, not as substitutes for the books
-    above.
+  above.
 
 ## Category-Theoretic Method Sources
 
@@ -34,6 +33,6 @@ Use these sources for orientation and calibration, not for copy-paste prose.
 - Halmos / Knuth / Higham: prose discipline, equation narration, revision, notation, examples.
 - Velleman: proof forms and local logical structure.
 - Tao / Hammack / Gowers: rapid prototypes, dependency sketches, local lemma design, backward scratch work, and
-    simpler-model projection when a theorem is too hard to attack directly.
+  simpler-model projection when a theorem is too hard to attack directly.
 - Mac Lane / Riehl / Awodey / Leinster / Borceux: universal-property arguments, naturality, adjunction,
-    representability, functoriality, equivalence discipline.
+  representability, functoriality, equivalence discipline.

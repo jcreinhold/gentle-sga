@@ -14,28 +14,28 @@ that prime, the loop group is rigid — it moves continuously through the family
 where no prime is special, the rigidity is total. A striking byproduct: in characteristic zero, the loop group of a
 smooth compact space is unchanged by any birational surgery one cares to perform.
 
-File 49 gave **upper semicontinuity** of fibre `π₁` for proper separable families: the specialisation morphism
-`sp : π₁(X̄_{y_1}) → π₁(X̄_{y_0})` is surjective (X.2.3, X.2.4), but can drop strictly along a non-trivial
-specialisation (X.2.5 — Kodaira degenerate elliptic curves, M. Artin's unpublished counterexample). File 50 then
-developed the **transcendental method** for `π₁` of a proper smooth curve (X.2.6, surface presentation with `2g`
-generators + one relation), the **topological finite generation theorem** (X.2.9), and **A. Tamagawa's solvable
+File 49 gave **upper semicontinuity** of fibre $\pi_{1}$ for proper separable families: the specialisation morphism
+$sp : \pi_{1}(\bar{X}_{y_{1}}) \to \pi_{1}(\bar{X}_{y_{0}})$ is surjective (X.2.3, X.2.4), but can drop strictly along a
+non-trivial specialisation (X.2.5 — Kodaira degenerate elliptic curves, M. Artin's unpublished counterexample). File 50
+then developed the **transcendental method** for $\pi_{1}$ of a proper smooth curve (X.2.6, surface presentation with
+`2g` generators + one relation), the **topological finite generation theorem** (X.2.9), and **A. Tamagawa's solvable
 specialisation theorem** (X.2.14, a rigidity result for equal-characteristic curves).
 
-Section X.3 now sharpens upper semicontinuity into an honest **continuity** statement. Concretely: for `f` proper
+Section X.3 now sharpens upper semicontinuity into an honest **continuity** statement. Concretely: for $f$ proper
 **smooth** (not merely separable) with geometrically connected fibres, the specialisation morphism is **surjective** and
-induces an **isomorphism** on the **prime-to-`p` quotient** `π₁^{(p)}`. In characteristic 0 (where `p` plays no role),
-this is the full isomorphism `π₁(X̄_{y_1}) \xrightarrow{\sim} π₁(X̄_{y_0})`. In characteristic `p > 0`, the
-specialisation is an iso on `π₁^{(p)}` but can drop on the `p`-Sylow part (file 49, X.2.5 — even smooth proper families
-exhibit `p`-primary non-rigidity).
+induces an **isomorphism** on the **prime-to-$p$ quotient** $\pi^{(p)}_{1}$. In characteristic 0 (where $p$ plays no
+role), this is the full isomorphism $\pi_{1}(\bar{X}_{y_{1}}) \xrightarrow{\sim} \pi_{1}(\bar{X}_{y_{0}})$. In
+characteristic $p > 0$, the specialisation is an iso on $\pi^{(p)}_{1}$ but can drop on the $p$-Sylow part (file 49,
+X.2.5 — even smooth proper families exhibit $p$-primary non-rigidity).
 
 The argument requires two new black boxes that have no analogue in Exposé IX or earlier files:
 
 1. **Zariski–Nagata purity of the branch locus** (X.3.1). The ramification locus of a quasi-finite dominant morphism
-    from a normal scheme to a regular noetherian scheme is either everything or pure of codimension 1. Stated as a
-    general theorem (proof: SGA 2 X.3.4) and proved in the **dim-2 case** inline along Zariski's classical proof. The
-    reformulation X.3.3 (étale coverings of a regular scheme extend uniquely across codim-≥-2 closed subschemes) is the
-    engine of the continuity theorem.
-1. **Abhyankar's lemma** (X.3.6). For two **tamely ramified** Galois extensions `L, K′` of `K` over a DVR `V`, with
+   from a normal scheme to a regular noetherian scheme is either everything or pure of codimension 1. Stated as a
+   general theorem (proof: SGA 2 X.3.4) and proved in the **dim-2 case** inline along Zariski's classical proof. The
+   reformulation X.3.3 (étale coverings of a regular scheme extend uniquely across codim-≥-2 closed subschemes) is the
+   engine of the continuity theorem.
+1. **Abhyankar's lemma** (X.3.6). For two **tamely ramified** Galois extensions $L, K'$ of $K$ over a DVR $V$, with
     inertia orders `n, m$ and`m$ a multiple of `n$, the composite extension
     `L′$ is **unramified** over the normalisation of`V$ in `K′$. Proved in full along the SGA lines, after a
     two-paragraph preface on tame ramification.
@@ -50,8 +50,8 @@ The corollaries are striking:
 - \*\*X.3.4 (birational invariance of `π_1$).** For`X, Y$ smooth proper `k$-schemes, every birational map
     `f : X ⤏ Y$ induces an isomorphism`π_1(X) ≃ π_1(Y)$.
 - **X.3.9 (char-0 isomorphism).** In characteristic 0, the specialisation morphism is an isomorphism — the étale
-    fundamental group of a proper smooth scheme is *rigid* under specialisation. This is a clean rigidity statement,
-    unavailable for non-smooth (X.2.5) or non-proper (file 48, X.1.10) \`f$.
+  fundamental group of a proper smooth scheme is *rigid* under specialisation. This is a clean rigidity statement,
+  unavailable for non-smooth (X.2.5) or non-proper (file 48, X.1.10) \`f$.
 - **X.3.10 (curve corollary).** The prime-to-`p$ part of`π_1$ of a proper smooth curve of genus `g$ over an
     algebraically closed `k$ of char`p$ is `Γ^{(p)}$, where `Γ$ is the topological surface group on`2g$ generators
     with one commutator relation. This is the **deepest fact about `π_1$ of a curve\*\* available by **purely
@@ -69,8 +69,8 @@ File 51 closes Exposé X with a brief remark (X.3.11) on what \`p$-primary infor
 
 <!-- source: X.3.1 -->
 
-**Theorem X.3.1 (Zariski–Nagata).** Let `f : X → Y` be a **quasi-finite dominant morphism** of integral preschemes, with
-`X` **normal** and `Y` **regular** locally noetherian. Let
+**Theorem X.3.1 (Zariski–Nagata).** Let $f : X \to Y$ be a **quasi-finite dominant morphism** of integral preschemes, with
+$X$ **normal** and $Y$ **regular** locally noetherian. Let
 `Z = \{ x ∈ X : f \text{ is not étale at } x \}$ be the **ramification locus** of`f$, equivalently the closed locus where the differential `df : f^* Ω^1_Y → Ω^1_X$
 is not surjective (file 12, I.9.5(ii)). If `Z ≠ X$, then`Z$ is **pure of codimension 1** in `X$ — that is, every
 irreducible component of `Z$ has codimension 1 in`X$ at each of its generic points.
@@ -93,18 +93,19 @@ would be everything.
 
 <!-- source: X.3.2 -->
 
-**Corollary X.3.2.** Let `A` be a **regular noetherian local ring** of dimension `n ≥ 2$, and let`A → B$ be an
+**Corollary X.3.2.** Let $A$ be a **regular noetherian local ring** of dimension $n \geq 2$, and let$A → B$ be an
 **injective local homomorphism** such that:
 
 1. \`B$ is **normal**,
 1. `B$ is a localisation of a finite-type`A$-algebra,
 1. `B$ is **quasi-finite** over`A$ (i.e. the residue extension `B / 𝔪_A B$ is a finite-dimensional vector space over \`A
-    / 𝔪_A$, equivalently the fibre at the closed point is a finite set), and
-1. for **every** prime ideal `𝔭 ⊂ B$ with`𝔭 ≠ 𝔪_B$, `B_𝔭$ is **étale** over `A_𝔮$ where`𝔮 = 𝔭 ∩ A$.
+   / 𝔪_A$, equivalently the fibre at the closed point is a finite set), and
+1. for **every** prime ideal $\mathfrak{p} \subset B$ with$𝔭 ≠ 𝔪_B$, $B_{\mathfrak{p}}$ is **\acute{e}tale** over$A_𝔮$
+   where`𝔮 = 𝔭 ∩ A$.
 
-Then `B$ is **étale** over`A$.
+Then $B$ is **\acute{e}tale** over$A$.
 
-*This result says:* if `B$ is étale over`A$ at every prime distinct from the maximal ideal, it is étale at the
+*This result says:* if $B$ is \acute{e}tale over$A$ at every prime distinct from the maximal ideal, it is étale at the
 maximal ideal as well — provided `\dim A ≥ 2$. This is the local-ring rephrasing of "the branch locus has codimension 0
 or 1": if the branch locus is non-empty, it has codimension 1, but our hypothesis says no codim-`≤ 1` prime is branched,
 so the branch locus must be empty.
@@ -120,18 +121,18 @@ faithful-flatness argument for completion ([`completion-flat`](appendix-black-bo
 characteristic situation; it suffices for the most important application of purity in this exposé (X.3.8). The general
 case uses Nagata's depth-and-discriminant argument plus a delicate result of Chow.
 
-**Setup.** `A` is a regular noetherian local ring of dimension 2 (so `\dim A = 2$).`B$ is a normal noetherian local
-ring, quasi-finite over `A$, with `B$ étale over`A$ at every prime `𝔭 ⊂ B$ with `𝔭 ≠ 𝔪_B$. We will show`B$ is
+**Setup.** $A$ is a regular noetherian local ring of dimension 2 (so `\dim A = 2$).`B$ is a normal noetherian local
+ring, quasi-finite over `A$, with `B$ étale over`A$ at every prime `𝔭 ⊂ B$ with $\mathfrak{p} \neq \mathfrak{m}_{B}$. We will show$B$ is
 étale over `A$.
 
-\*\*Step 1 — `B$ is`A$-flat.** Since `B$ is normal, it is in particular an `S_2$ ring — i.e. the depth of`B$ as a
-module over itself is `\geq 2$ at every prime of depth `\geq 2$ in`A$. Since `\dim A = 2$, this means
-`\mathrm{depth}_A(B) \geq 2$ (depth as`A$-module equals depth as `B$-module here, because both rings are local of dim 2,
-and depth is preserved under quasi-finite injective extensions).
+\*\*Step 1 — `B$ is`A$-flat.** Since `B$ is normal, it is in particular an `S_2$ ring — i.e. the depth of`B$ as a module
+over itself is `\geq 2$ at every prime of depth $\geq 2$ in$A$. Since `\dim A = 2$, this means `\mathrm{depth}_A(B) \geq
+2$ (depth as`A$-module equals depth as `B$-module here, because both rings are local of dim 2, and depth is preserved
+under quasi-finite injective extensions).
 
 Now apply [`ega-0iv-17-3-4-depth`](appendix-black-boxes.md#ega-0iv-17-3-4-depth) (EGA 0_IV §17.3.4, the **depth ≥ 2 ⇒
-free over regular dim-2 local**): since `A$ is regular of dimension 2 and`B$ is a finite `A$-module of depth
-`\geq 2$,`B$ is a **free `A$-module\*\*.
+free over regular dim-2 local**): since `A$ is regular of dimension 2 and`B$ is a finite `A$-module of depth `\geq
+2$,`B$ is a **free `A$-module\*\*.
 
 **Step 2 — the discriminant argument.** Since `B$ is finite locally free over`A$ of some constant rank `r$, the trace
 pairing gives an \`A$-linear map
@@ -153,18 +154,19 @@ it has codimension `0$ (if `\mathrm{disc} = 0$, i.e.`\\mathrm{disc}$ is in the m
 or `1$ (if `\mathrm{disc}$ is non-zero but not a unit — divisor of ramification) or empty (if`\\mathrm{disc}$ is a unit
 — no ramification).
 
-By hypothesis, `B$ is étale over`A$ at every `𝔭 ⊂ B$ with `𝔭 ≠ 𝔪_B$, which translates:`B$ is étale at every `𝔮 ⊂ A$ with
+By hypothesis, $B$ is \acute{e}tale over$A$ at every $\mathfrak{p} \subset B$ with$𝔭 ≠
+𝔪_B$, which translates:$B$ is \acute{e}tale at every$𝔮 ⊂ A$ with
 `𝔮 ≠ 𝔪_A$. So the ramification locus is **contained in the closed point**`{ 𝔪_A } ⊂ \\mathrm{Spec}(A)$.
 
 A principal closed subset contained in the closed point of `\mathrm{Spec}(A)$, where`\\dim A = 2$, must be empty:
-because the closed point has codimension 2, and a principal subset has codimension at most 1, the only principal
-subset contained in `\{ 𝔪_A \}$ is the empty set (corresponding to \`\\mathrm{disc}$ being a unit).
+because the closed point has codimension 2, and a principal subset has codimension at most 1, the only principal subset
+contained in `\{ 𝔪_A \}$ is the empty set (corresponding to \`\\mathrm{disc}$ being a unit).
 
 Hence `\mathrm{disc}_{B/A}$ is a unit in`A$, so `B$ is **étale** over \`A$. □
 
 This completes the proof of X.3.2 (and a fortiori X.3.1) in the dim-2 case. The argument is genuinely "Zariski's
 discriminant argument" — finite-locally-free + non-vanishing discriminant ⇒ étale. The key non-trivial input is the
-depth-`≥ 2`-on-regular-2-local ⇒ free statement (EGA 0_IV 17.3.4).
+depth-$\geq 2$-on-regular-2-local ⇒ free statement (EGA 0_IV 17.3.4).
 
 > **Slogan.** *In dimension 2, the Zariski–Nagata purity theorem reduces to: depth-2-on-regular-2-local ⇒ free (EGA 0_IV
 > 17.3.4), and a principal subset of \`\\mathrm{Spec}$ of a 2-dim regular local ring contained in the closed point must
@@ -175,14 +177,14 @@ depth-`≥ 2`-on-regular-2-local ⇒ free statement (EGA 0_IV 17.3.4).
 
 <!-- source: X.3.3 -->
 
-**Theorem X.3.3.** Let `X` be a **locally noetherian regular prescheme**, and let `U \subset X` be an open subscheme
-whose complement `Z = X − U` is a closed subscheme of \*\*codimension `\geq 2$** in`X$. Then the functor
+**Theorem X.3.3.** Let $X$ be a **locally noetherian regular prescheme**, and let $U \subset X$ be an open subscheme
+whose complement $Z = X - U$ is a closed subscheme of \*\*codimension $\geq 2$** in$X$. Then the functor
 
 ```text
 \Phi : \mathrm{ét}(X) → \mathrm{ét}(U),    X′ ↦ X′ \times_X U
 ```
 
-from étale `X$-coverings to étale`U$-coverings is an **equivalence of categories**.
+from étale $X$-coverings to \acute{e}tale$U$-coverings is an **equivalence of categories**.
 
 In particular: if `a$ is a geometric point of`U$, the canonical homomorphism
 
@@ -198,37 +200,37 @@ is an **isomorphism**.
 
 *Proof.* The second assertion (\`π_1$ is unchanged) follows from the first by (file 33) V.6.9.
 
-For the first, we may suppose `X$ is **connected**, hence irreducible (a normal scheme is`S_2$, hence equidimensional
-on connected components). The functor `\Phi : \mathrm{ét}(X) → \mathrm{ét}(U)$ is **fully faithful** as a consequence of
-normality of `X$: morphisms of locally free`𝒪_X$-modules `\mathcal{F} → \mathcal{G}$ extend uniquely across a
-codim-`\geq 2` closed subscheme (since locally free implies depth 2 on a normal scheme).
+For the first, we may suppose `X$ is **connected**, hence irreducible (a normal scheme is`S_2$, hence equidimensional on
+connected components). The functor `\Phi : \mathrm{ét}(X) → \mathrm{ét}(U)$ is **fully faithful** as a consequence of
+normality of `X$: morphisms of locally free$\mathcal{O}_{X}$-modules$\mathcal{F} → \mathcal{G}$ extend uniquely across a
+codim-$\geq 2$ closed subscheme (since locally free implies depth 2 on a normal scheme).
 
 It remains to show `\Phi$ is **essentially surjective**: for every étale covering`U′ → U$, there exists an étale
 covering `X′ → X$ such that \`U′ \\simeq X′ \\times_X U$ (necessarily unique by full faithfulness).
 
-We may suppose `U′$ is connected, hence irreducible (`U′$ is normal because `U$ is, by file 12 I.10.3). Let
-`K$ be the function field of`X$ (equivalently of `U$, since `U$ is dense in`X$), and let `K′$ be the function field of
-`U′$. Then`U′$ identifies canonically with the **normalisation** of `U$ in \`K′$ (file 12, I.10.3).
+We may suppose `U′$ is connected, hence irreducible (`U′$ is normal because `U$ is, by file 12 I.10.3). Let `K$ be the
+function field of`X$ (equivalently of `U$, since `U$ is dense in`X$), and let `K′$ be the function field of `U′$.
+Then`U′$ identifies canonically with the **normalisation** of `U$ in \`K′$ (file 12, I.10.3).
 
-Let `X′$ be the **normalisation** of`X$ in `K′$ (EGA II §6.3 — normalisation in a finite-degree extension of the
+Let $X'$ be the **normalisation** of$X$ in `K′$ (EGA II §6.3 — normalisation in a finite-degree extension of the
 function field is a well-defined construction). Then \`X′ \\times_X U \\simeq U′$ by construction.
 
 Moreover, `X′$ is normal and integral, and the structural morphism`f : X′ → X$ is **finite** and dominant (since `X$ is
 normal and `K′ / K$ is finite separable). It is **étale** over`U′ = f^{-1}(U)$ (since `U′$ is étale over
-`U$), and since`Z = X − U$ has codimension `\geq 2$ in `X$, its preimage`f^{-1}(Z)$ has codimension `\geq 2$ in
+`U$), and since`Z = X − U$ has codimension $\geq 2$ in$X$, its preimage$f^{-1}(Z)$ has codimension$\geq 2$ in
 `X′$ (because`f$ is finite, hence does not raise codimension).
 
 We can now apply **X.3.1** (the general Zariski–Nagata purity theorem) to `f : X′ → X$: the ramification locus of`f$,
 being contained in `f^{-1}(Z)$ which has codim `\geq 2$ in`X′$, must be empty by purity. Hence `f : X′ → X$ is **étale**
 at every point of \`X′$. This completes the proof of X.3.3. □
 
-> **Slogan.** *Étale coverings of a regular scheme extend uniquely across codim-`\geq 2` closed subschemes. The
+> **Slogan.** *Étale coverings of a regular scheme extend uniquely across codim-$\geq 2$ closed subschemes. The
 > fundamental group is unchanged by removing such a closed subscheme.*
 
 This is the **operative form** of purity that we shall use throughout the rest of Exposé X. It says: in the étale-π₁
 category, a regular scheme has no information localised in codimension \`\\geq 2$.
 
-## §X.3.4 — Birational invariance of `π₁`
+## §X.3.4 — Birational invariance of $\pi_{1}$
 
 <!-- source: X.3.4 -->
 
@@ -236,14 +238,14 @@ category, a regular scheme has no information localised in codimension \`\\geq 2
 
 <!-- source: X.3.4 -->
 
-Let `f : X → Y` be a **rational map** from a locally noetherian regular prescheme `X` to a prescheme `Y`. Suppose `f` is
-defined on an open subset `U \subset X$ whose complement is a closed subset of codimension`\\geq 2$.
+Let $f : X \to Y$ be a **rational map** from a locally noetherian regular prescheme $X$ to a prescheme $Y$. Suppose $f$
+is defined on an open subset `U \subset X$ whose complement is a closed subset of codimension`\\geq 2$.
 
 Then by X.3.3, the functor
 `\Phi : \mathrm{ét}(Y) → \mathrm{ét}(X)$ is well-defined up to natural isomorphism: any étale covering`Y′ →
-Y$ pulls back to an étale covering `U′ = U \times_Y Y′$ of
-`U$, which by X.3.3 extends uniquely to an étale covering`X′$ of `X$. Hence for every geometric point
-`a$ of`U$, with image `b$ in \`Y$, a canonical homomorphism
+Y$ pulls back to an étale covering $U' = U \times_{Y}
+Y'$ of$U$, which by X.3.3 extends uniquely to an étale covering$X'$ of$X$. Hence for every geometric point `a$ of`U$,
+with image `b$ in \`Y$, a canonical homomorphism
 
 ```text
 π_1(X, a) → π_1(Y, b)
@@ -266,11 +268,11 @@ Recalling that a rational map from a normal `k$-scheme to a proper`k$-scheme is 
 complement of a set of codimension `\geq 2$ (extension across codim-1 follows from properness of the target), we obtain
 the canonical result:
 
-### Corollary X.3.4 — birational invariance of `π_1`
+### Corollary X.3.4 — birational invariance of $\pi_{1}$
 
 <!-- source: X.3.4 -->
 
-**Corollary X.3.4 (Birational invariance of the fundamental group).** Let `k` be a field, let `X` and
+**Corollary X.3.4 (Birational invariance of the fundamental group).** Let $k$ be a field, let $X$ and
 `Y$ be two **proper regular** schemes over`k$, and let `f : X ⤏ Y$ be a **birational map** from `X$ to`Y$. Let `Ω$ be an
 algebraically closed extension of the function field `K$ of`X$ allowing one to define the fundamental groups of `X$ and
 \`Y$ at compatible geometric base points.
@@ -291,7 +293,7 @@ preserves the unramified extensions of the function field.
 
 *Proof.* A birational map `f : X ⤏ Y$ has indeterminacy locus a closed subset of`X$ of codimension `\geq 2$ (extension
 across codim-1 is automatic by properness of `Y$ and normality of`X$). So `f$ is defined on the complement
-`U \subset X$ of a codim-`\\geq
+$U \subset X$ of a codim-$\\geq
 2`closed subset. Applying X.3.3 (or rather its functorial reading above), we obtain a canonical homomorphism`π_1(X) →
 π_1(Y)$ — and the same construction applied to the inverse rational map `f^{-1} : Y
 ⤏ X$ gives a canonical homomorphism \`π_1(Y) → π_1(X)$, which is the inverse of the first (since the compositions
@@ -340,10 +342,10 @@ Before stating and proving Abhyankar's lemma, we record a few elementary facts f
 are **Serre, *Local Fields*** (GTM **67**), Ch. IV §1, recorded as the new appendix row
 [`serre-local-fields-tameness`](appendix-black-boxes.md#serre-local-fields-tameness).
 
-**Setup.** Let `V$ be a **discrete valuation ring** (DVR) with fraction field`K$ and residue field `k$. Let
-`L$ be a **finite Galois extension** of`K$ with group `G$. Let `V′$ be the **normalisation** of`V$ in `L$ — that is, the
-integral closure of `V$ in`L$. Then `V′$ is a free `V$-module of rank`n = [L : K]$, and `V′$ is a Dedekind ring of
-dimension 1 (since `V$ is). Let`𝔪′ \\subset V′$ be a **maximal ideal** above the maximal ideal `𝔪 \subset V$, and let
+**Setup.** Let `V$ be a **discrete valuation ring** (DVR) with fraction field`K$ and residue field `k$. Let `L$ be a
+**finite Galois extension** of`K$ with group `G$. Let $V'$ be the **normalisation** of$V$ in `L$ — that is, the integral
+closure of `V$ in`L$. Then `V′$ is a free `V$-module of rank`n = [L : K]$, and `V′$ is a Dedekind ring of dimension 1
+(since `V$ is). Let`𝔪′ \\subset V′$ be a **maximal ideal** above the maximal ideal `𝔪 \subset V$, and let
 `k′ = V′ / 𝔪′$ be the residue field of`V′$ at `𝔪′$.
 
 **Decomposition and inertia groups.** Define:
@@ -359,12 +361,12 @@ The exact sequence
 1 → G_i → G_d → \mathrm{Gal}(k′ / k) → 1
 ```
 
-records this structure: `G_d$ is the symmetry of the place`𝔪′$ over `𝔪$ in `V$, and`G_i$ is the kernel of the
+records this structure: `G_d$ is the symmetry of the place`𝔪′$ over $\mathfrak{m}$ in$V$, and`G_i$ is the kernel of the
 residue-field action.
 
 **Tame ramification.** We say `L / K$ is **tamely ramified over`V$**, or that the place `𝔪′$ is **tamely ramified**, if
 the inertia order `n_i = |G_i|$ is **coprime to** the characteristic`p$ of the residue field `k$. The condition
-`p \nmid n_i$ is **automatic** if`\\mathrm{char}(k) = 0$.
+$p \nmid n_{i}$ is **automatic** if$\\mathrm{char}(k) = 0$.
 
 **The canonical injection \`G_i \\hookrightarrow k′^×$.** In the tame case, there is a canonical injective homomorphism
 
@@ -373,15 +375,15 @@ G_i \hookrightarrow k′^×
 ```
 
 realising `G_i$ as a subgroup of the multiplicative group of roots of unity in`k′^×$. Concretely: for any uniformiser
-`u$ of `𝔪 \subset V$ (and equivalently`u$ of `𝔪′$ in the totally ramified case), the action of `σ ∈ G_i$ on`u$ is
-`σ(u) = ζ u$ for some root of unity `ζ ∈ k′^×$; the map`σ \\mapsto ζ$ is the desired injection.
+`u$ of `𝔪 \subset V$ (and equivalently`u$ of `𝔪′$ in the totally ramified case), the action of $\sigma \in G_{i}$ on$u$
+is `σ(u) = ζ u$ for some root of unity `ζ ∈ k′^×$; the map`σ \\mapsto ζ$ is the desired injection.
 
 In particular, **\`G_i$ is cyclic** in the tame case.
 
-**The typical case.** `L = K[t] / (t^n - u)$, where`u$ is a uniformiser of `V$ and `n$ is coprime to`p$. If `K$ contains
-the `n$-th roots of unity,`L$ is a **totally ramified** Galois extension of `K$ — that is, \`\\mathrm{Gal}(L / K) = G =
-G_i \\simeq ℤ / nℤ$, with the inertia group equal to the full Galois group. This is the Kummer extension example, and it
-is the model from which all tame extensions are built.
+**The typical case.** $L = K[t] / (t^{n} - u)$, where$u$ is a uniformiser of `V$ and `n$ is coprime to`p$. If `K$
+contains the `n$-th roots of unity,`L$ is a **totally ramified** Galois extension of `K$ — that is, \`\\mathrm{Gal}(L /
+K) = G = G_i \\simeq ℤ / nℤ$, with the inertia group equal to the full Galois group. This is the Kummer extension
+example, and it is the model from which all tame extensions are built.
 
 ### Lemma X.3.6 — Abhyankar's lemma
 
@@ -391,48 +393,47 @@ is the model from which all tame extensions are built.
 `K′$ be **two Galois extensions of`K$ tamely ramified over `V$\*\*, and let `n$ and`m$ be the **orders of the
 corresponding inertia groups** at chosen maximal ideals.
 
-Let `L′$ be a **composite** extension of`L$ and `K′$ over `K$ (i.e.`L′ = L \\cdot K′$ in some common Galois closure).
-**If `m$ is a multiple of `n$**, then`L′$ is **unramified** over the localisations of the normal closure `V′$ of
-`V$ in`K′$.
+Let $L'$ be a **composite** extension of$L$ and $K'$ over$K$ (i.e.`L′ = L \\cdot K′$ in some common Galois closure).
+**If `m$ is a multiple of
+`n$**, then`L′$ is **unramified** over the localisations of the normal closure $V'$ of$V$ in`K′$.
 
 *This result says:* if you have two tamely ramified Galois extensions of `K / V$, and the *bigger* inertia group`H_i$
 (of order `m$) has order divisible by the *smaller* inertia group `G_i$ (of order`n$), then the composite extension
 `L′$ becomes **unramified** when restricted to the bigger one. The composite of tame extensions "absorbs" the
 ramification when the inertia orders divide each other.
 
-*Proof.* Let `W′$ be the normalisation of`V′$ in `L′$, let `𝔪′ \subset V′$ be the chosen maximal ideal, and let`𝔫′
-\\subset W′$
-be a maximal ideal above `𝔪′$. Let `𝔫$ be the maximal ideal induced on the normalisation`W \\subset L$ of `V$ in \`L$.
+*Proof.* Let $W'$ be the normalisation of$V′$ in $L'$, let$𝔪′ \subset V′$ be the chosen maximal ideal, and let`𝔫′
+\\subset W′$ be a maximal ideal above `𝔪′$. Let `𝔫$ be the maximal ideal induced on the normalisation`W \\subset L$ of
+`V$ in \`L$.
 
-Let `G = \mathrm{Gal}(L / K)$,`H = \\mathrm{Gal}(K′ / K)$, `M = \mathrm{Gal}(L′ / K)$, with corresponding inertia
+Let $G = \mathrm{Gal}(L / K)$,$H = \\mathrm{Gal}(K′ / K)$, `M = \mathrm{Gal}(L′ / K)$, with corresponding inertia
 subgroups \`G_i, H_i, M_i$ at the chosen maximal ideals.
 
 By the **standard intermediate-field sorites** of Galois theory:
 
 - `M$ embeds in the product`G \\times H$ via the joint Galois action.
-- The projections `M → G$ and`M → H$ are **surjective**.
+- The projections $M \to G$ and$M → H$ are **surjective**.
 - The same holds for the inertia subgroups: `M_i \subset G_i \times H_i$, with projections`M_i → G_i$ and `M_i → H_i$
-    surjective.
+  surjective.
 
-\*\*Step 1 — `M_i$ has order coprime to`p$.** Since `G_i$ and `H_i$ are by hypothesis cyclic of orders`m$ and `n$, both
-coprime to `p$ (tame ramification), and`M_i \\subset G_i \\times H_i$, the order of `M_i$ divides
-`mn$ — also coprime to`p$. Hence `M_i$ has order coprime to \`p$, and is itself **cyclic** (cyclic subgroup of a cyclic
-group).
+\*\*Step 1 — `M_i$ has order coprime to`p$.** Since $G_{i}$ and$H_i$ are by hypothesis cyclic of orders`m$ and `n$, both
+coprime to `p$ (tame ramification), and`M_i \\subset G_i \\times H_i$, the order of $M_{i}$ divides$mn$ — also coprime
+to`p$. Hence `M_i$ has order coprime to \`p$, and is itself **cyclic** (cyclic subgroup of a cyclic group).
 
-\*\*Step 2 — `M_i$ has order dividing`m$.** Since `m$ is a multiple of `n$, every element of`G_i \\times H_i$ has
-`m$-th power equal to the identity (every element has order dividing the LCM of `m, n$, which is`m$). Hence every
-element of `M_i$ has order dividing \`m$.
+\*\*Step 2 — `M_i$ has order dividing`m$.** Since `m$ is a multiple of `n$, every element of$G_{i} \\times
+H_{i}$ has$m$-th power equal to the identity (every element has order dividing the LCM of `m, n$, which is`m$). Hence
+every element of `M_i$ has order dividing \`m$.
 
-\*\*Step 3 — `M_i$ has order exactly`m$.** The projection `M_i → H_i$ is surjective, and `|H_i| = m$, so`|M_i| \\geq m$.
-Combined with Step 2: `|M_i| = m$.
+\*\*Step 3 — `M_i$ has order exactly`m$.** The projection $M_{i} \to H_{i}$ is surjective, and$|H_i| = m$, so`|M_i|
+\\geq m$. Combined with Step 2: `|M_i| = m$.
 
 \*\*Step 4 — the projection
 `M_i → H_i$ is bijective.** It is surjective by Galois theory (Step 0 of the standard sorites), and`|M_i| = |H_i| = m$.
 Hence the projection is bijective.
 
-**Step 5 — the kernel of `M_i → H_i$ is the inertia group of`𝔫′$ over `𝔪′$.** This is the \*\*inertia group of
-`L′ / K′$** at the chosen primes above`𝔪′$ in `W′$. Bijectivity in Step 4 means this kernel is **trivial**, so the
-inertia group of `L′ / K′$ at`𝔫′$ is trivial. That is, `L′$ is **unramified** over `K′$ at`𝔫′$. □
+**Step 5 — the kernel of `M_i → H_i$ is the inertia group of`𝔫′$ over `𝔪′$.** This is the \*\*inertia group of `L′ /
+K′$** at the chosen primes above$\mathfrak{m}'$ in$W′$. Bijectivity in Step 4 means this kernel is **trivial**, so the
+inertia group of $L' / K'$ at$𝔫′$ is trivial. That is, $L'$ is **unramified** over$K′$ at`𝔫′$. □
 
 > **Slogan.** *The composite of two tamely ramified Galois extensions of `V$, with inertia orders`m, n$ and `m$
 > divisible by \`n$, becomes unramified over the bigger one's normalisation. The smaller inertia "fits inside" the
@@ -453,12 +454,13 @@ would have to *disappear* on the special fibre to make
 
 <!-- source: X.3.7 -->
 
-Recall (file 49, X.2.3–X.2.4): the **specialisation morphism** `sp : π_1(X̄_{y_1}) → π_1(X̄_{y_0})` is the homomorphism
-of geometric-fibre fundamental groups induced by moving the base point along a specialisation in `Y` from a generic
-`y_1$ to a closed`y_0$ (defined up to inner automorphism of `π_1(X, a_0)$).
+Recall (file 49, X.2.3–X.2.4): the **specialisation morphism**
+$sp : \pi_{1}(\bar{X}_{y_{1}}) \to \pi_{1}(\bar{X}_{y_{0}})$ is the homomorphism of geometric-fibre fundamental groups
+induced by moving the base point along a specialisation in $Y$ from a generic $y_{1}$ to a closed$y_0$ (defined up to
+inner automorphism of `π_1(X, a_0)$).
 
-Place ourselves under the conditions of X.2.4 (file 49): `f : X → Y$ is a **proper separable** morphism with`Y$
-locally noetherian, `y_0 ⤳ y_1$ is a specialisation in \`Y$, and the specialisation morphism
+Place ourselves under the conditions of X.2.4 (file 49): `f : X → Y$ is a **proper separable** morphism with`Y$ locally
+noetherian, `y_0 ⤳ y_1$ is a specialisation in \`Y$, and the specialisation morphism
 
 ```text
 sp : π_1(X̄_{y_1}, ā_1) → π_1(X̄_{y_0}, ā_0)
@@ -477,10 +479,10 @@ The closed point `y_0 ∈ Y$ has residue field`k$; the generic point `y_1$ has r
 Then:
 
 - `X_0 = X̄_0$, the closed fibre, since`k$ is algebraically closed.
-- `κ(y_0) = k$,`κ(y_1) = K$.
-- The geometric generic fibre is `X̄_1 = X_K \otimes_K K̄$ where`K̄$ is an algebraic closure of `K$.
+- $\kappa(y_{0}) = k$,$κ(y_1) = K$.
+- The geometric generic fibre is $\bar{X}_{1} = X_{K} \otimes_{K} \bar{K}$ where$K̄$ is an algebraic closure of `K$.
 
-\*\*Reducing further to `K_s$.** Let`K_s \\subset K̄$ be the separable closure of `K$ inside
+\*\*Reducing further to $K_{s}$.** Let$K_s \\subset K̄$ be the separable closure of `K$ inside
 `K̄$. By IX.4.11 (file 45, the radicial reduction), the canonical morphism`X̄_1 = X\_{K̄} → X\_{K_s}$ induces an
 **isomorphism** on fundamental groups:
 
@@ -495,9 +497,9 @@ Then:
 Therefore, taking X.2.1 (file 49) into account — that \`π_1(X_0) \\xrightarrow{\\sim} π_1(X)$ — we are reduced to
 **studying the kernel of the surjective homomorphism**
 
-```text
-π_1(X_{K_s}) → π_1(X)
-```
+$$
+\pi_{1}(X_{K_{s}}) \to \pi_{1}(X)
+$$
 
 associated with the canonical morphism \`X\_{K_s} → X = X_V$.
 
@@ -508,10 +510,10 @@ associated with the canonical morphism \`X\_{K_s} → X = X_V$.
 By (file 33) V.7 and (file 33) V.6.9, determining the kernel of the surjection \`π_1(X\_{K_s}) → π_1(X)$ is
 **equivalent** to solving the following descent problem:
 
-**Question.** Given a \*\*connected principal covering `Z_{K_s} → X_{K_s}$ with group`G$** — hence associated with a
-continuous homomorphism `π_1(X_{K_s}) → G$ — *under what conditions* is
-`Z_{K_s}$ isomorphic to the inverse image of a principal covering`Z → X$ with group `G$ (i.e. comes from a
-`G$-Galois étale cover of`X$ itself)?
+**Question.** Given a \*\*connected principal covering $Z_{K_{s}} \to X_{K_{s}}$ with group$G$** — hence associated with
+a continuous homomorphism `π_1(X_{K_s}) → G$ — *under what conditions* is
+`Z_{K_s}$ isomorphic to the inverse image of a principal covering$Z \to X$ with group$G$ (i.e. comes from a
+$G$-Galois \acute{e}tale cover of$X$ itself)?
 
 ### Step 1 — Descent to a finite subextension \`K′ / K$
 
@@ -522,39 +524,38 @@ First note that `K_s$ is the **filtered increasing union** of its finite subexte
 finiteness sorites it is isomorphic to the inverse image of an étale covering `Z_{K′} → X_{K′}$ for some finite
 subextension \`K′ ⊂ K_s$.
 
-**Caveat.** For fixed `K′$, the choice of`Z\_{K′}$ is **not unique** — different finite subextensions may give
-non-isomorphic finite-base coverings whose pullbacks to `K_s$ are all
-`Z_{K_s}$. (This is the usual "no canonical model" issue: a covering of`X\_{K_s}$ can be defined over multiple distinct
-finite subextensions, and the choice depends on the particular descent data we pick.)
+**Caveat.** For fixed $K'$, the choice of$Z\_{K′}$ is **not unique** — different finite subextensions may give
+non-isomorphic finite-base coverings whose pullbacks to $K_{s}$ are all$Z_{K_s}$. (This is the usual "no canonical
+model" issue: a covering of`X\_{K_s}$ can be defined over multiple distinct finite subextensions, and the choice depends
+on the particular descent data we pick.)
 
 The statement "`Z_{K_s}$ is isomorphic to the inverse image of a principal covering`Z$ of `X$" then becomes:
 
-> There exists a \*\*finite subextension `K″ \supset K′$** of`K_s$ such that `Z_{K″} = Z_{K′} \otimes_{K′} K″$ is
-> isomorphic to `Z \otimes_V K″$ for some principal`G$-covering `Z$ of \`X = X_V$.
+> There exists a \*\*finite subextension $K'' \supset K'$** of$K_s$ such that $Z_{K''} = Z_{K'} \otimes_{K'} K''$ is
+> isomorphic to$Z \otimes_V K″$ for some principal`G$-covering `Z$ of \`X = X_V$.
 
-### Step 2 — Replace `K′$ by its normalisation`V′$ in the DVR sense
+### Step 2 — Replace $K'$ by its normalisation$V′$ in the DVR sense
 
 <!-- source: X.3.7 -->
 
-Now, for a finite subextension `K′ \subset K_s$ over`K$, denote by `V′$ the **normalisation of `V$ in`K′$** — that
-is, the integral closure of `V$ in `K′$. Since`V$ is a complete DVR with algebraically closed residue field and `K′$ is
-a finite separable extension of `K$,`V′$ is **again a complete DVR** with **residue field `k$** (unchanged because \`k$
-is algebraically closed and the residue extension is therefore trivial).
+Now, for a finite subextension $K' \subset K_{s}$ over$K$, denote by $V'$ the **normalisation of$V$ in`K′$** — that is,
+the integral closure of `V$ in $K'$. Since$V$ is a complete DVR with algebraically closed residue field and `K′$ is a
+finite separable extension of `K$,`V′$ is **again a complete DVR** with **residue field `k$** (unchanged because \`k$ is
+algebraically closed and the residue extension is therefore trivial).
 
-The canonical morphism
-`X_{V′} → X_V$ induces an isomorphism on the fibres above the closed points of`\\mathrm{Spec}(V)$ and `\mathrm{Spec}(V′)$
-— both fibres being the same `X_0 = X̄_0$ over the same`k$. Applying
-X.2.1 (file 49) to `X_V$ and \`X\_{V′}$, the induced homomorphism on fundamental groups
+The canonical morphism `X_{V′} → X_V$ induces an isomorphism on the fibres above the closed points of`\\mathrm{Spec}(V)$
+and `\mathrm{Spec}(V′)$ — both fibres being the same `X_0 = X̄_0$ over the same`k$. Applying X.2.1 (file 49) to
+`X_V$ and \`X\_{V′}$, the induced homomorphism on fundamental groups
 
-```text
-π_1(X_{V′}) → π_1(X_V)
-```
+$$
+\pi_{1}(X_{V'}) \to \pi_{1}(X_{V})
+$$
 
 is an **isomorphism**. Equivalently: **every principal covering of
 `X_{V′}$ is the inverse image of a principal covering of`X_V$**, uniquely determined up to isomorphism.
 
-This is the key observation: each finite subextension `K′ ⊂ K_s$ of`K$ gives a finite cover `V′$ of
-`V$ — and étale covers of`X\_{V′}$ are exactly the same as étale covers of `X_V$, by X.2.1's complete-local rigidity.
+This is the key observation: each finite subextension $K' \subset K_{s}$ of$K$ gives a finite cover $V'$ of$V$ — and
+étale covers of`X\_{V′}$ are exactly the same as étale covers of `X_V$, by X.2.1's complete-local rigidity.
 
 ### Lemma X.3.7 — the descent characterisation
 
@@ -562,24 +563,24 @@ This is the key observation: each finite subextension `K′ ⊂ K_s$ of`K$ gives
 
 **Lemma X.3.7.** Let `Z_{K′} → X_{K′}$ be a **connected principal covering with group`G$**, and let `Z_{K_s} = Z_{K′}
 \otimes_{K′} K_s$ be its inverse image on `X_{K_s}$. Then`Z\_{K_s}$ is isomorphic to the inverse image of a principal
-covering `Z → X_V$ if and only if there exists a finite extension `K″ \supset K′$ of`K$ in `K_s$ such that the principal
-covering `Z_{K″} = Z_{K′} \otimes_{K′} K″$ of`X\_{K″}$ is induced by a principal covering of `X_{V″}$.
+covering `Z → X_V$ if and only if there exists a finite extension $K'' \supset K'$ of$K$ in `K_s$ such that the
+principal covering `Z_{K″} = Z_{K′} \otimes_{K′} K″$ of`X\_{K″}$ is induced by a principal covering of `X_{V″}$.
 
-(Here `V″$ is the normalisation of`V$ in `K″$, a complete DVR with residue field \`k$.)
+(Here $V''$ is the normalisation of$V$ in `K″$, a complete DVR with residue field \`k$.)
 
-*This result says:* descent of an étale covering from the generic fibre `X_{K_s}$ to the total scheme`X_V$ is
-controlled by lifting through the tower of complete-DVR base changes `V \subset V′ \subset V″ \subset …$. The condition
-is equivalent to: for some finite-degree base change `K″ / K$, the covering`Z$ extends from the open
-generic fibre `X_{K″}$ to the full scheme \`X\_{V″}$.
+*This result says:* descent of an étale covering from the generic fibre `X_{K_s}$ to the total scheme`X_V$ is controlled
+by lifting through the tower of complete-DVR base changes `V \subset V′ \subset V″ \subset …$. The condition is
+equivalent to: for some finite-degree base change `K″ / K$, the covering`Z$ extends from the open generic fibre
+`X_{K″}$ to the full scheme \`X\_{V″}$.
 
-*Proof sketch.* The "if" direction is immediate from the definitions: if `Z_{K″}$ extends to a covering`Z\_{V″}$ of
-`X_{V″}$, then `Z_{V″}$ pulls back along`V → V″$ to give a covering of `X_V$, which (by the X.2.1-based isomorphism
+*Proof sketch.* The "if" direction is immediate from the definitions: if $Z_{K''}$ extends to a covering$Z\_{V″}$ of
+$X_{V''}$, then$Z_{V″}$ pulls back along$V \to V''$ to give a covering of$X_V$, which (by the X.2.1-based isomorphism
 `π_1(X_{V″}) \xrightarrow{\sim} π_1(X_V)$) is canonically pullback-equivalent to a covering of`X_V$ itself.
 
-The "only if" direction: if `Z_{K_s}$ extends to`Z → X_V$, then `Z_{K_s}$ is in particular pulled back from
-`Z$ through the chain`X_V ← X\_{K_s} \\subset X\_{K̄}$. Choose a finite subextension `K″ ⊂ K_s$ large enough that
-`Z_{K_s}$ is defined over`K″$ — i.e., `Z_{K″}$ exists; then the pullback
-`Z \otimes_V K″$ is on`X\_{K″}$ and equals `Z_{K″}$, which extends to `Z \otimes_V V″ = Z_{V″}$ on`X\_{V″}$. □
+The "only if" direction: if $Z_{K_{s}}$ extends to$Z → X_V$, then `Z_{K_s}$ is in particular pulled back from `Z$
+through the chain`X_V ← X\_{K_s} \\subset X\_{K̄}$. Choose a finite subextension `K″ ⊂ K_s$ large enough that
+$Z_{K_{s}}$ is defined over$K″$ — i.e., `Z_{K″}$ exists; then the pullback `Z \otimes_V
+K″$ is on$X\_{K''}$ and equals$Z_{K″}$, which extends to $Z \otimes_{V} V'' = Z_{V''}$ on$X\_{V″}$. □
 
 ### Translating into the language of function fields
 
@@ -589,8 +590,8 @@ Under the hypothesis that the `X_{V″}$ are **normal** — it is enough that`X_
 **smooth** (cf. file 12, I.9.1) — the X\_{V″}$ are integral, since they are connected. Let:
 
 - `L$ = function field of`X$ and `X_K$
-- `L′$ = function field of`X\_{V′}$ and `X_{K′}$ — equal to `L \otimes_K K′$ (since`K′ / K$ is finite separable)
-- `L″$ = function field of`X\_{V″}$ and `X_{K″}$ — equal to \`L′ \\otimes\_{K′} K″$
+- $L'$ = function field of$X\_{V′}$ and `X_{K′}$ — equal to `L \otimes_K K′$ (since`K′ / K$ is finite separable)
+- $L''$ = function field of$X\_{V″}$ and `X_{K″}$ — equal to \`L′ \\otimes\_{K′} K″$
 
 Under the X.3.7 conditions, the connected principal `G$-covering`Z\_{K′}$ of `X_{K′}$ defines a finite separable
 extension `R′$ of`L′$ (by file 12 I.10.3, finite étale corresponds to finite separable function-field extensions).
@@ -603,12 +604,12 @@ R″ = R′ \otimes_{L′} L″ = R′ \otimes_{K′} K″.
 
 The condition of X.3.7 — that `Z_{K″}$ is induced by a principal covering of`X\_{V″}$ — is equivalent to:
 
-> There exists a finite separable extension `K″ / K′$ such that`R″ = R′ \\otimes\_{K′} K″$ is **unramified** over the
+> There exists a finite separable extension $K'' / K'$ such that$R″ = R′ \\otimes\_{K′} K″$ is **unramified** over the
 > normal scheme `X_{V″}$ (and \*\*not only over the open part `X_{K″}$** of`X\_{V″}$).
 
 This is what we need to verify, and Abhyankar's lemma is exactly the technical tool.
 
-> **Slogan.** *Descent of an étale covering from `X_{K_s}$ to`X_V$ reduces to finding a finite separable extension
+> **Slogan.** *Descent of an étale covering from $X_{K_{s}}$ to$X_V$ reduces to finding a finite separable extension
 > `K″ / K′$ such that the principal-covering function field
 > `R″ = R′ \otimes_{K′} K″$ becomes unramified over the entire`X\_{V″}$, not just over its open generic part `X_{K″}$.
 > This is the descent step that Abhyankar's lemma resolves.*
@@ -621,30 +622,30 @@ This is what we need to verify, and Abhyankar's lemma is exactly the technical t
 
 <!-- source: X.3.8 -->
 
-From now on suppose that `f : X → Y` is a **smooth** morphism (not merely proper separable). Then the morphisms
+From now on suppose that $f : X \to Y$ is a **smooth** morphism (not merely proper separable). Then the morphisms
 `X_{V′} → \mathrm{Spec}(V′)$ are **smooth** (smoothness is preserved under base change, file 50's [`ega-iv-12-2-smoothness`](appendix-black-boxes.md#ega-iv-12-2-smoothness)), and therefore the schemes`X\_{V′}$
 are **regular** (smooth over a regular base implies regular).
 
-Notice that the fibre of the closed point of `\mathrm{Spec}(V′)$ in`X\_{V′}$ is **irreducible** and of **codimension
-1** in `X_{V′}$ (the closed point has codim 1 in `\mathrm{Spec}(V′)$, and smoothness preserves codimension). Let`𝔬′$ be
-its **local ring** at the generic point of this irreducible fibre; this is a **discrete valuation ring** with:
+Notice that the fibre of the closed point of $\mathrm{Spec}(V')$ in$X\_{V′}$ is **irreducible** and of **codimension 1**
+in `X_{V′}$ (the closed point has codim 1 in `\mathrm{Spec}(V′)$, and smoothness preserves codimension). Let`𝔬′$ be its
+**local ring** at the generic point of this irreducible fibre; this is a **discrete valuation ring** with:
 
 - \*\*Fraction field `L′$** (the function field of`X\_{V′}$);
 - **Residue field** isomorphic to the field of rational functions of \`X_0$ (the closed fibre);
 - **Same characteristic** as `k$ (the residue field of`V′$).
 
-Define similarly `𝔬″$ in`L″$; it is plainly the **normalisation of `𝔬′$ in \`L″$\*\*.
+Define similarly $\mathfrak{o}''$ in$L″$; it is plainly the **normalisation of `𝔬′$ in \`L″$\*\*.
 
-**Applying purity.** By hypothesis, the principal `G`-covering `R″ → X_{V″}` (where
+**Applying purity.** By hypothesis, the principal $G$-covering $R'' \to X_{V''}$ (where
 `R″$ is the function-field extension defining the cover, and we identify schemes with their function fields here) is étale over the open generic fibre`X\_{K″}
 \\subset X\_{V″}$. Its ramification locus, a closed subset of the *regular* scheme `X_{V″}$, is therefore contained in
 the closed fibre `X_0 \subset X_{V″}$ — which is itself an irreducible divisor of codimension 1 in`X\_{V″}$.
 
-By the purity theorem X.3.1 (applied to the normalisation `R″$ of`X\_{V″}$ in the function field of the cover, with
-the smooth `X_{V″}$ playing the role of the regular base), the ramification locus is either all of
-`R″$ or pure of codimension 1, hence detected at the generic point of the divisor`X_0$. The generic point of `X_0$ in
+By the purity theorem X.3.1 (applied to the normalisation $R''$ of$X\_{V″}$ in the function field of the cover, with the
+smooth `X_{V″}$ playing the role of the regular base), the ramification locus is either all of `R″$ or pure of
+codimension 1, hence detected at the generic point of the divisor`X_0$. The generic point of `X_0$ in
 `X_{V″}$ has local ring`𝔬″$ — the DVR introduced above, with fraction field `L″$ and residue field the rational-function
-field of `X_0$. Hence: **`R″$ is unramified over `X_{V″}$\*\* if and only if \*\*`R″$ is unramified over`𝔬″$**. The
+field of `X_0$. Hence: **$R''$ is unramified over$X_{V″}$\*\* if and only if \*\*$R''$ is unramified over$𝔬″$**. The
 ramification question reduces from "the entire normal regular `X_{V″}$" to "just the DVR \`𝔬″$" — a 1-dimensional
 ramification check.
 
@@ -652,7 +653,7 @@ ramification check.
 
 <!-- source: X.3.8 -->
 
-Now we use Abhyankar's lemma X.3.6. Set `u′$ to be a **uniformiser of`V′$**. Since `𝔬′$ has the same residue field as
+Now we use Abhyankar's lemma X.3.6. Set $u'$ to be a **uniformiser of$V′$**. Since `𝔬′$ has the same residue field as
 `V′$ (both are`k$ algebraically closed, or rather have residue fields whose generic-fibre completions match), `u′$ is
 **also a uniformiser of \`𝔬′$**.
 
@@ -672,12 +673,12 @@ K″ = K′[t] / (t^n - u′).
 
 Then `K″$ is a finite Galois extension of`K′$ (with Galois group `\mathrm{Gal}(K″/K′) = ℤ/nℤ$, assuming
 `K′$ contains`n$-th roots of unity, which it does since `k$ is algebraically closed of char
-`p \nmid n$ and`K′$ contains the
-maximal unramified extension), and `L″$ is isomorphic to `L′[t] / (t^n - u′)$, hence is **tamely ramified over`𝔬′$**
+$p \nmid n$ and$K′$ contains the
+maximal unramified extension), and $L''$ is isomorphic to$L′[t] / (t^n - u′)$, hence is **tamely ramified over`𝔬′$**
 with inertia group of order **exactly `n$\*\*.
 
-Applying **Abhyankar's lemma** X.3.6 to the pair of tame extensions `L / K = R′ / L′$ and`L′ / K = L″ / L′$ over the
-DVR `𝔬′$, with `m = n$ and the original inertia order`\\leq |G|$ dividing `n$: the composite
+Applying **Abhyankar's lemma** X.3.6 to the pair of tame extensions $L / K = R' / L'$ and$L′ / K = L″ / L′$ over the
+DVR $\mathfrak{o}'$, with$m = n$ and the original inertia order$\\leq |G|$ dividing$n$: the composite
 `R″ = R′ \otimes_{K′} K″ = R′ \otimes_{L′} L″$ is **unramified** over the normalisation of`𝔬′$ in `L″$ — namely \`𝔬″$.
 
 So the condition of X.3.7 is **satisfied**: the principal `G$-covering`Z\_{K_s}$ descends to a principal `G$-covering of
@@ -689,31 +690,32 @@ This proves the following theorem.
 
 <!-- source: X.3.8 -->
 
-**Theorem X.3.8.** Let `f : X → Y` be a **proper and smooth** morphism with **geometrically connected fibres**, with
-`Y$ locally noetherian. Let`y_0$ and `y_1$ be two points of `Y$ such that`y_0 ∈ \\mathrm{cl}({y_1})$, let `X̄_0$ and
+**Theorem X.3.8.** Let $f : X \to Y$ be a **proper and smooth** morphism with **geometrically connected fibres**, with
+`Y$ locally noetherian. Let`y_0$ and $y_{1}$ be two points of$Y$ such that$y_{0} \in \\mathrm{cl}({y_{1}})$, let$X̄_0$ and
 \`X̄_1$ be the corresponding geometric fibres, and consider the specialisation homomorphism of X.2.4 (file 49)
 
-```text
-sp : π_1(X̄_1) → π_1(X̄_0).
-```
+$$
+sp : \pi_{1}(\bar{X}_{1}) \to \pi_{1}(\bar{X}_{0}).
+$$
 
-This homomorphism is **surjective**, and every continuous homomorphism from `π_1(X̄_1)$ to a finite group`G$ of order
-coprime to the characteristic `p$ of `κ(y_0)$ comes from a homomorphism`π_1(X̄_0) → G$.
+This homomorphism is **surjective**, and every continuous homomorphism from $\pi_{1}(\bar{X}_{1})$ to a finite group$G$
+of order coprime to the characteristic `p$ of `κ(y_0)$ comes from a homomorphism`π_1(X̄_0) → G$.
 
 *This result says:* for proper smooth families, the specialisation morphism is **surjective** (X.2.4 gives this) *and*
 \*\*bijective on the
 prime-to-`p$ Galois quotients**. Every finite étale cover of the geometric *generic* fibre whose Galois group has order coprime to`p$
 comes from a finite étale cover of the geometric *closed* fibre via the specialisation.
 
-*Proof.* The reduction to the case `Y = \mathrm{Spec}(V)$ with`V$ a complete DVR with algebraically closed residue
-field is X.2.4 (file 49). Surjectivity of `sp$ is the result of X.2.3 (file 49). The new content is the
-\*\*prime-to-`p$ bijectivity statement**: every continuous homomorphism`π_1(X̄_1) → G$ with `|G|$ coprime to
+*Proof.* The reduction to the case `Y = \mathrm{Spec}(V)$ with`V$ a complete DVR with algebraically closed residue field
+is X.2.4 (file 49). Surjectivity of `sp$ is the result of X.2.3 (file 49). The new content is the
+\*\*prime-to-`p$ bijectivity statement**: every continuous homomorphism$\pi_{1}(\bar{X}_{1}) \to G$ with$|G|$ coprime to
 `p$ comes from a homomorphism`π_1(X̄_0) → G$.
 
-By the V.6 dictionary (file 33), this is equivalent to: every connected `G$-Galois étale covering`Z → X̄_1$ with
-`|G|$ coprime to `p$ descends to a`G$-Galois étale covering of `X̄_0$. The discussion in §X.3.7 reduces this descent
-problem to: every connected principal `G$-covering`Z\_{K_s} → X\_{K_s}$ comes from a connected `G$-Galois covering of
-`X_V$. The discussion in §X.3.7–8 + Abhyankar's lemma X.3.6 + purity X.3.3 (specifically the inequality between codimensions in`X\_{V″}$ and on the DVR `𝔬′$)
+By the V.6 dictionary (file 33), this is equivalent to: every connected $G$-Galois \acute{e}tale covering$Z → X̄_1$ with
+`|G|$ coprime to `p$ descends to a$G$-Galois \acute{e}tale covering of$X̄_0$. The discussion in §X.3.7 reduces this
+descent problem to: every connected principal `G$-covering`Z\_{K_s} → X\_{K_s}$ comes from a connected `G$-Galois
+covering of
+`X_V$. The discussion in §X.3.7–8 + Abhyankar's lemma X.3.6 + purity X.3.3 (specifically the inequality between codimensions in$X\_{V''}$ and on the DVR$𝔬′$)
 then resolves this when `|G|$ is coprime to`p$. □
 
 The proof of X.3.8 is **purely algebraic**: every step (the reduction to a complete DVR, the radicial reduction IX.4.11,
@@ -744,8 +746,8 @@ sp : π_1(X̄_1) \xrightarrow{\sim} π_1(X̄_0).
 
 If
 `\mathrm{char}(κ(y_0)) = p > 0$, then the **kernel** of the specialisation homomorphism is contained in the intersection of the kernels of all continuous homomorphisms`π_1(X̄_1)
-→ G$ with `|G|$ coprime to
-`p$ — equivalently, in the **closed normal subgroup generated by a`p$-Sylow subgroup** of the galoisian-type group `π_1(X̄_1)$.
+→ G$ with `|G|$ coprime to `p$ — equivalently, in the **closed normal subgroup generated by
+a`p$-Sylow subgroup** of the galoisian-type group `π_1(X̄_1)$.
 
 Hence, writing `π_1(X̄_1)^{(p)}$ for the **prime-to-`p$ completion** of `π_1(X̄_1)$ (the quotient by the closed normal
 subgroup generated by a `p$-Sylow), and analogously`π_1(X̄_0)^{(p)}$, the specialisation morphism induces an
@@ -756,7 +758,7 @@ sp^{(p)} : π_1(X̄_1)^{(p)} \xrightarrow{\sim} π_1(X̄_0)^{(p)}.
 ```
 
 *This result says:* in characteristic 0, the étale fundamental group is **rigid** under specialisation for proper smooth
-families. In characteristic `p`, only the prime-to-`p$ quotient is rigid; the`p$-Sylow part can drop (and typically does
+families. In characteristic $p$, only the prime-to-`p$ quotient is rigid; the`p$-Sylow part can drop (and typically does
 — see file 49 X.2.5).
 
 *Proof.* If `\mathrm{char}(κ(y_0)) = 0$, then no prime is excluded by the "coprime to`p$" hypothesis of X.3.8 — every
@@ -769,9 +771,8 @@ subgroup `N \subset π_1(X̄_1)$ such that`π_1(X̄_1) / N$ has no homomorphisms
 `N$ is the closed normal subgroup generated by a`p$-Sylow of `π_1(X̄_1)$ (standard profinite-group theory). Modulo \`N$,
 the map is an iso. □
 
-> **Slogan.** *Characteristic 0 ⇒ proper smooth families exhibit
-> `π_1$-rigidity under specialisation; characteristic`p$ ⇒ only the prime-to-`p$ quotient is rigid, and the \`p$-Sylow
-> part can drop arbitrarily.*
+> **Slogan.** *Characteristic 0 ⇒ proper smooth families exhibit `π_1$-rigidity under specialisation; characteristic`p$
+> ⇒ only the prime-to-`p$ quotient is rigid, and the \`p$-Sylow part can drop arbitrarily.*
 
 This is the **strongest rigidity statement available at the level of SGA 1**. The `p$-Sylow can move; the prime-to-`p$
 part cannot. The wild characteristic-`p$ phenomena that file 50 X.2.8 catalogued for elliptic curves
@@ -782,7 +783,7 @@ families — all live entirely in the \`p$-Sylow part, which X.3.9 leaves untouc
 
 <!-- source: X.3.10 -->
 
-### Corollary X.3.10 — `π_1^{(p)}$ of a curve in characteristic`p$
+### Corollary X.3.10 — $\pi^{(p)}_{1}$ of a curve in characteristic$p$
 
 <!-- source: X.3.10 -->
 
@@ -791,9 +792,9 @@ of characteristic `p$. With the notation `Γ^{(p)}$ for the prime-to-`p$ quotien
 \mid (s_1 t_1 s_1^{-1} t_1^{-1}) ⋯ (s_g t_g s_g^{-1} t_g^{-1}) = 1 \rangle^{\widehat{}}$ (the profinite completion of
 the surface group):
 
-```text
-π_1(X_0)^{(p)} \simeq Γ^{(p)}.
-```
+$$
+\pi_{1}(X_{0})^{(p)} \simeq \Gamma^{(p)}.
+$$
 
 *This result says:* the prime-to-`p$ étale fundamental group of a proper smooth connected curve of genus`g$ over an
 algebraically closed field of characteristic `p$ is **exactly** the
@@ -803,12 +804,12 @@ part, is **exact** in characteristic \`p$ — even though the full presentation 
 *Proof.* Proceed as in X.2.6 (file 50), but now we can finish purely algebraically using X.3.9 instead of GAGA:
 
 1. By X.1.8 (file 48) reduce to the case
-    `\mathrm{char}(k) = 0$ via algebraic-closure invariance — but this only works if we lift first via Witt vectors. So use the **Witt-vector lift** ([`witt-vectors-lifting-smooth-curves`] (appendix-black-boxes.md#witt-vectors-lifting-smooth-curves), file 22, SGA 1 III.7.4) to get a smooth proper curve`X
-    / \\mathrm{Spec}(W(k))$ of generic genus `g$ over the Witt-vector ring.
-1. By X.2.6 (file 50, transcendental method applied to `X_K = X \otimes K$ where`K$ has characteristic 0), `π_1(X_K)
-    \simeq Γ$ (the full surface group, char 0).
+   `\mathrm{char}(k) = 0$ via algebraic-closure invariance — but this only works if we lift first via Witt vectors. So use the **Witt-vector lift** ([`witt-vectors-lifting-smooth-curves`] (appendix-black-boxes.md#witt-vectors-lifting-smooth-curves), file 22, SGA 1 III.7.4) to get a smooth proper curve`X
+   / \\mathrm{Spec}(W(k))$ of generic genus `g$ over the Witt-vector ring.
+1. By X.2.6 (file 50, transcendental method applied to $X_{K} = X \otimes K$ where$K$ has characteristic 0), `π_1(X_K)
+   \simeq Γ$ (the full surface group, char 0).
 1. By X.3.9, the specialisation morphism `sp : π_1(X_{K̄}) → π_1(X_0)$ is **bijective on the prime-to-`p$ quotients**:
-    `sp^{(p)} : π_1(X_K)^{(p)} \xrightarrow{\sim} π_1(X_0)^{(p)}$.
+   `sp^{(p)} : π_1(X_K)^{(p)} \xrightarrow{\sim} π_1(X_0)^{(p)}$.
 1. Restricting `π_1(X_K) \simeq Γ$ to the prime-to-`p$ quotient gives `π_1(X_K)^{(p)} \simeq Γ^{(p)}$.
 
 Composing 3 and 4: \`π_1(X_0)^{(p)} \\simeq Γ^{(p)}$. □
@@ -820,8 +821,8 @@ algebraic-geometric machinery of formal-functions theorem + Witt-vector lift + A
 to give the X.3.10 conclusion.
 
 > **Slogan.** *The prime-to-`p$ part of`π_1$ of a proper smooth curve over an algebraically closed field of char `p$ is
-> determined by the genus alone — it is the prime-to-`p$ quotient of the topological surface group on`2g$
-> generators with the commutator relation. This is "the deepest fact about `π_1$ of a curve" available algebraically.*
+> determined by the genus alone — it is the prime-to-`p$ quotient of the topological surface group on`2g$ generators
+> with the commutator relation. This is "the deepest fact about `π_1$ of a curve" available algebraically.*
 
 ## §X.3.11 — Closing remark
 
@@ -863,9 +864,9 @@ X.3.9 gave the clean **characteristic-0 isomorphism**; the corollary X.3.10 gave
 presentation\*\* for proper smooth curves in characteristic \`p$. The closing remark X.3.11 noted that only the dim-2
 case of purity was needed.
 
-This closes the gentle pass through Exposé X. The remaining material in `docs/books/sga/i/`:
+This closes the gentle pass through Exposé X. The remaining material in $docs/books/sga/i/$:
 
-- **Exposé XI — Exemples et compléments** (`docs/books/sga/i/11-exemples-et-complements.md`). Now covered in the gentle
+- **Exposé XI — Exemples et compléments** ($docs/books/sga/i/11-exemples-et-complements.md$). Now covered in the gentle
     SGA by **files 52–56**: file 52 computes
     `π_1$ of projective spaces and develops the rationally connected story (Serre 1959, Shioda 1977, Kollár 1996, Graber–Harris–Starr 2003); file 53 treats abelian varieties, the Serre–Lang theorem`π_1(A)
     ≃ T·(A)$, and the gentle full treatment of Nori's true fundamental group scheme;
@@ -875,13 +876,13 @@ This closes the gentle pass through Exposé X. The remaining material in `docs/b
     **Cartier-duality master formula** `H^1(S, G) ≃ \mathrm{Hom}(D(G), \mathrm{Pic}_{S/k})$ that links back to the
     true fundamental group of file 53.
 - **Exposé XII — Géométrie algébrique et géométrie analytique**
-    (`docs/books/sga/i/12-geometrie-algebrique-et-geometrie-analytique.md`). GAGA — the comparison theorem
-    `π_1^ét(X / ℂ) \simeq π_1^{top}(X^{an})^{\widehat{}}$ for`X$ proper over `ℂ$. The formal underpinning of the X.2.6
-    transcendental method (file 50). The full proof requires the étale-cohomology framework of SGA 4. **Remains as a
-    future gentle pass.**
-- **Exposé XIII — Propriété cohomologique** (`docs/books/sga/i/13-proprete-cohomologique.md`). Cohomological invariance
-    under proper base change — proper base change for higher direct images \`R^i f\_\*$ in the étale topology. The full
-    framework develops in SGA 4 V. **Remains as a future gentle pass.**
+  ($docs/books/sga/i/12-geometrie-algebrique-et-geometrie-analytique.md$). GAGA — the comparison theorem
+  `π_1^ét(X / ℂ) \simeq π_1^{top}(X^{an})^{\widehat{}}$ for`X$ proper over `ℂ$. The formal underpinning of the X.2.6
+  transcendental method (file 50). The full proof requires the étale-cohomology framework of SGA 4. **Remains as a
+  future gentle pass.**
+- **Exposé XIII — Propriété cohomologique** ($docs/books/sga/i/13-proprete-cohomologique.md$). Cohomological invariance
+  under proper base change — proper base change for higher direct images \`R^i f\_\*$ in the étale topology. The full
+  framework develops in SGA 4 V. **Remains as a future gentle pass.**
 
 With Exposés I–XI now covered (files 01–56), every result of \`π_1$-theory needed to state Mochizuki's anabelian
 conjectures (file 50, X.2.14), the Lefschetz hyperplane theorem (file 50, X.2.13), the Kodaira degenerate-elliptic

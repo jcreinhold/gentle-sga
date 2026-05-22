@@ -59,7 +59,7 @@ hierarchical). Primitives:
 - `Let: x ≜ …` for definitions.
 - `Case:` construct for case analysis.
 - Equality chains with right-column justifications, which "should be used whenever possible" (1993 §2.2) for any
-    transitive relation.
+  transitive relation.
 - `Q.E.D.` at every level.
 
 **References within a proof:** `⟨n⟩k.j` denotes part `j` of step `k` at level `n`; `⟨n⟩:k` denotes the `k`-th assumption

@@ -108,7 +108,7 @@ Backward work is scratch work, not finished prose. Its job is to discover the ne
 Once a candidate subclaim appears, classify it correctly.
 
 - Use a **milestone proposition** when the subclaim is a conceptual turning point, is cited later, or makes the main
-    theorem mostly formal.
+  theorem mostly formal.
 - Use a **local lemma** when the subclaim removes one technical obstacle and can be forgotten after use.
 - Use a **sublemma inside a proof** when the intermediate claim only matters inside that proof.
 - Merge two technical lemmas if the intermediate bridge statement is only verified once and only used once.
@@ -156,11 +156,11 @@ If the proof still feels ad hoc after that, then the issue may really be definit
 This workflow is based mainly on:
 
 - Paul Halmos, _How to Write Mathematics_: outline first, organization as graph/tree, find a shared lemma when proofs
-    start repeating, and avoid both unbroken long proofs and boring lemma parades.
+  start repeating, and avoid both unbroken long proofs and boring lemma parades.
 - Terence Tao, “Write a rapid prototype first,” “Organise the paper,” “Create lemmas,” and “On compilation errors in
-    mathematical reading”: skeleton first, explicit dependency diagrams, milestones early, localize technical work,
-    merge one-use technical bridges, and project to a simpler paper when the full one is too hard to see.
+  mathematical reading”: skeleton first, explicit dependency diagrams, milestones early, localize technical work, merge
+  one-use technical bridges, and project to a simpler paper when the full one is too hard to see.
 - Richard Hammack, _Book of Proof_: use backward scratch work to discover a route from the target to an obvious fact,
-    then reverse it in the final proof.
+  then reverse it in the final proof.
 - Timothy Gowers, “examples first”: when the abstract structure is slippery, get a concrete model in mind before trying
-    to carry the full theorem.
+  to carry the full theorem.

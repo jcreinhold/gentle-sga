@@ -93,7 +93,7 @@ Separate constructive from non-constructive proofs.
 
 - Constructive existence: build an explicit witness and verify it.
 - Non-constructive existence: derive existence from compactness, Zorn, completeness, dimension count, cardinality, or
-    another theorem, and say which one.
+  another theorem, and say which one.
 
 Do not announce a witness with “let” unless you have shown that it exists.
 

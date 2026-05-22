@@ -17,18 +17,18 @@ Read [references/on-writing-mathematics.md](./references/on-writing-mathematics.
 Then load only what the task needs:
 
 - [references/proof-architecture.md](./references/proof-architecture.md) for any theorem that is not obviously short, or
-    when the proof must be decomposed before drafting
+  when the proof must be decomposed before drafting
 - [../mathematical-theory-design/references/level-audit.md](../mathematical-theory-design/references/level-audit.md)
-    when nearby results on the same formulation keep landing as tautology or same-reason refutation, or when a trivial
-    surrogate choice makes the claim immediate
+  when nearby results on the same formulation keep landing as tautology or same-reason refutation, or when a trivial
+  surrogate choice makes the claim immediate
 - [references/proof-workspace-structure.md](./references/proof-workspace-structure.md) when organizing theorem-scale
-    work in the filesystem
+  work in the filesystem
 - [references/proof-patterns.md](./references/proof-patterns.md) for direct, contradiction, contraposition, induction,
-    case, minimal-counterexample, existence/uniqueness, or iff proofs
+  case, minimal-counterexample, existence/uniqueness, or iff proofs
 - [references/category-theoretic-techniques.md](./references/category-theoretic-techniques.md) for universal-property,
-    naturality, adjunction, Yoneda, exactness, factorization, or equivalence arguments
+  naturality, adjunction, Yoneda, exactness, factorization, or equivalence arguments
 - [references/notation-and-markdown.md](./references/notation-and-markdown.md) for block layout, Unicode choices, and
-    equation punctuation
+  equation punctuation
 - [references/examples.md](./references/examples.md) for compact models of clean proof presentation
 - [references/pitfalls.md](./references/pitfalls.md) when revising or checking for hidden assumptions and overclaims
 - [references/literature.md](./references/literature.md) when you need source-facing orientation
@@ -43,7 +43,7 @@ Produce proof-heavy mathematical prose:
 - proof architecture for hard results: milestone propositions, local technical lemmas, and dependency sketches
 - proofs split into steps, cases, or subsidiary lemmas when the reader needs navigation
 - inline or displayed mathematical text wrapped with backticks whenever the formatter would otherwise reflow or mangle
-    the expression
+  the expression
 
 ## Workflow
 
@@ -52,7 +52,7 @@ Produce proof-heavy mathematical prose:
 State:
 
 - the ambient setting: ring, field, category, topological space, model, site, universe level, finiteness hypothesis, and
-    so on
+  so on
 - the exact quantifiers and domain restrictions
 - the comparison species: equality, isomorphism, equivalence, homotopy, inclusion, factorization, order relation
 - any local notation introduced for the proof
@@ -67,15 +67,15 @@ If the theorem is not obviously short, do not start by pushing directly on the m
 Load [references/proof-architecture.md](./references/proof-architecture.md) and do this first:
 
 1. Write a bare-bones prototype: the main theorem, key definitions, candidate milestone propositions, and candidate
-    local lemmas, with proofs omitted or left as notes to self. If the theorem has its own workspace, put this first
-    pass in `rapid-prototype.md`.
+   local lemmas, with proofs omitted or left as notes to self. If the theorem has its own workspace, put this first pass
+   in `rapid-prototype.md`.
 1. Distill that prototype into a cleaner `proof-architecture.md`: the current theorem statement, the milestone
-    propositions, the local lemmas, and the dependency order.
+   propositions, the local lemmas, and the dependency order.
 1. Make the dependency order explicit, even if only as a short bullet DAG or box-arrow sketch.
 1. If the structure is still unclear, project to a simpler special case, a near-counterexample, or a model example and
-    ask what the proof looks like there.
+   ask what the proof looks like there.
 1. Use backward scratch work on the main theorem or on one milestone result to discover which intermediate claim would
-    make the next step routine.
+   make the next step routine.
 1. Turn those discoveries into blocks: milestone proposition, local lemma, or sublemma.
 
 Only after this should you draft the top-level proof. Treat the final theorem proof as assembly whenever possible: once
@@ -139,7 +139,7 @@ Wrap exact mathematical strings in backticks whenever formatting could disturb t
 - theorem statements containing dense symbolic text
 - displayed relation lines and factorization lines
 - names of equivalence classes, quotient objects, kernels, pullbacks, and universal maps when the exact glyph sequence
-    matters
+  matters
 
 Prefer preserving the exact mathematical string over letting the formatter reinterpret it as ordinary prose.
 
@@ -195,12 +195,12 @@ For long arguments, decide the architecture before you draft the top-level proof
 - let each lemma remove one source of difficulty; avoid lemmas that mix unrelated jobs
 - if the proof architecture is unclear, work a simpler model or special case before committing to a decomposition
 - promote a lemma to a proposition, theorem, or its own section when it becomes a conceptual turning point or its proof
-    has independent weight
+  has independent weight
 - merge technical lemmas that are only useful together instead of forcing the reader to remember an artificial
-    intermediate statement
+  intermediate statement
 - keep one-use lemmas close to the place where they are used
 - expose the dependency shape early when the argument is very large: milestone results first, technical details later or
-    in an appendix
+  in an appendix
 - make the final theorem proof mostly an assembly proof once the enabling lemmas are available
 - keep exposition adjacent to the formal core, but do not mix motivation with justification
 
@@ -272,28 +272,28 @@ You are an LLM agent. The discipline above is what proof writing should look lik
 unless you stop yourself.
 
 - **Linear prose blob.** You write the proof as one paragraph because that compiles in your head. _Counter:_ if the
-    argument has more than three substantive moves, decompose into named subclaims first; fill bodies after.
+  argument has more than three substantive moves, decompose into named subclaims first; fill bodies after.
 - **Premature lemma extraction.** You factor every two-line argument into a lemma "for modularity." _Counter:_ lemmas
-    are paid for at every citation; if a lemma is used once and its body is shorter than its statement, inline it.
+  are paid for at every citation; if a lemma is used once and its body is shorter than its statement, inline it.
 - **Lemma-itis.** A forest of `aux`, `helper`, `step` lemmas, each shallow. _Counter:_ if a lemma can't be described in
-    one meaningful sentence, you've over-decomposed; merge per Tao's unify-when-only-useful-together rule.
+  one meaningful sentence, you've over-decomposed; merge per Tao's unify-when-only-useful-together rule.
 - **Reflexive generality.** Stating a lemma for `α : Type*` with multiple typeclass constraints when only one type is
-    used. _Counter:_ state at the type that is used; generalise when a real second caller arrives. Tao's "easy to use,
-    not easy to prove" test — the lemma's _callers_ dictate the generality, not the proof's convenience.
+  used. _Counter:_ state at the type that is used; generalise when a real second caller arrives. Tao's "easy to use, not
+  easy to prove" test — the lemma's _callers_ dictate the generality, not the proof's convenience.
 - **Naming amnesia.** `aux1`, `helper2`, `step`. _Counter:_ the lemma's name is part of its interface. Pay it.
 - **No statement-first.** Jumping into the proof body without writing the outline as named claims (Lamport's
-    discipline). _Counter:_ write the outline first; the elaborator, the type checker, or paper-and-pencil unification
-    will validate the skeleton before you commit body detail.
+  discipline). _Counter:_ write the outline first; the elaborator, the type checker, or paper-and-pencil unification
+  will validate the skeleton before you commit body detail.
 - **Stop-when-it-compiles (proof edition).** The argument closes formally, so you commit. _Counter:_ run the Leron-test
-    — read the proof at speed; does it still read as mathematics? And remember Lamport: confirmation bias makes a closed
-    proof feel more reliable than it is.
+  — read the proof at speed; does it still read as mathematics? And remember Lamport: confirmation bias makes a closed
+  proof feel more reliable than it is.
 - **Skipping the second outline.** First decomposition that closes the theorem is the one you ship. _Counter:_
-    Ousterhout's "design it twice" (ch 11) applies, and for proofs it means two _substantively different_ proof
-    strategies — induction on a different parameter, direct vs by contradiction, reduction to a known theorem vs
-    from-scratch, different lemma decomposition — not two phrasings of the same plan. The point is the comparison: you
-    learn what the proof's actual difficulty is, and the better strategy often shows up only by contrast. The cost is
-    real (Ousterhout: an hour or two for a small module — the proof analogue is similar) and pays back because the first
-    idea on a non-trivial theorem is rarely the right one.
+  Ousterhout's "design it twice" (ch 11) applies, and for proofs it means two _substantively different_ proof strategies
+  — induction on a different parameter, direct vs by contradiction, reduction to a known theorem vs from-scratch,
+  different lemma decomposition — not two phrasings of the same plan. The point is the comparison: you learn what the
+  proof's actual difficulty is, and the better strategy often shows up only by contrast. The cost is real (Ousterhout:
+  an hour or two for a small module — the proof analogue is similar) and pays back because the first idea on a
+  non-trivial theorem is rarely the right one.
 
 ## Before Declaring Done (proof edition)
 
@@ -328,9 +328,9 @@ patterns.
 ## Boundary
 
 - Use [../mathematical-conjecture-design/SKILL.md](../mathematical-conjecture-design/SKILL.md) for line-level `goal.md`
-    and stable `proposal.md`. Theorem notes, `rapid-prototype.md`, `proof-architecture.md`, and theorem workspaces are
-    not the same kind of document.
+  and stable `proposal.md`. Theorem notes, `rapid-prototype.md`, `proof-architecture.md`, and theorem workspaces are not
+  the same kind of document.
 - Use `mathematical-theory-design` when the definitions, theorem statement, or universal-property level are still being
-    designed.
+  designed.
 - Use `mathematical-proof-review` when the job is adversarial review of an existing proof or proof-heavy note.
 - Use `technical-writing` for broad exposition that is not primarily about writing or revising a formal argument.

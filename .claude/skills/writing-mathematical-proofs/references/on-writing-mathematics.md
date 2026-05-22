@@ -107,14 +107,14 @@ asking which smaller claims would make the top-level argument mostly formal.
 
 - Use lemmas to isolate technical work that the reader should be able to forget once a milestone result is established.
 - Let each lemma remove one source of difficulty cleanly. If a lemma has several unrelated jobs, the architecture is
-    probably still muddy.
+  probably still muddy.
 - Promote a lemma to a proposition, theorem, or its own section when it becomes a conceptual hinge or its proof has
-    independent weight.
+  independent weight.
 - Merge technical lemmas that are only useful together instead of making the reader retain an artificial intermediate
-    statement.
+  statement.
 - Keep one-use lemmas close to where they are used.
 - If an argument spans many moving parts, expose its dependency shape early: milestone results first, then technical
-    reductions, with standard or orthogonal material moved later or to an appendix.
+  reductions, with standard or orthogonal material moved later or to an appendix.
 
 The point is not to maximize the number of lemmas. The point is to make the main theorem approachable, reduce reader
 memory load, and turn the final proof into an assembly of already-understood moves rather than a heroic direct attack.
